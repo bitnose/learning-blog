@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Kill Cyber Chain"
+title = "Chapter 1: Welcome!"
 date = "2022-03-30"
 description = "Chapter 1: Welcome!"
 tags = [
