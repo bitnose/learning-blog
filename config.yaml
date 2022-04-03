@@ -1,0 +1,29 @@
+baseURL: /
+languageCode: en-us
+title: It's a blog!
+theme: mini
+paginate: 3
+relativeURLS: true
+
+
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:title/
+
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+
+social:
+  github: https://github.com/
+  stackoverflow: https://stackoverflow.com/users/
+
+
+params:
+  author: Anniina Korkiakangas
+  bio: Learning diary 
+  description: "."
+  enableRSS: false
+  enableComments: false
+  enableGoogleAnalytics: false
