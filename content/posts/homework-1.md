@@ -93,12 +93,9 @@ According to The NSO Group’s transparency report, the NSO - Group has sixty cu
 - [Initial Access tactic](https://attack.mitre.org/tactics/TA0001/): The adversary is trying to get into your network.
 ### **Techniques**
 - Represents “how” an adversary achieves a tactical goal by performing an action.
-	
 - [Supply Chain Compromise tactic](https://attack.mitre.org/techniques/T1195/): Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for data or system compromise. 
-
 ### **Procedure**
 - The specific implementation the adversary uses for techniques or sub-techniques.
-
 - APT29 group gained initial network access to some victims via a trojanized update of SolarWinds Orion software.
 
 ##### Mitre. Techniques. https://attack.mitre.org/techniques/T1195/002/. read: 30.3.2022.
@@ -128,7 +125,7 @@ Installed Ubuntu to a Linux virtual machine with the Guest Additions using [Orac
 
 - Client OS: Ubuntu
 - Virtualization: Oracle VM & Vm Guest Additions
-- Host OS: macOS
+- Host OS: macOS Big Sur
 - Machine: MacBook Pro 2015
 
 
