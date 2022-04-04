@@ -1,8 +1,8 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Post 1: Cyber Kill Chain"
+title = "Report 1: Cyber Kill Chain"
 date = "2022-04-04"
-description = "Writing based on homework"
+description = "A writing based on given homework"
 tags = [
     "cyber-kill-chain",
     "cyber-security",
@@ -16,10 +16,10 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Post 1: Cyber Kill Chain**
+## **Report 1: Cyber Kill Chain**
 ### **Instructions**
 
-This is a post based on homework given at the course:
+This is a post based on the given homework at the course:
 [ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
 
  z) Read and summarize. Some bullets are enough for a summary.

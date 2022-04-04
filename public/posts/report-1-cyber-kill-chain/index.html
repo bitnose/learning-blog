@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Report 1: Cyber Kill Chain | Learning blog</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="A writing based on given homework">
+<meta name="generator" content="Hugo 0.96.0" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="../../css/style.css">
+
+
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="../../"> <span class="arrow">←</span>Home</a>
+	
+	<a href="../../posts">Archive</a>
+	<a href="../../tags">Tags</a>
+	<a href="../../about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Report 1: Cyber Kill Chain</h1>
+
+    <div class="tip">
+        <time datetime="2022-04-04 00:00:00 &#43;0000 UTC">Apr 4, 2022</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1303 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          7 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h2 id="report-1-cyber-kill-chain"><strong>Report 1: Cyber Kill Chain</strong> <a href="#report-1-cyber-kill-chain" class="anchor">🔗</a></h2><h3 id="instructions"><strong>Instructions</strong> <a href="#instructions" class="anchor">🔗</a></h3><p>This is a post based on the given homework at the course:
+<a href="https://terokarvinen.com/2021/trust-to-blockchain-2022/" target="_blank" rel="noopener">ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring</a></p>
+<p>z) Read and summarize. Some bullets are enough for a summary.</p>
+<ul>
+<li><a href="https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf" target="_blank" rel="noopener">Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains</a></li>
+<li><a href="https://darknetdiaries.com" target="_blank" rel="noopener">Darknet Diaries</a></li>
+<li><a href="https://attack.mitre.org/resources/faq/" target="_blank" rel="noopener">MITRE ATT&amp;CK FAQ</a> explains <a href="https://attack.mitre.org/matrices/enterprise/" target="_blank" rel="noopener">the ATT&amp;CK Enterprise Matrix</a>. Explain tactic, technique, and procedure in the context of ATT&amp;CK, and give an example of each. The enterprise matrix is big, you can just glimpse/browse it to see what&rsquo;s available instead of reading hundreds of pages.</li>
+</ul>
+<p>a) How would you compare Cyber Kill Chain and ATT&amp;CK Enterprise matrix? Who do you think could benefit from these models? (Bonus: Do you think anything is missing from either of these models?)</p>
+<p>d) Install Debian on Virtualbox. Report your work, including the environment (including host OS, the real physical computer used).</p>
+<h2 id="cyber-kill-chain"><strong>Cyber Kill Chain</strong> <a href="#cyber-kill-chain" class="anchor">🔗</a></h2><h3 id="summary"><strong>Summary</strong> <a href="#summary" class="anchor">🔗</a></h3><p>A Kill Chain model is used by the US military to target and engage an adversary to create desired effects
+Roots on the kill chain model. Lockheed Martin, a US defense and technology company, created the Cyber Kill Chain as a framework for cyber defense.</p>
+<ul>
+<li>Cyber Kill Chain is a seven-stage systematic cyber-attack process and a defense model used for the identification and prevention of cyber-attacks on a computer network</li>
+<li>Each stage or chain is required to achieve the next one and a successful attack depends on stages in the right order</li>
+<li>Anyone deficiency will interrupt the entire process: The earlier the better!</li>
+</ul>
+<h3 id="the-seven-stages-of-the-cyber-kill-chain"><strong>The seven stages of the Cyber Kill Chain</strong> <a href="#the-seven-stages-of-the-cyber-kill-chain" class="anchor">🔗</a></h3><ol>
+<li><strong>Reconnaissance</strong> Research, identification, and selection of targets.</li>
+<li><strong>Weaponization</strong> - Creating a malware weapon tailored for the vulnerable target</li>
+<li><strong>Delivery</strong> - Transmission of the weapon to the targeted environment</li>
+<li><strong>Exploitation</strong> - After the weapon is delivered to the victim host, exploitation triggers intruders’ code using vulnerabilities on the target</li>
+<li><strong>Installation</strong> - Installation of code/program on the target’s system allows the adversary to maintain persistence inside the environment.</li>
+<li><strong>Command and Control</strong> -  Establishing a command and control channel to have access inside the target environment.</li>
+<li><strong>Actions on Objectives</strong> - Intruders take action to achieve their original objectives. For example, moving laterally inside the environment or violating the confidentiality, integrity, or availability of a system in the environment.</li>
+</ol>
+<ul>
+<li>The paper presents a new intrusion kill chain model to analyze intrusions and drive defensive courses of action</li>
+<li>The principle goal of the analysis is to determine the patterns and behaviors of the intruders, their tactics, techniques, and procedures to detect <em>“how”</em> they operate rather than specifically <em>“what”</em> they do</li>
+<li>Just one mitigation breaks the chain and thwarts the adversary, therefore any repetition by the adversary is a liability that defenders must recognize and leverage</li>
+</ul>
+<h3 id="courses-of-action"><strong>Courses of Action</strong> <a href="#courses-of-action" class="anchor">🔗</a></h3><ul>
+<li>Defenders must be able to move their detection and analysis up the kill chain and more importantly implement courses of action across the kill chain</li>
+<li><strong>Detect</strong>, <strong>deny</strong>, <strong>disrupt</strong>, <strong>degrade</strong>, <strong>deceive</strong>, and <strong>destroy</strong> are some courses of action that can be taken</li>
+<li>Some tools for courses of action: web analytics, network intrusion detection systems, denying access using firewall access control lists, audit logging, host intrusion detection systems, data execution prevention, honey potting, DNS redirecting</li>
+</ul>
+<h5 id="source-hutchins-et-al-2011-intelligence-driven-computer-network-defense-informed-by-analysis-of-adversary-campaigns-and-intrusion-kill-chainshttpslockheedmartincomcontentdamlockheed-martinrmsdocumentscyberlm-white-paper-intel-driven-defensepdf--read-3032022"><a href="https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf" target="_blank" rel="noopener">Source: Hutchins et al 2011. Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains.</a>  Read 30.3.2022. <a href="#source-hutchins-et-al-2011-intelligence-driven-computer-network-defense-informed-by-analysis-of-adversary-campaigns-and-intrusion-kill-chainshttpslockheedmartincomcontentdamlockheed-martinrmsdocumentscyberlm-white-paper-intel-driven-defensepdf--read-3032022" class="anchor">🔗</a></h5><h2 id="darknet-diaries-ep-100-nso"><strong>Darknet Diaries EP 100: NSO</strong> <a href="#darknet-diaries-ep-100-nso" class="anchor">🔗</a></h2><h5 id="aug-31-2021">Aug 31, 2021 <a href="#aug-31-2021" class="anchor">🔗</a></h5><h3 id="summary-1"><strong>Summary</strong> <a href="#summary-1" class="anchor">🔗</a></h3><p>An Israeli company, The NSO Group, created powerful spyware called Pegasus which gives access to the data on a mobile phone. The NSO Group sells spyware to government agencies around the world.</p>
+<ul>
+<li>
+<p>Spyware like this is extremely sophisticated and expensive to buy, can be sold for hundreds of thousands of dollars or even millions</p>
+</li>
+<li>
+<p>The NSO Group claims they are selling Pegasus to governments and intelligence agencies to prevent crime and terror</p>
+</li>
+<li>
+<p>Nonetheless, if the software was used The NSO Group claims they only create and sell the spyware, don’t use them hence they are not held accountable for using the spyware</p>
+</li>
+<li>
+<p>The malware can have an access to Whatsapp messages, listen to calls, track location, turn on the microphone and the camera, and then sends the data back to the attackers (government agencies) without the victim having a clue</p>
+</li>
+<li>
+<p>The malware got access to mobile phones using zero-day exploits in Apple’s iPhones and using zero-click exploits against WhatsApp users</p>
+</li>
+<li>
+<p>The victims are cartel leaders, drug lords but also political leaders, human rights activists, journalists, people in power, scientists and their family members</p>
+</li>
+<li>
+<p>here is evidence of cases when the malware was used to attack civil society and innocent people
+According to The NSO Group’s transparency report, the NSO - Group has sixty customers in forty countries and a list of fifty-five countries the NSO Group refuses to do business with due to moral or ethical reasons</p>
+</li>
+<li>
+<p>The host of the podcast, Jack Rhysider, says</p>
+</li>
+</ul>
+<p><em>“But if they continue to do multi-million dollar deals with oppressive regimes who use the malware to attack civil society over and over, then the NSO Group needs to be held accountable for that.”</em></p>
+<h5 id="darknet-diaries-2021-jack-rhysider-episode-100-httpsdarknetdiariescomepisode100-listened-142022">Darknet Diaries 2021. Jack Rhysider. Episode 100. <a href="https://darknetdiaries.com/episode/100/" target="_blank" rel="noopener">https://darknetdiaries.com/episode/100/</a>. Listened 1.4.2022. <a href="#darknet-diaries-2021-jack-rhysider-episode-100-httpsdarknetdiariescomepisode100-listened-142022" class="anchor">🔗</a></h5><h2 id="attck"><strong>ATT&amp;CK</strong> <a href="#attck" class="anchor">🔗</a></h2><h3 id="summary-2"><strong>Summary</strong> <a href="#summary-2" class="anchor">🔗</a></h3><p><a href="https://attack.mitre.org/resources/faq/" target="_blank" rel="noopener">ATT&amp;CK</a> &ldquo;is a knowledge base of cyber adversary behavior and taxonomy for adversarial actions across their lifecycle.&rdquo;</p>
+<h3 id="tactics"><strong>Tactics</strong> <a href="#tactics" class="anchor">🔗</a></h3><ul>
+<li>Adversary’s tactical goal: Tactics represent “why” an adversary performs an ATT&amp;CK technique or sub-technique. The reason for performing an action.</li>
+<li><a href="https://attack.mitre.org/tactics/TA0001/" target="_blank" rel="noopener">Initial Access tactic</a>: The adversary is trying to get into your network.</li>
+</ul>
+<h3 id="techniques"><strong>Techniques</strong> <a href="#techniques" class="anchor">🔗</a></h3><ul>
+<li>
+<p>Represents “how” an adversary achieves a tactical goal by performing an action.</p>
+</li>
+<li>
+<p><a href="https://attack.mitre.org/techniques/T1195/" target="_blank" rel="noopener">Supply Chain Compromise tactic</a>: Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for data or system compromise.</p>
+</li>
+</ul>
+<h3 id="procedure"><strong>Procedure</strong> <a href="#procedure" class="anchor">🔗</a></h3><ul>
+<li>
+<p>The specific implementation the adversary uses for techniques or sub-techniques.</p>
+</li>
+<li>
+<p>APT29 group gained initial network access to some victims via a trojanized update of SolarWinds Orion software.</p>
+</li>
+</ul>
+<h5 id="mitre-techniques-httpsattackmitreorgtechniquest1195002-read-3032022">Mitre. Techniques. <a href="https://attack.mitre.org/techniques/T1195/002/" target="_blank" rel="noopener">https://attack.mitre.org/techniques/T1195/002/</a>. read: 30.3.2022. <a href="#mitre-techniques-httpsattackmitreorgtechniquest1195002-read-3032022" class="anchor">🔗</a></h5><h2 id="cyber-kill-chain-vs-attck-enterprise-matrix"><strong>Cyber Kill Chain vs ATT&amp;CK Enterprise matrix</strong> <a href="#cyber-kill-chain-vs-attck-enterprise-matrix" class="anchor">🔗</a></h2><p>A big difference between the two models is the way they approach the subject. Cyber Kill Chain approaches intrusions as a linear continuity of different procedures following each other after reaching the goal of each step. The focus is on identifying and stopping the intrusion, the earlier the better.</p>
+<p>Cyber Kill Chain is more theoretical and strategical approach. ATT&amp;CK Enterprise matrix rather goes into detail and depth containing a lot of data regarding both adversarie&rsquo;s and defender&rsquo;s sides. ATT&amp;CK Enterprise matrix is providing references and examples when Cyber Kill Chain is focusing more on the big picture.</p>
+<p>ATT&amp;CK Enterprise matrix is a toolbox containing a set of techniques used by adversaries to accomplish a specific objective. Cyber Kill Chain’s every stage is connected and adversaries’ strategy is seen as more rigid, following the same pattern in a specific order.</p>
+<p>The way the models are built is different. ATT&amp;CK Enterprise Matrix is based on data that has been collected and regularly updated with the industry. Cyber Kill Chain is based on US Military’s Kill Chain model.</p>
+<h5 id="macafee-what-is-mitre-attack-framework-httpswwwmcafeecomenterpriseen-ussecurity-awarenesscybersecuritywhat-is-mitre-attack-frameworkhtml-read-142022">Macafee. What is mitre attack framework. <a href="https://www.mcafee.com/enterprise/en-us/security-awareness/cybersecurity/what-is-mitre-attack-framework.html" target="_blank" rel="noopener">https://www.mcafee.com/enterprise/en-us/security-awareness/cybersecurity/what-is-mitre-attack-framework.html</a>. Read: 1.4.2022. <a href="#macafee-what-is-mitre-attack-framework-httpswwwmcafeecomenterpriseen-ussecurity-awarenesscybersecuritywhat-is-mitre-attack-frameworkhtml-read-142022" class="anchor">🔗</a></h5><h3 id="who-benefits"><strong>Who benefits?</strong> <a href="#who-benefits" class="anchor">🔗</a></h3><p>Both adversaries and cybersecurity teams can benefit from the models. Both can use the models as a framework for building strategies for attacking and defending. Adversaries can use the ATT&amp;CK Enterprise matrix to create a strategy and procedure for the attack.</p>
+<p>Defenders can use the model for testing purposes to orchestrate operations and penetration tests on their network. Targets and cybersecurity teams can benefit from using the same model for understanding and predicting the adversary’s strategy.</p>
+<h5 id="mitre-getting-started-httpsattackmitreorgresourcesgetting-started-read-142022">Mitre. Getting started. <a href="https://attack.mitre.org/resources/getting-started/" target="_blank" rel="noopener">https://attack.mitre.org/resources/getting-started/</a>. Read 1.4.2022. <a href="#mitre-getting-started-httpsattackmitreorgresourcesgetting-started-read-142022" class="anchor">🔗</a></h5><h2 id="install-linux-virtual-machine"><strong>Install Linux virtual machine</strong> <a href="#install-linux-virtual-machine" class="anchor">🔗</a></h2><h3 id="report"><strong>Report</strong> <a href="#report" class="anchor">🔗</a></h3><p>Installed Ubuntu to a Linux virtual machine with the Guest Additions using <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">Oracle’s Virtual Box</a> on macOS Big Sur 11. All good to go!</p>
+<ul>
+<li>Client OS: Ubuntu</li>
+<li>Virtualization: Oracle VM &amp; Vm Guest Additions</li>
+<li>Host OS: macOS</li>
+<li>Machine: MacBook Pro 2015</li>
+</ul>
+
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="../../tags/cyber-kill-chain">cyber-kill-chain</a>
+            
+                <a href="../../tags/cyber-security">cyber-security</a>
+            
+                <a href="../../tags/homework">homework</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+
+    <a class="symbol" href="https://github.com/" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>Github</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+    <a class="symbol" href="https://stackoverflow.com/users/" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>stackoverflow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-488.000000, -1163.000000)">
+            <g id="stackoverflow" transform="translate(488.000000, 1163.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M42.0860128,53.5922927 L22.9745951,53.6011499 L22.9729497,49.5538824 L42.0835447,49.5440929 L42.0860128,53.5922927 L42.0860128,53.5922927 Z M55,30.6708298 L51.7306912,12 L47.7087256,12.6920259 L50.9775643,31.3628557 L55,30.6708298 L55,30.6708298 Z M42.5455518,44.3547147 L23.5156994,42.616026 L23.1410164,46.6470941 L42.1712214,48.3841513 L42.5455518,44.3547147 L42.5455518,44.3547147 Z M43.8009984,39.0731519 L25.3459811,34.1539179 L24.285633,38.0621508 L42.7419431,42.9819676 L43.8009984,39.0731519 L43.8009984,39.0731519 Z M46.2103463,34.4436411 L29.7494464,24.8164635 L27.6748215,28.3015328 L44.1365441,37.9292931 L46.2103463,34.4436411 L46.2103463,34.4436411 Z M50.2466504,31.6088756 L46.8745036,33.8883189 L36.106599,18.2318456 L39.4792159,15.9517031 L50.2466504,31.6088756 Z M45.3315807,40.2784283 L48.5799693,40.2784283 L48.5799693,60 L17,60 L17,40.2784283 L20.2648427,40.2784283 L20.2648427,56.8243495 L45.3315807,56.8243495 L45.3315807,40.2784283 Z" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+
+</div>
+
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2022 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       Anniina Korkiakangas
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>
