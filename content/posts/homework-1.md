@@ -1,7 +1,7 @@
 +++
 author = "Anniina Korkiakangas"
 title = "Post 1: Cyber Kill Chain"
-date = "2022-03-30"
+date = "2022-04-04"
 description = "Writing based on homework"
 tags = [
     "cyber-kill-chain",
