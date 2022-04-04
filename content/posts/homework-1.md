@@ -70,15 +70,14 @@ Roots on the kill chain model. Lockheed Martin, a US defense and technology comp
 ### **Summary**
 An Israeli company, The NSO Group, created powerful spyware called Pegasus which gives access to the data on a mobile phone. The NSO Group sells spyware to government agencies around the world.
 - Spyware like this is extremely sophisticated and expensive to buy, can be sold for hundreds of thousands of dollars or even millions
-- The NSO Group claims they are selling Pegasus to governments and intelligence agencies to prevent crime and terror
+ The NSO Group claims they are selling Pegasus to governments and intelligence agencies to prevent crime and terror
 - Nonetheless, if the software was used The NSO Group claims they only create and sell the spyware, don’t use them hence they are not held accountable for using the spyware 
 - The malware can have an access to Whatsapp messages, listen to calls, track location, turn on the microphone and the camera, and then sends the data back to the attackers (government agencies) without the victim having a clue 
 - The malware got access to mobile phones using zero-day exploits in Apple’s iPhones and using zero-click exploits against WhatsApp users
 - The victims are cartel leaders, drug lords but also political leaders, human rights activists, journalists, people in power, scientists and their family members
 - here is evidence of cases when the malware was used to attack civil society and innocent people
 According to The NSO Group’s transparency report, the NSO - Group has sixty customers in forty countries and a list of fifty-five countries the NSO Group refuses to do business with due to moral or ethical reasons
-
-- The host of the podcast, Jack Rhysider, says 
+- The host of the podcast, Jack Rhysider, says: 
 
 *“But if they continue to do multi-million dollar deals with oppressive regimes who use the malware to attack civil society over and over, then the NSO Group needs to be held accountable for that.”* 
 ##### Darknet Diaries 2021. Jack Rhysider. Episode 100. https://darknetdiaries.com/episode/100/. Listened 1.4.2022.
