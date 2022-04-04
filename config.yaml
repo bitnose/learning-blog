@@ -1,6 +1,6 @@
 baseURL: /
 languageCode: en-us
-title: It's a blog!
+title: Learning blog
 theme: mini
 paginate: 3
 relativeURLS: true
@@ -22,7 +22,7 @@ social:
 
 params:
   author: Anniina Korkiakangas
-  bio: Learning diary 
+  bio: 
   description: "."
   enableRSS: false
   enableComments: false

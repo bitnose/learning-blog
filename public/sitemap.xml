@@ -8,13 +8,19 @@
     <loc>/categories/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/ch-1/</loc>
+    <loc>/tags/cyber-kill-chain/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/chapter-1-welcome/</loc>
+    <loc>/tags/cyber-security/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/homework/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/post-1-cyber-kill-chain/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
@@ -27,9 +33,6 @@
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/themes/</loc>
-    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/welcome/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url>
 </urlset>
