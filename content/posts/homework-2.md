@@ -47,7 +47,7 @@ An arbitrator is a **trusted third party**, a middle-man, with **no interest** i
 My comment: An arbitrator must be incorruptible!
 
 #### **Some Problems with Computer Arbitrators**
-- Faceless: More likely difficulties to trust him
+- Faceless: More likely difficulties to trust it
 - The network must handle the cost 
 - The arbitrator must deal with every transaction so it can be a bottleneck in large projects
 - Arbitrator represents a vulnerable point of protocol because everyone on the network must trust him
@@ -95,7 +95,6 @@ Comment: Maybe smart contracts and blockchain could help with it?
 - A good one-way hash function is collision-free: hard to generate two pre-images with the same hash value
 - Hash function is public, the security is its one-wayness
 - Computationally unfeasible to find a pre-image that hashes to that value
-“Fingerprinting”
 
 ###### Schneier 2015: Applied Cryptography: [Chapter 2 - Protocol Building Blocks](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html). read: 10.4.2022
 
@@ -107,19 +106,18 @@ Comment: Maybe smart contracts and blockchain could help with it?
 - Encryption, access management, endpoint protection, longer passwords and two-factor-authentication protect against intruders 
 - Default passwords, password reuse are simple passwords create vulnerabilities that attackers might leverage
 
-#### **Capturing credential over the network**
+#### **Ways to capture credential over the network**
 - MITM 
 - Attacks against clear text protocols (telnet, FTP, SIP, POP3, IMAP, HTTP, etc)
 - Against ciphered protocols
 - Spoof an SSL certificate, SSH downgrade attacks
 - Relay attacks: steal the creds directly from the device
 
-#### **Why is it so easy to crack passwords these days**
+#### **Why is it so easy to crack passwords these days?**
 - Used to rely on CPU speed
-- Distribute across CPUS 
 - Weak algorithms 
-- Dictionaries like rainbow tables
-- Multiple GPU’s makes it much faster by decreasing computation times: key space of 69 characters takes only 1 day
+- Dictionaries like rainbow tables makes it easier
+- Multiple GPU’s makes it much faster by decreasing computation times
 
 ##### Summary of Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: [Lesson 6: Hacking User Credentials](https://learning.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00)
 
