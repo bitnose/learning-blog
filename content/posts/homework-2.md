@@ -97,7 +97,7 @@ Comment: Maybe smart contracts and blockchain could help with it?
 - Computationally unfeasible to find a pre-image that hashes to that value
 “Fingerprinting”
 
-###### **Schneier 2015: Applied Cryptography: [Chapter 2 - Protocol Building Blocks](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html)**. read: 10.4.2022
+###### Schneier 2015: Applied Cryptography: [Chapter 2 - Protocol Building Blocks](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html). read: 10.4.2022
 
 
 ## **Hacking User Credentials**
@@ -176,7 +176,7 @@ I start by trying get more information of the hash type and the mode to use:
      [+] Woltlab Burning Board 4.x
      [+] bcrypt [Hashcat Mode: 3200]
 
-Next, I try: 
+Next, I tried: 
 
      $ hashcat -m 3200 '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu' rockyou.txt -o solved --force
 
@@ -186,7 +186,8 @@ The process timed out. I tried again and actually it worked!
     ...
     $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu:12345
 
-The cracking took 22 minutes and 23 seconds. A hashrate 
+The cracking took 22 minutes and 23 seconds. The hash rate was very low because I don't have a compatible GPU available on my machine. The software shows 0H/s, I assume it's shows zero when the hash rate is below 1H/s.
+  
 
 
 
