@@ -99,7 +99,6 @@ Comment: Maybe smart contracts and blockchain could help with it?
 
 ###### Schneier 2015: Applied Cryptography: [Chapter 2 - Protocol Building Blocks](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html). read: 10.4.2022
 
-
 ## **Hacking User Credentials**
 
 #### **About Authentication and Authorization Mechanism**
@@ -122,7 +121,7 @@ Comment: Maybe smart contracts and blockchain could help with it?
 - Dictionaries like rainbow tables
 - Multiple GPU’s makes it much faster by decreasing computation times: key space of 69 characters takes only 1 day
 
-###### Summary of Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: [Lesson 6: Hacking User Credentials](https://learning.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00)
+##### Summary of Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: [Lesson 6: Hacking User Credentials](https://learning.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00)
 
 ## **Cracking passwords with hashcat**
 #### **a) Install hashcat and test that it works.**
@@ -131,7 +130,7 @@ I installed hashcat according [this article](https://terokarvinen.com/2022/crack
 
 #### **b) Crack this hash: 21232f297a57a5a743894a0e4a801fc3**
 
-At first, I try to get more information of the hash type with this command:
+At first, I tried to get more information of the hash type with this command:
        
     $ hashid -m 21232f297a57a5a743894a0e4a801fc3
 
@@ -140,7 +139,7 @@ It gives a result like this:
     [+] MD2 
     [+] MD5 [Hashcat Mode: 0]
     
-Now I can try with:
+I tried with:
 
     $ hashcat -m 0 '21232f297a57a5a743894a0e4a801fc3' rockyou.txt -o solved --force
 
@@ -151,11 +150,11 @@ Cracking was successfull! Print the solved password with this command:
 
 #### **c) Crack this Windows NTLM hash: f2477a144dff4f216ab81f2ac3e3207d**
 
-At first, I try to get more information of the hash by typing this command:
+At first, I tried to get more information of the hash by typing this command:
         
     $ hashid -m f2477a144dff4f216ab81f2ac3e3207d
 
-We know already it's a NTLM hash so I can select the right hashcat mode (which is 1000 in this case).
+We know already it's a NTLM hash so I selected the right hashcat mode (which is 1000 in this case).
 
     $ hashcat -m 1000 'f2477a144dff4f216ab81f2ac3e3207d' rockyou.txt -o solved --force
 
@@ -168,7 +167,7 @@ Hurray! The cracking was successful. The password is:
 
 #### **d) Try cracking this hash and comment on your hash rate $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu** 
 
-I start by trying get more information of the hash type and the mode to use:
+I started by trying get more information of the hash type and the mode to use:
 
      $ hashid -m '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
 
@@ -186,7 +185,7 @@ The process timed out. I tried again and actually it worked!
     ...
     $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu:12345
 
-The cracking took 22 minutes and 23 seconds. The hash rate was very low because I don't have a compatible GPU available on my machine. The software shows 0H/s, I assume it's shows zero when the hash rate is below 1H/s.
+The cracking took 22 minutes and 23 seconds. The hash rate was very low because I don't have a compatible GPU available on my machine. The software shows 0H/s, I assume it shows zero when the hash rate is below 1H/s.
   
 
 
