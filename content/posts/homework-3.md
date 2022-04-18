@@ -118,6 +118,8 @@ Compared to RSA, ECDSA keys are shorter but they have the higher degree of [secu
 - User’s public address is the last 20 bytes of the Keccak-256 hash of the public key added after 0x
 
 ## **c) Hands on: Encrypt and sign a message**
+[PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (Pretty Good Privacy) is an cryptographic system used for   encrypting and decrypting emails and sensitive files. It's also used for confidentiality and verification. 
+
 For the exercise I'm using PGP [GnuPG](https://gnupg.org) to encrypt the messages. The excersice was done on Ubuntu 18 virtual machine. GnuPG or GPG is an implementation of a public key cryptography. I followed these [instructions](https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages).
 
 **Install GnuPG**
@@ -130,6 +132,10 @@ For the exercise I'm using PGP [GnuPG](https://gnupg.org) to encrypt the message
     $ gpg --gen-key
 
 This will ask your name and email address which will be assosiated with the key-pair. After it will ask you to enter a passphrase. 
+
+**Import** someone's **public key** from the file. 
+
+    $ gpg --import certkey.asc
 
 **Encrypt a message** by using the receiver's (-r) public key and sign it with your own  private key. In this case, the receiver is same. 
 
@@ -150,6 +156,7 @@ You can **sign the key** to tell the software you trust the key you have been gi
 **List** all the keys with this command.
 
     $ gpg --list-keys
+
 
 
 
