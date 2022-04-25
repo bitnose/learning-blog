@@ -29,7 +29,7 @@ Shavers & Bair 2016: [Hiding Behind the Keyboard: The Tor Browser](https://learn
 [Tor](https://www.torproject.org), **The Onion Router** browser, has empowered any person even without technical background to **communicate anonymously over the Internet**. It hides the user’s original IP address when using the browser. This makes tracing nearly impossible.
 
 #### **Overview**
-- Tor allows uncencored and anonymous communication over the Internet.
+- Tor allows unregulated and anonymous communication over the Internet.
 - Simply a modified Firefox browser
 - The most commonly used anonymoys Internet tool in the world
 - Used for both **legitimate and illicit** communication 
@@ -132,7 +132,16 @@ Anonymity works in TOR by using several layers of encryption between each hop. T
  Tor makes an use of Elliptic curve cryptography to encrypt the connection. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key. 
 
 #### **f)** What kind of the **treath models could TOR fit**?
-- 
+
+Exit nodes can be used for **spoofing** information which might become useful when combined with contextual information. 
+
+Some other threats are:
+- Denial of Service: To deny access to valid user by making it illegal to use Tor Browser
+- Brute-force attacks 
+- The anonymity protects all so adversaries which makes the platform great for distributing malicious content on user's machine if it's insufficiently protected
+- Using Tor in malicious ways might cause a threat to people and societies 
+- Man-in-the-middle attacks
+
 
 
 
