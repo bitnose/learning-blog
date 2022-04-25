@@ -129,7 +129,9 @@ The main differences between Tor and I2P are (https://geti2p.net/en/comparison/t
 
 Anonymity works in TOR by using several layers of encryption between each hop. The data is encrypted except on the exit hop. Entry node knows the IP address of middle node but don't know the IP'address of the exit node or the content of the message. The middle node knows the IP address of the previous node and exit node but doesn't know the encrypted content. The exit node knows the IP'address of the middle node but not the entry node. The message is plaintext. 
 
- Tor makes an use of Elliptic curve cryptography to encrypt the connection. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key. 
+ Tor makes an use of Elliptic curve cryptography to encrypt the connection. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key. All so, it blocks the fingerprinting and tracking.
+
+ 
 
 #### **f)** What kind of the **treath models could TOR fit**?
 
@@ -138,7 +140,7 @@ Exit nodes can be used for **spoofing** information which might become useful wh
 Some other threats are:
 - Denial of Service: To deny access to valid user by making it illegal to use Tor Browser
 - Brute-force attacks 
-- The anonymity protects all so adversaries which makes the platform great for distributing malicious content on user's machine if it's insufficiently protected
+- The anonymity protects all so adversaries which makes the platform great for distributing malicious content on user's machine if it's insufficiently protected or if the user's is careless
 - Using Tor in malicious ways might cause a threat to people and societies 
 - Man-in-the-middle attacks
 
