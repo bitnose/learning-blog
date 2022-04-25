@@ -29,12 +29,12 @@ Shavers & Bair 2016: [Hiding Behind the Keyboard: The Tor Browser](https://learn
 [Tor](https://www.torproject.org), **The Onion Router** browser, has empowered any person even without technical background to **communicate anonymously over the Internet**. It hides the user’s original IP address when using the browser. This makes tracing nearly impossible.
 
 #### **Overview**
-- Tor allows unregulated and anonymous communication over the Internet.
+- Tor allows unregulated and anonymous communication over the Internet
 - Simply a modified Firefox browser
 - The most commonly used anonymoys Internet tool in the world
 - Used for both **legitimate and illicit** communication 
-- Initially developed by the US government in 2002, not controlled by them anyone.
-- Open for improvements by anyone with technical ability to test and improve it. It brings lots of experts together and ensures its relevancy.
+- Initially developed by the US government in 2002, not controlled by them anymore
+- Open for improvements by anyone with technical ability to test and improve it. It brings lots of experts together and ensures its relevancy
 - It’s free, easy to use, portable, fast to set up, and provides amount of anonymity
 - In the most of countries it's legal to use Tor. **What is illegal is all so illegal in Tor!**
 
@@ -119,19 +119,19 @@ The investigators obtained the identity due to Ross Ulbricht actions on the publ
 ### **I2P**
 Some other anonymous networks are [I2P](https://geti2p.net/en/), The Invisible Internet Project. It's an encrypted private network layer. It is a peer-to-peer network, it relies on peers to route traffic. All the traffic in the network is internal and I2P does not interact with the Internet direclty. You can think it as a layer on top of the Internet. Connections are encrypted from route to route and end-to-end. 
 
-The main differences between Tor and I2P are (https://geti2p.net/en/comparison/tor):
+The main differences between Tor and I2P are
 
-- Differences in the threat model: 
+- Differences in the threat model 
 - The out-proxy design: I2P are optimized for **hidden services** and it's **end-to-end encrypted** unlike TOR where the last hop's data is plaintext 
+
+###### Source: 12P. I2P Compared to Tor. https://geti2p.net/en/comparison/tor.
 
 
 #### **e)** In your own words, **how does anonymity work in TOR?** (e.g. how does it use: public keys, encryption, what algorithms?)
 
-Anonymity works in TOR by using several layers of encryption between each hop. The data is encrypted except on the exit hop. Entry node knows the IP address of middle node but don't know the IP'address of the exit node or the content of the message. The middle node knows the IP address of the previous node and exit node but doesn't know the encrypted content. The exit node knows the IP'address of the middle node but not the entry node. The message is plaintext. 
+Anonymity works in TOR by using several layers of encryption between each hop. The data is encrypted except on the exit hop. Entry node knows the IP address of middle node but don't know the IP'address of the exit node or the content of the message. The middle node knows the IP address of the previous node and exit node but doesn't know the encrypted content. The exit node knows the IP'address of the middle node but not the entry node. The message is plaintext. All so, it blocks the fingerprinting and tracking.
 
- Tor makes an use of Elliptic curve cryptography to encrypt the connection. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key. All so, it blocks the fingerprinting and tracking.
-
- 
+ Tor makes an use of Elliptic curve cryptography to encrypt the connection. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key.
 
 #### **f)** What kind of the **treath models could TOR fit**?
 
