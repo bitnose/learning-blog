@@ -137,6 +137,11 @@ This will ask your name and email address which will be assosiated with the key-
 
     $ gpg --import certkey.asc
 
+
+**Verify** the sender's identity using a fingerprint of a public key.
+
+    $ gpg --fingerprint person@email.com
+
 **Encrypt a message** by using the receiver's (-r) public key and sign it with your own  private key. In this case, the receiver is same. 
 
     $ gpg --encrypt --sign --armor -r person@email.com file_name
@@ -144,10 +149,6 @@ This will ask your name and email address which will be assosiated with the key-
 **Decrypt the message** 
 
     $ gpg file_name.asc
-
-**Verify** the sender's identity using a fingerprint of a public key.
-
-    $ gpg --fingerprint person@email.com
 
 You can **sign the key** to tell the software you trust the key you have been given and you have verified the person it's associated with. 
 
