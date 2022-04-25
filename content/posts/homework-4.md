@@ -122,6 +122,8 @@ Some other anonymous networks are [I2P](https://geti2p.net/en/), The Invisible I
 The main differences between Tor and I2P are
 
 - Differences in the threat model 
+- I2P is more distributed 
+- 
 - The out-proxy design: I2P are optimized for **hidden services** and it's **end-to-end encrypted** unlike TOR where the last hop's data is plaintext 
 
 ###### Source: 12P. I2P Compared to Tor. https://geti2p.net/en/comparison/tor.
@@ -131,7 +133,7 @@ The main differences between Tor and I2P are
 
 Anonymity works in TOR by using several layers of encryption between each hop. The data is encrypted except on the exit hop. Entry node knows the IP address of middle node but don't know the IP'address of the exit node or the content of the message. The middle node knows the IP address of the previous node and exit node but doesn't know the encrypted content. The exit node knows the IP'address of the middle node but not the entry node. The message is plaintext. All so, it blocks the fingerprinting and tracking.
 
- Tor makes an use of Elliptic curve cryptography to encrypt the connection. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key.
+ Tor makes an use of Elliptic curve cryptography. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key.
 
 #### **f)** What kind of the **treath models could TOR fit**?
 
