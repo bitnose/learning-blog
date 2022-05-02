@@ -22,7 +22,7 @@ aliases = ["migrate-from-jekyl"]
 This is a report based on the given homework at the course:
 [ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
 
-**a)** v) Read/watch and summarize 
+**v)** Read/watch and summarize 
 
 - Nakamoto, Satoshi 2008: [Bitcoin: A Peer-to-Peer Electronic Cash System.](https://bitcoin.org/bitcoin.pdf) ([A colored HTML version](https://git.dhimmel.com/bitcoin-whitepaper/). This is the paper that defined and introduced BitCoin. You can skip "11. Calculations" if you don't like sigma symbols. URL and email address on top of the paper seem unbeliveable and added by third party.
 
@@ -30,18 +30,20 @@ This is a report based on the given homework at the course:
 
 ## **Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto October 31, 2008, summary**
 
-The paper introduces a peer-to-peer network that relais on proof-of-work to record a public history of transactions and this way it ensures digital coins are not spent twice.
+The paper introduces a peer-to-peer network of nodes that relais on proof-of-work to record a public history of transactions and this way it ensures digital coins are not spent twice.
 
 - This kind of network would allow online payments to be sent directly with parties without traditional financial institutions
 - An electronic payment system based on cryptographic proof instead of trust 
 - If honest nodes control a majority of CPU power, it's computionally impractical for an adversary to try to douple spent money: Nodes vote with their CPU power their acceptance of valid blocks by working on them and rejecting invalid blocks by refusing to work on them. 
-- Each block contains information of previous block hence it can be used to verify there is no double spending
+- Each block contains information of previous block 
 
 ## **Felten et al 2015: Bitcoin and Cryptocurrency Technologies, week 1, Summary**
 
-#### **Cryptographic hash functions**
+#### Building blocks of Cryptocurrency Technologies
 
-Characteristics of cryptographic hash functions: They are mathematical functions which take any string as input and return a fixed size output and efficiently computable.
+**Cryptographic hash functions**
+- They are mathematical functions which take any string as input and return a fixed size output 
+- They are efficiently computable
  
 **Hash pointer**
 - Pointer tells where some information is stored and what is a cryptographic hash of the information
@@ -63,7 +65,7 @@ Characteristics of cryptographic hash functions: They are mathematical functions
 
 #### **a)** Value of bit money. **How much is one BitCoin (BTC) worth now?** Using historical BTC course, show that you could have lost a lot of money investing in BTC. Also show that you could have won a lot of money with BTC.
 
-One BitCoin (BTC) is worth of **38,902.51 USD** (02/05/2022 at 10:56 UTC1+1)
+One Bitcoin (BTC) is worth of **38,902.51 USD** (02/05/2022 at 10:56 UTC1+1)
 
 **Case 1**
 
@@ -97,12 +99,12 @@ I would have made 63 232.82$ (excluding all the additional fees, inflation etc).
 
 #### **b) Is it legal to own BitCoin in Finland?** Why do you think so?
 
-Yes, it is legal to own BitCoin in Finland. Some thoughts of mine:
+Yes, it is legal to own Bitcoin in Finland. Some thoughts of mine:
 
 - Bitcoin can be taxed when it's legally accepted
-- Easier to control i.e. less hazardaus when something is legally accepted: the structure around it can be created
+- Easier to control when something is legally accepted: the structure around it can be created
 - Might increase or direct the adaptation and development of new technology when it is accepted in society 
-- BitCoin can be seen as a competing system for traditional banks and fiat. By legalizing owning BitCoins, it can be moved under the supervicing centralized power/institution to ensure and control the laws are followed. 
+- Bitcoin can be seen as a competing system for traditional banks and fiat. By legalizing owning BitCoins, it can be moved under the supervicing centralized power/institution to ensure and control the laws are followed. 
 By legalizing something, you have to ensure the laws are applied also either using self-enforcing protocols, being willingly naive and trust or just create a trusted third party. 
 
 #### **c) What's a block chain?** Give a simple but detailed explanation. (Feel free to use the most narrow and simple definition of blockchain - no need to consider a whole cryptocurrency).
