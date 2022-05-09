@@ -152,7 +152,7 @@ The result of scanning the task ran total 221 events (163 dangers, 51 warnings a
 
 ## **a) Reference implementation: StackExchange**
 
- StackOverflow (and StackExchange) can offer bits of help along the way of learning, well almost anything. 
+ StackOverflow (and StackExchange) can offer bits of help along the way of learning. 
 
 #### **Q: Question**
 
