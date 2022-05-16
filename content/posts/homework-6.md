@@ -19,8 +19,9 @@ aliases = ["migrate-from-jekyl"]
 
 # **Report 6: Can of worms**
 #### **Instructions**
-A report based on the homework at the course
-[ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
+
+A report based on the homework 6 (h6 can of worms) on the course
+[ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
 
 #### **Homework v)** Read/watch and summarize 
 
@@ -146,7 +147,7 @@ This one seems to be more worrysome.
 It seems that malware is trying to **steal user information and credentials**. It's labeled **stealer**.
 The result of scanning the task ran total 221 events (163 dangers, 51 warnings and 7 other). According Mitre ATT&CK matrix, it uses 4 different tactics and 8 techniques. 
 
-###### Source: Any run. Cybersecuirty blog. How to use ANY.RUN. https://any.run/cybersecurity-blog/how-to-use-anyrun/. 
+###### Source: Any run. Cybersecurity blog. How to use ANY.RUN. https://any.run/cybersecurity-blog/how-to-use-anyrun/. 
 
  #### **Homework b) Reference implementation**. Ever cop^H^H^Hlearned from StackOverflow? Pick a StackExchange site related to the course, sort questions by score, and briefly explain one question and answer. https://stackexchange.com/sites
 

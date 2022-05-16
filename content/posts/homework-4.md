@@ -19,8 +19,9 @@ aliases = ["migrate-from-jekyl"]
 
 # **Report 4: The Tor Browser**
 #### **Instructions**
-This is a post based on the given homework at the course:
-[ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
+
+A report based on the homework 4 (h4) on the course
+[ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
 
 **a)** Read and summarize 
 Shavers & Bair 2016: [Hiding Behind the Keyboard: The Tor Browser](https://learning.oreilly.com/library/view/hiding-behind-the/9780128033524/XHTML/B9780128033401000021/B9780128033401000021.xhtml) 
@@ -84,8 +85,14 @@ Based on Debian/Linux and runs from a DVD, USB flash drive, or SD card and does 
 
 #### **a) Install TOR browser and access TOR network** (.onion addresses). (Explain in detail how you installed it, and how you got access to TOR).
 
+Installed the Tor browser.
 
-Installed the Tor browser on Ubuntu 18.04 virtual machine. 
+The excersice was done on:
+- Client OS: Ubuntu 18.04
+- Virtualization: Oracle VM & Vm Guest Additions
+- Host OS: macOS Big Sur 11
+- Machine: MacBook Pro 2015
+
 1. Downloaded the [Tor browser](https://www.torproject.org/download/) for Linux and update the package list.
 
         $ sudo apt-get update
@@ -131,7 +138,7 @@ The main differences between Tor and I2P are
 
 #### **e)** In your own words, **how does anonymity work in TOR?** (e.g. how does it use: public keys, encryption, what algorithms?)
 
-Anonymity works in TOR by using several layers of encryption between each hop. The data is encrypted except on the exit hop. Entry node knows the IP address of middle node but don't know the IP'address of the exit node or the content of the message. The middle node knows the IP address of the previous node and exit node but doesn't know the encrypted content. The exit node knows the IP'address of the middle node but not the entry node. The message is plaintext. All so, it blocks the fingerprinting and tracking.
+In my own words, anonymity works in TOR by using several layers of encryption between each hop. The data is encrypted except on the exit hop. Entry node knows the IP address of middle node but don't know the IP'address of the exit node or the content of the message. The middle node knows the IP address of the previous node and exit node but doesn't know the encrypted content. The exit node knows the IP'address of the middle node but not the entry node. The message is plaintext. All so, it blocks the fingerprinting and tracking.
 
  Tor makes an use of Elliptic curve cryptography. Elliptic curve cryptograhy leverages public-key encryption and it's a one-way-function which means the private key cannot be calculated from the public key.
 

@@ -19,8 +19,9 @@ aliases = ["migrate-from-jekyl"]
 
 # **Report 3: Public key encryption and pgp**
 #### **Instructions**
-This is a post based on the given homework at the course:
-[ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
+
+A report based on the homework 3 (h3 public key encryption and pgp) on the course
+[ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
 
 **a)** Read and summarize (with 1-5 bullet points for each heading)
 Schneier 2015: [Applied Cryptography Chapter 1: Foundations](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html)
@@ -94,7 +95,6 @@ Schneier 2015: [Applied Cryptography Chapter 1: Foundations](https://learning.or
 
 ###### Schneier 2015: Applied Cryptography: [Chapter 1 - Foundation](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html). read: 16.4.2022
 
-
 ## **b) Examples of public key cryptosystems**
 
 **RSA**
@@ -117,10 +117,18 @@ Compared to RSA, ECDSA keys are shorter but they have the higher degree of [secu
 -  The public key can be derived from the signature and it’s used to proove the author of the signature
 - User’s public address is the last 20 bytes of the Keccak-256 hash of the public key added after 0x
 
+##### Source: Wikipedia 2022. Elliptic Curve Cryptography. https://en.wikipedia.org/wiki/Elliptic-curve_cryptography. Read: 18.04.2022
+
 ## **c) Hands on: Encrypt and sign a message**
 [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (Pretty Good Privacy) is an cryptographic system used for   encrypting and decrypting emails and sensitive files. It's also used for confidentiality and verification. 
 
 For the exercise I'm using PGP [GnuPG](https://gnupg.org) to encrypt the messages. The excersice was done on Ubuntu 18 virtual machine. GnuPG or GPG is an implementation of a public key cryptography. I followed these [instructions](https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages).
+
+The excersice was done on:
+- Client OS: Ubuntu 18
+- Virtualization: Oracle VM & Vm Guest Additions
+- Host OS: macOS Big Sur 11
+- Machine: MacBook Pro 2015
 
 **Install GnuPG**
 
@@ -136,7 +144,6 @@ This will ask your name and email address which will be assosiated with the key-
 **Import** someone's **public key** from the file. 
 
     $ gpg --import certkey.asc
-
 
 **Verify** the sender's identity using a fingerprint of a public key.
 
@@ -157,10 +164,6 @@ You can **sign the key** to tell the software you trust the key you have been gi
 **List** all the keys with this command.
 
     $ gpg --list-keys
-
-
-
-
 
 
 

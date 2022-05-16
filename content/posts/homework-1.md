@@ -1,12 +1,13 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Report 1: Cyber Kill Chain"
+title = "Report 1: Adversarial mindset"
 date = "2022-04-04"
 description = "A writing based on given homework"
 tags = [
     "cyber-kill-chain",
     "cyber-security",
     "homework",
+    "adversarial mindset",
 ]
 categories = [
     "themes",
@@ -16,22 +17,17 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Report 1: Cyber Kill Chain**
+## **Report 1: Adversarial mindset**
 ### **Instructions**
 
-This is a post based on the given homework at the course:
-[ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
+A report based on the homework 1 (h1 adversarial mindset) on the course
+[ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
 
  z) Read and summarize. Some bullets are enough for a summary.
 
 - [Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf) 
-- [Darknet Diaries](https://darknetdiaries.com)
+- [Darknet Diaries](https://darknetdiaries.com). Pick one episode.
 - [MITRE ATT&CK FAQ](https://attack.mitre.org/resources/faq/) explains [the ATT&CK Enterprise Matrix](https://attack.mitre.org/matrices/enterprise/). Explain tactic, technique, and procedure in the context of ATT&CK, and give an example of each. The enterprise matrix is big, you can just glimpse/browse it to see what's available instead of reading hundreds of pages.
-
-a) How would you compare Cyber Kill Chain and ATT&CK Enterprise matrix? Who do you think could benefit from these models? (Bonus: Do you think anything is missing from either of these models?)
-
-d) Install Debian on Virtualbox. Report your work, including the environment (including host OS, the real physical computer used).
-
 
 ## **Cyber Kill Chain**
 ### **Summary**
@@ -62,7 +58,7 @@ Roots on the kill chain model. Lockheed Martin, a US defense and technology comp
 - **Detect**, **deny**, **disrupt**, **degrade**, **deceive**, and **destroy** are some courses of action that can be taken
 - Some tools for courses of action: web analytics, network intrusion detection systems, denying access using firewall access control lists, audit logging, host intrusion detection systems, data execution prevention, honey potting, DNS redirecting
 
-##### [Source: Hutchins et al 2011. Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains.](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf)  Read 30.3.2022.
+##### [Source: Hutchins et al 2011. Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains.](https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf) Read 30.3.2022.
 
 ## **Darknet Diaries EP 100: NSO** 
 ##### Aug 31, 2021 
@@ -80,7 +76,8 @@ According to The NSO Group’s transparency report, the NSO - Group has sixty cu
 - The host of the podcast, Jack Rhysider, says: 
 
 *“But if they continue to do multi-million dollar deals with oppressive regimes who use the malware to attack civil society over and over, then the NSO Group needs to be held accountable for that.”* 
-##### Darknet Diaries 2021. Jack Rhysider. Episode 100. https://darknetdiaries.com/episode/100/. Listened 1.4.2022.
+
+##### Darknet Diaries 2021. Jack Rhysider. [Episode 100.](https://darknetdiaries.com/episode/100/). Listened 1.4.2022.
 
 ## **ATT&CK** 
 ### **Summary**
@@ -101,7 +98,9 @@ According to The NSO Group’s transparency report, the NSO - Group has sixty cu
 
 ## **Cyber Kill Chain vs ATT&CK Enterprise matrix**
 
-A big difference between the two models is the way they approach the subject. Cyber Kill Chain approaches intrusions as a linear continuity of different procedures following each other after reaching the goal of each step. The focus is on identifying and stopping the intrusion, the earlier the better. 
+a) How would you compare Cyber Kill Chain and ATT&CK Enterprise matrix? Who do you think could benefit from these models? (Bonus: Do you think anything is missing from either of these models?)
+
+To my mind, a big difference between the two models is the way they approach the subject. Cyber Kill Chain approaches intrusions as a linear continuity of different procedures following each other after reaching the goal of each step. The focus is on identifying and stopping the intrusion, the earlier the better. 
 
 Cyber Kill Chain is more theoretical and strategical approach. ATT&CK Enterprise matrix rather goes into detail and depth containing a lot of data regarding both adversarie's and defender's sides. ATT&CK Enterprise matrix is providing references and examples when Cyber Kill Chain is focusing more on the big picture.
 
@@ -118,13 +117,18 @@ Both adversaries and cybersecurity teams can benefit from the models. Both can u
 Defenders can use the model for testing purposes to orchestrate operations and penetration tests on their network. Targets and cybersecurity teams can benefit from using the same model for understanding and predicting the adversary’s strategy. 
 
 ##### Mitre. Getting started. https://attack.mitre.org/resources/getting-started/. Read 1.4.2022.
-## **Install Linux virtual machine**
-### **Report**
-Installed Ubuntu to a Linux virtual machine with the Guest Additions using [Oracle’s Virtual Box]( https://www.virtualbox.org/wiki/Downloads) on macOS Big Sur 11. All good to go! 
 
-- Client OS: Ubuntu
+## **Install Linux virtual machine**
+
+d) Install Debian on Virtualbox. Report your work, including the environment (including host OS, the real physical computer used).
+
+### **Report**
+
+I installed Ubuntu to a Linux virtual machine with Guest Additions using [Oracle’s Virtual Box](https://www.virtualbox.org/wiki/Downloads) on macOS Big Sur 11. 
+
+- Client OS: Ubuntu 18.04
 - Virtualization: Oracle VM & Vm Guest Additions
-- Host OS: macOS Big Sur
+- Host OS: macOS Big Sur 11
 - Machine: MacBook Pro 2015
 
 

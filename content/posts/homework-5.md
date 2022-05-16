@@ -19,8 +19,9 @@ aliases = ["migrate-from-jekyl"]
 
 # **Report 5: Bitcoin**
 #### **Instructions**
-This is a report based on the given homework at the course:
-[ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
+
+A report based on the homework 5 (h5 BitCoin) on the course
+[ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
 
 **v)** Read/watch and summarize 
 
@@ -62,7 +63,6 @@ The paper introduces a peer-to-peer network of nodes that relais on proof-of-wor
 - Generating a new public key generates also a new identity 
 - Public keys are not directly connected to real-world identity 
 
-
 #### **a)** Value of bit money. **How much is one BitCoin (BTC) worth now?** Using historical BTC course, show that you could have lost a lot of money investing in BTC. Also show that you could have won a lot of money with BTC.
 
 One Bitcoin (BTC) is worth of **38,902.51 USD** (02/05/2022 at 10:56 UTC1+1)
@@ -99,19 +99,18 @@ I would have made 63 232.82$ (excluding all the additional fees, inflation etc).
 
 #### **b) Is it legal to own BitCoin in Finland?** Why do you think so?
 
-Yes, it is legal to own Bitcoin in Finland. Some thoughts of mine:
+Yes, it is legal to own Bitcoin in Finland. Some thoughts:
 
 - Bitcoin can be taxed when it's legally accepted
 - Easier to control when something is legally accepted: the structure around it can be created
-- Might increase or direct the adaptation and development of new technology when it is accepted in society 
-- Bitcoin can be seen as a competing system for traditional banks and fiat. By legalizing owning BitCoins, it can be moved under the supervicing centralized power/institution to ensure and control the laws are followed. 
-By legalizing something, you have to ensure the laws are applied also either using self-enforcing protocols, being willingly naive and trust or just create a trusted third party. 
+- Might increase or direct the adaptation and development of new technology when it is legally accepted in society 
+- Bitcoin can be seen as a competing system for traditional banks and fiat. By legalizing owning BitCoins, can it be moved under a supervicing centralized power/institution to ensure and control the laws are followed?
 
 #### **c) What's a block chain?** Give a simple but detailed explanation. (Feel free to use the most narrow and simple definition of blockchain - no need to consider a whole cryptocurrency).
 
 A block chain is a database where records are linked together using cryptography. Each block contains a hash of previous block so together they form chain of nodes that can be tracked. If information in one block changes, it modifies the whole chain. Block chain leverages Merkle tree structure, hash pointers and cryptography.
 
-Usually block chain network is ran by peers relaying on decentralization. 
+Usually block chain network is ran by peers relaying on decentralization and consensus mechanism. 
 
 #### **d) Not BitCoin**. Give examples of some AltCoins, crypto currencies compiting with BitCoin. For each AltCoin: how does it differ, what's it's claim for fame?
 

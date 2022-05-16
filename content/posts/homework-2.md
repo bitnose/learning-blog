@@ -18,8 +18,9 @@ aliases = ["migrate-from-jekyl"]
 
 # **Report 2: Hashes**
 #### **Instructions**
-This is a post based on the given homework at the course:
-[ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring](https://terokarvinen.com/2021/trust-to-blockchain-2022/)
+
+A report based on the homework 2 (h2 hashes) on the course
+[ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences](https://terokarvinen.com/2021/trust-to-blockchain-2022/) given by teacher Tero Karvinen.
 
 z) Read and summarize (some bullet points, feel free to concentrate on things you find interesting)
 
@@ -68,7 +69,7 @@ Comment: Maybe smart contracts and blockchain could help with it?
 ## **Attacks against Protocols (themselves)**
 **Passive Attack** 
 - Eavesdropping the protocol
-- It does not affect the protocol,  it only observes and seeks to acquire information
+- It does not affect the protocol, it only observes and seeks to get information
 - Difficult to detect —> Prevention instead of detection
 - Motive: gain information
 
@@ -124,15 +125,21 @@ Comment: Maybe smart contracts and blockchain could help with it?
 ## **Cracking passwords with hashcat**
 #### **a) Install hashcat and test that it works.**
 
-I installed hashcat according [this article](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/). The excersice was done on Ubuntu 18 virtual machine. 
+I installed hashcat according [Cracking passwords with hashcat](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/). 
+
+The excersice was done on:
+- Client OS: Ubuntu 18.04
+- Virtualization: Oracle VM & Vm Guest Additions
+- Host OS: macOS Big Sur 11
+- Machine: MacBook Pro 2015
 
 #### **b) Crack this hash: 21232f297a57a5a743894a0e4a801fc3**
 
-At first, I tried to get more information of the hash type with this command:
+At first, I tried to get more information of the hash type with this command on the terminal:
        
     $ hashid -m 21232f297a57a5a743894a0e4a801fc3
 
-It gives a result like this: 
+It gave a result like this: 
 
     [+] MD2 
     [+] MD5 [Hashcat Mode: 0]
@@ -141,22 +148,22 @@ I tried with:
 
     $ hashcat -m 0 '21232f297a57a5a743894a0e4a801fc3' rockyou.txt -o solved --force
 
-Cracking was successfull! Print the solved password with this command:
+Cracking was successfull! I printed the solved password with this command:
 
     $ cat solved
     21232f297a57a5a743894a0e4a801fc3:admin
 
-#### **c) Crack this Windows NTLM hash: f2477a144dff4f216ab81f2ac3e3207d**
+#### **c) Crack this Windows NTLM hash: f2477a144dff4f216ab81f2ac3e3207d(Update: I added the tip that it's NTLM)**
 
 At first, I tried to get more information of the hash by typing this command:
         
     $ hashid -m f2477a144dff4f216ab81f2ac3e3207d
 
-We know already it's a NTLM hash so I selected the right hashcat mode (which is 1000 in this case).
+I knew already it's a NTLM hash so I selected the right hashcat mode (which is 1000 in this case).
 
     $ hashcat -m 1000 'f2477a144dff4f216ab81f2ac3e3207d' rockyou.txt -o solved --force
 
-Hurray! The cracking was successful. The password is:
+Hurray! The cracking was successful. The password was:
 
     $ cat solved
     ...
@@ -165,7 +172,7 @@ Hurray! The cracking was successful. The password is:
 
 #### **d) Try cracking this hash and comment on your hash rate $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu** 
 
-I started by trying get more information of the hash type and the mode to use:
+I started by trying to get more information of the hash type and the mode to use:
 
      $ hashid -m '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
 
@@ -184,7 +191,6 @@ The process timed out. I tried again and actually it worked!
     $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu:12345
 
 The cracking took 22 minutes and 23 seconds. The hash rate was very low because I don't have a compatible GPU available on my machine. The software shows 0H/s, I assume it shows zero when the hash rate is below 1H/s.
-  
 
 
 
