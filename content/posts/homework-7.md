@@ -31,7 +31,9 @@ I selected a block in **Latest Blocks** section
 {{< figure src="/img/block.png" title="Screenshot 1: Block in Bitcoin public ledger" width="600">}}
 A link to the [block](https://www.blockchain.com/btc/block/00000000000000000008bce7ad903f0c644bcc9896c80dd776f13ab36581f8e4)
 
-#### **Keyparts of block**
+#### **Keyparts of block** 
+There are more information of the block when hovering above title.
+
 - **Hash** A unique identifier for the block which identifies it
 - **Confirmations** Tells how many confirmations the block has on the blockchain 
 - **Timestamp** The moment when the block was mined by the miner
@@ -50,7 +52,9 @@ I selected a transaction in Block transactions section:
 {{< figure src="/img/transaction.png" title="Screenshot 2: Transaction in Bitcoin public ledger" width="600">}}
 A link to the [transaction](https://www.blockchain.com/btc/tx/fe5f0d4bcdc25127060398584e521f15c4be32a85eeb20e9fcb297f8c304c5c8)
 
-#### **Keyparts of transaction**
+#### **Keyparts of transaction** 
+Same thing here, there are more information of the transaction when hovering above title.
+
 - **Hash** A unique identifier for the transaction 
 - **Status** Tells whether the transaction has been validated
 - **Received time** The moment when the transaction was distributed to the network
