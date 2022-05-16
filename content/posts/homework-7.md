@@ -62,3 +62,15 @@ Same thing here, there are more information of the transaction when hovering abo
 - **Value when transacted** The value of the transaction
 
 I can also see the wallet address which initiated the transaction and the wallet address(es) where the transaction was transacted.
+
+#### **Homework b) Return everything. Add links to each of your homework reports here.**
+
+Links to the homework reports:
+
+[h1 adversial mindset](https://anniina-korkiakangas.netlify.app/posts/report-1-adversarial-mindset/)
+[h2 hashes](https://anniina-korkiakangas.netlify.app/posts/report-2-hashes/)
+[h3 public key encryption and pgp](https://anniina-korkiakangas.netlify.app/posts/report-3-public-key-encryption-and-pgp/)
+[h4 Tor](https://anniina-korkiakangas.netlify.app/posts/report-4-the-tor-browser/)
+[h5 BitCoin](https://anniina-korkiakangas.netlify.app/posts/report-5-bitcoin/)
+[h6 Can of Worms](https://anniina-korkiakangas.netlify.app/posts/report-6-can-of-worms/)
+[h7 Final Countdown](https://anniina-korkiakangas.netlify.app/posts/report-7-final-countdown/)
