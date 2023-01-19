@@ -7,6 +7,8 @@ tags = [
     "linux",
     "virtualmachine",
     "läksyt",
+    "debian",
+    "virtualbox"
 ]
 categories = [
     "themes",
@@ -35,11 +37,11 @@ Tietokoneiden teknisten testien raportointi pähkinänkuoressa:
 #### **a) Asenna Linux virtuaalikoneeseen.** 
 
 Tein harjoituksen, klo 11:15:
-- Ohjelmitojärjestelmä: macOS Big Sur
+- Ohjelmistojärjestelmä: macOS Big Sur 11.7
 - Kone: MacBook Pro Retina, 2015
-- Perustuen: [Install Debian on Virtualbox - Updated 2023](https://terokarvinen.com/2021/install-debian-on-virtualbox/)
+- Perustuen: [Install Debian on Virtualbox - Updated 2023](https://terokarvinen.com/2021/install-debian-on-virtualbox/) by Tero Karvinen
 
-Latasin Debian 11 *debian-live-11.6.0-amd64-xfce-nonfree.iso* tiedoston [Debianin sivustolta](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/current-live/amd64/iso-hybrid/).
+Ensimmäiseksi latasin Debian 11 *debian-live-11.6.0-amd64-xfce-nonfree.iso* tiedoston [Debianin sivustolta](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/current-live/amd64/iso-hybrid/).
 
 **Oracle VirtualBox**
 
@@ -53,7 +55,7 @@ Lisäsin uuden virtuaalikoneen VirtualBoxissa:
 - Operating System: Debian (64-bit)
 - Type: Linux
 - Memory size: 4000 MB
-- File size: 20 GB
+- File size: 60 GB
 - Hard disk file type: VDI
 
 Seuraavaksi: 
@@ -85,10 +87,47 @@ Seuraavaksi tarkistin tiedot yhteenvedosta ja klikkasins **Install** - asennus a
 
 {{< figure src="/img/debian-1.png" title="All done!" width="600">}}
 
-Seuraavaksi klikkasin **Restart**.  
+Klikkasin **Restart**.  
 Sisäänkirjaudun juuri luomillani käyttäjätunnuksilla onnistuneesti. Asennus onnistui!
 
 {{< figure src="/img/debian.png" title="Toimii" width="600">}}
+
+Aukaisin terminaalin ja syötin komennon:
+
+    $ sudo apt-get update
+
+
+- **sudo** käytä superuser oikeuksia
+- **apt-get** package manager
+- **update** Update komento
+
+Päivitä ja asenna uusimmat versiot kaikista ohjelmista:
+
+        $ sudo apt-get -y dist-upgrade
+
+- **-y** Kyllä vastaus
+- **dist-upgrade** Päivitä kaikki 
+
+Asensin ja käynnistin palomuurin:
+
+        $ sudo apt-get -y install ufw
+        $ sudo ufw enable
+
+- **install** asenna
+- **ufw** Palomuuri
+- **enable** aloita
+
+{{< figure src="/img/debian-3.png" title="Terminal" width="600">}}
+
+Uudelleenkäynnistin koneen klikkaamalla vasempaan yläkulmaan:
+##### Applications > Log out > Restart 
+
+Kone uudelleenkäynnistyi ja kirjauduin sisään. 
+**Virtuaali-Linux asennettu!**
+
+
+
+
 
 
 ###### “Tätä dokumenttia saa kopioida ja muokata [GNU General Public License](http://www.gnu.org/licenses/gpl.html) mukaisesti.”
