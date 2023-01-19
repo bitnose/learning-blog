@@ -34,12 +34,14 @@ Tietokoneiden teknisten testien raportointi pähkinänkuoressa:
 
 #### **a) Asenna Linux virtuaalikoneeseen.** 
 
-Tein harjoituksen klo 21:56:
+Tein harjoituksen, klo 11:15:
 - Ohjelmitojärjestelmä: macOS Big Sur
 - Kone: MacBook Pro Retina, 2015
 - Perustuen: [Install Debian on Virtualbox - Updated 2023](https://terokarvinen.com/2021/install-debian-on-virtualbox/)
 
 Latasin Debian 11 *debian-live-11.6.0-amd64-xfce-nonfree.iso* tiedoston [Debianin sivustolta](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/current-live/amd64/iso-hybrid/).
+
+**Oracle VirtualBox**
 
 [Oracle VirtualBox 6.1](https://www.virtualbox.org/wiki/Downloads) macOS:lle oli valmiiksi asennettuna koneelle. 
 
@@ -58,10 +60,13 @@ Seuraavaksi:
 ##### Settings > Storage > Controller: IDE > Optical Drive 
 - Etsin lataamani ISO tiedoston *debian-live-11.6.0-amd64-xfce-nonfree.iso* ja lisäsin sen *Virtual Optical Desk File*
 
+
+**Debian virtuaalikone**
+
 Klikkasin **Start** käynnistääkseni virtuaalikoneen.
 Vituaalikone käynnistyi onnistuneesti! Seuraavaksi valitsin Main Menun vaihtoehdoista Debian GNU/Linux Live (kernel 4.19.0-13-amd64). Debian työpöytä live versio avautui, seuraavaksi klikkasin **Install Debian kuvaketta** aloittaakseni asennuksen. 
 
-Installer avautui ja lisäsin seuraavat tiedot:
+**Installer** avautui ja lisäsin seuraavat tiedot:
 - Language > American English
 - Location > Finland (valitsin kartalta)
 - Keyboard > Keyboard model: Generic 105-key PC (intl.), Finnish & Finnish (Machintosh)
@@ -69,7 +74,7 @@ Installer avautui ja lisäsin seuraavat tiedot:
 - Partitions > Encryption: no
 - Partitions > Master Boot Record
 
-Lisäsin käyttäjätiedot:
+Lisäsin **käyttäjätiedot**:
 - Etunimi + Sukunimi
 - Käyttäjänimi kirjautumiseen
 - Koneen nimi 
@@ -80,10 +85,10 @@ Seuraavaksi tarkistin tiedot yhteenvedosta ja klikkasins **Install** - asennus a
 
 {{< figure src="/img/debian-1.png" title="All done!" width="600">}}
 
-"All done!" Seuraavaksi klikkasin **Restart**.  
+Seuraavaksi klikkasin **Restart**.  
 Sisäänkirjaudun juuri luomillani käyttäjätunnuksilla onnistuneesti. Asennus onnistui!
 
-{{< figure src="/img/debian.png" title="Debian" width="600">}}
+{{< figure src="/img/debian.png" title="Toimii" width="600">}}
 
 
-##### “Tätä dokumenttia saa kopioida ja muokata [GNU General Public License](http://www.gnu.org/licenses/gpl.html) mukaisesti.”
+###### “Tätä dokumenttia saa kopioida ja muokata [GNU General Public License](http://www.gnu.org/licenses/gpl.html) mukaisesti.”
