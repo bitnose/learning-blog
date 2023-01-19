@@ -1,7 +1,7 @@
 +++
 author = "Anniina Korkiakangas"
 title = "Reportti 1: Virtuaali-Linux"
-date = "2023-01-18"
+date = "2023-01-19"
 description = "Linuxin asentaminen virtuaalikoneeseen"
 tags = [
     "linux",
@@ -62,7 +62,6 @@ Seuraavaksi:
 ##### Settings > Storage > Controller: IDE > Optical Drive 
 - Etsin lataamani ISO tiedoston *debian-live-11.6.0-amd64-xfce-nonfree.iso* ja lisäsin sen *Virtual Optical Desk File*
 
-
 **Debian virtuaalikone**
 
 Klikkasin **Start** käynnistääkseni virtuaalikoneen.
@@ -101,7 +100,7 @@ Aukaisin terminaalin ja syötin komennon:
 - **apt-get** package manager
 - **update** Update komento
 
-Päivitä ja asenna uusimmat versiot kaikista ohjelmista:
+Päivitin ja asensin uusimmat versiot kaikista ohjelmista:
 
         $ sudo apt-get -y dist-upgrade
 
@@ -123,11 +122,6 @@ Uudelleenkäynnistin koneen klikkaamalla vasempaan yläkulmaan:
 ##### Applications > Log out > Restart 
 
 Kone uudelleenkäynnistyi ja kirjauduin sisään. 
+
+
 **Virtuaali-Linux asennettu!**
-
-
-
-
-
-
-###### “Tätä dokumenttia saa kopioida ja muokata [GNU General Public License](http://www.gnu.org/licenses/gpl.html) mukaisesti.”
