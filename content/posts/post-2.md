@@ -130,7 +130,7 @@ Seuraavaksi testasin toimiiko editori.
 
     $ micro
 
-{{< figure src="/img/terminal-2.png" title="Toimii! width="600">}}
+{{< figure src="/img/terminal-2.png" title="Toimii!" width="600">}}
 
 ### **Raudan tiedot** 
 
