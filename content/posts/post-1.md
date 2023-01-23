@@ -49,7 +49,7 @@ Ensimmäiseksi latasin Debian 11 *debian-live-11.6.0-amd64-xfce-nonfree.iso* tie
 
 Lisäsin uuden virtuaalikoneen VirtualBoxissa: 
         
-##### Machine > New...
+##### **Machine > New...**
 
 - Name: Debian
 - Operating System: Debian (64-bit)
@@ -58,8 +58,7 @@ Lisäsin uuden virtuaalikoneen VirtualBoxissa:
 - File size: 60 GB
 - Hard disk file type: VDI
 
-Seuraavaksi: 
-##### Settings > Storage > Controller: IDE > Optical Drive 
+##### **Settings > Storage > Controller: IDE > Optical Drive** 
 - Etsin lataamani ISO tiedoston *debian-live-11.6.0-amd64-xfce-nonfree.iso* ja lisäsin sen *Virtual Optical Desk File*
 
 **Debian virtuaalikone**
@@ -116,12 +115,50 @@ Asensin ja käynnistin palomuurin:
 - **ufw** Palomuuri
 - **enable** aloita
 
-{{< figure src="/img/debian-3.png" title="Terminal" width="600">}}
+{{< figure src="/img/debian-3.png" title="" width="600">}}
 
 Uudelleenkäynnistin koneen klikkaamalla vasempaan yläkulmaan:
-##### Applications > Log out > Restart 
+##### **Applications > Log out > Restart** 
 
 Kone uudelleenkäynnistyi ja kirjauduin sisään. 
 
 
-**Virtuaali-Linux asennettu!**
+***Virtuaali-Linux asennettu! *** 
+
+*Päivitys 11:44 20.01.2023*
+
+**VirtualBox Guest Additions**
+
+Host -koneella on valmiiksi ladattuna VirtualBox GuestAdditions. Guest Additionsin avulla esimerkiksi tämän ongelman pitäisi hävitä:
+
+{{< figure src="/img/naytto-1.png" title="Liian pieni ruutu! 👀" width="600">}}
+
+Seuraavaksi aukaisin Terminaalin asentaakseni ajurin.
+
+    $ cd /media/*/VBox*
+    $ ls
+    $ sudo bash VBoxLinuxAdditions.run
+
+- **cd** navigoi
+- **ls** listaa 
+
+##### **Applications > Log out > Restart**
+
+Kone käynnistyi, kirjauduin sisään, mutta näyttö oli mustana. Tähän ongelmaan on endotettu [ratkaisua](https://terokarvinen.com/2021/install-debian-on-virtualbox/). Uudelleenkäynnistin koneen ja kun näytölle ilmestyi **GRUB Bootloader**, valitsin ***Debian Gnu/Linux** painamalla **e** näppäintä. Seuraavaksi etsin kohdan tekstistä, joka alkaa:
+
+    linux           /boot/vm... 
+
+Ja lisään **xforcevesa** boot parametrin lausekkeen loppuun:
+
+    linux           /boot/vm... xforcevesa 
+
+Sen jälkeen boottasin uudelleen painamalla CTRL + x ja virtuaalikone käynnistyi uudelleen. Kaikki toimi nyt kuten pitää: Internet ok, parempi kuvanlaatu, näyttö ei pimeänä! Virtuaali Linux on käyttövalmis! 🎉
+
+
+
+
+
+
+
+
+

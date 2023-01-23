@@ -22,22 +22,22 @@ aliases = ["migrate-from-jekyl"]
 - h2, Komentaja-Pingviini. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
-#### **x) Lue ja tiivistä: [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited)**
+#### **x) Lue ja tiivistä:** [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited)
 
-**Linux Commnand Line Basics**
+ ### **Linux Commnand Line Basics**
 
     # Tämä on kommentti
     $ pwd                   # Tulosta "working directory"                
     /home/anniinak                      
 
- **Liikkuminen**
+ ### **Liikkuminen**
 
     $ cd anniinadir/        # Liiku kansioon         
     $ cd ..                 # Mene +1 kansio ylös 
     $ less file.txt         # Näytä tekstitiedosto
     $ ls /etc|less          # Näytä tiedosto kerralla
 
-**Tiedostojen muokkaus**
+ ### **Tiedostojen muokkaus**
 
     $ nano file.txt         # Avaa tiedosto editorissa
     $ mkdir NEWFOLDER       # Uusi kansio
@@ -50,7 +50,7 @@ aliases = ["migrate-from-jekyl"]
     $ rm JUNK               # Poista tiedosto
     $ rm -r FOLDEROFJUNK    # Poista tiedosto sisältöineen
 
-**SSH Remote Control**
+ ### **SSH Remote Control**
 
 Avaa etäyhteys turvallisesti: 
 
@@ -65,14 +65,14 @@ Kopio FOLDER uuteen kansioon etäkoneelle : login@server:path_from_your_home_dir
     $ scp -r FOLDER anniina@example.com:public_html/
 
 
-**Apuja**
+### **Apuja**
 
     $ man ls            # Näytä manuaali sivu
     $ ls --help         
     $ wget -h           
 
 
-**Tab näppäin**
+### **Tab näppäin**
 Näyttää mitä voidaan kirjoittaa: 
 
     $ ls /etc/re[tab][tab]
@@ -82,23 +82,26 @@ Näyttää mitä voidaan kirjoittaa:
 
     $ history               # Listaa syötetyt komennot
 
-**Admin komennot**
-- **Minimum priviledge** periaate: Anna vain tarvittavat käyttäoikeudet --> **sudo** vain kun vaaditaan laajat käyttöoikeudet
-- Päivitä lista saatavista paketeista, "packages"
+### **Admin komennot**
+**Minimum priviledge** periaate: Anna vain tarvittavat käyttäoikeudet --> **sudo** vain kun vaaditaan laajat käyttöoikeudet
 
-        $ sudo apt-get update 
-- **Etsi** ladattavia ohjelmistoja avainsanoilla 
+Päivitä lista saatavista paketeista, "packages":
 
-        $ apt-cache search dungeon adventure
-- **Asenna** ohjelmisto
+     $ sudo apt-get update 
 
-        $ sudo apt-get -y install nethack-console
-- **Poista** ohjelmisto
+**Etsi** ladattavia ohjelmistoja avainsanoilla: 
 
-        $ sudo apt-get purge nethack
+    $ apt-cache search dungeon adventure
+**Asenna** ohjelmisto:
+
+    $ sudo apt-get -y install nethack-console
+**Poista** ohjelmisto:
+
+    $ sudo apt-get purge nethack
 
 
-### **Raportti h2: Perustiedot** 
+## **Linux: Hands on**
+### **Perustiedot** 
 
 Aloitin harjoituksen klo 11:07 ja lopetin 12:45.
 
@@ -130,7 +133,7 @@ Seuraavaksi testasin toimiiko editori.
 
     $ micro
 
-{{< figure src="/img/terminal-2.png" title="Toimii!" width="600">}}
+{{< figure src="/img/terminal-2.png" title="Toimii! 🎉" width="600">}}
 
 ### **Raudan tiedot** 
 
@@ -159,7 +162,7 @@ Listauksessa selviää tietoja koneen raudasta. Virtuaalikone on asennettu Virtu
 
 {{< figure src="/img/tree.png" title="" width="600">}}
 
-### **Git - Versionhallinta**
+### **git - Versionhallinta**
 Asensin gitin versionhallintaa varten. Syötin seuraavat komennot luodakseni uuden repositorion ja testatakseni versionhallintaa. 
 
     $ git version           # Versio
@@ -176,6 +179,12 @@ Asensin gitin versionhallintaa varten. Syötin seuraavat komennot luodakseni uud
 
 ### **Tärkeät tiedostot**
 **d) FHS**. Esittele kansiot, jotka on listattu "Command Line Basics Revisited" kappaleessa "Important directories". Näytä kuvaava esimerkki kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Jos kyseessä on tiedosto, näytä siitä kuvaava esimerkkirivi. Työskentele komentokehotteessa ja näytä komennot, joilla etsit esimerkit.
+
+Käytin komentoa **cd** *polku kansioon* ja **ls** listaukseen.  
+
+    $ cd /
+    $ ls
+
 
 
 - **/** Root directory (kaikki kansiot ovat tämän alla)
