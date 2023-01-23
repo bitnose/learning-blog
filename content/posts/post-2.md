@@ -98,9 +98,9 @@ Näyttää mitä voidaan kirjoittaa:
         $ sudo apt-get purge nethack
 
 
-#### **Perustiedot** 
+### **Raportti h2: Perustiedot** 
 
-Aloitin harjoituksen, klo 11:07.
+Aloitin harjoituksen klo 11:07 ja lopetin 12:45.
 
 Host kone:
 - Rauta: MacBook Pro Retina, 2015
@@ -197,5 +197,3 @@ Asensin gitin versionhallintaa varten. Syötin seuraavat komennot luodakseni uud
 ### **grep-komento**
 
 **e) The Friendly M.** Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy 'man grep' ja tietysti verkosta.
-
-Etsi rivi, joka sisältää 'word' sanan 
