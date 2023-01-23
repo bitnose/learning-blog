@@ -1,7 +1,7 @@
 +++
 author = "Anniina Korkiakangas"
 title = "Reportti 2: Komentaja Pingviini"
-date = "2023-01-19"
+date = "2023-01-23"
 description = "Komentokehotteiden harjoittelua"
 tags = [
     "linux",
@@ -197,3 +197,5 @@ Asensin gitin versionhallintaa varten. Syötin seuraavat komennot luodakseni uud
 ### **grep-komento**
 
 **e) The Friendly M.** Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy 'man grep' ja tietysti verkosta.
+
+Etsi rivi, joka sisältää 'word' sanan 
