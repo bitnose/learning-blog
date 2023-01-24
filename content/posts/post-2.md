@@ -24,7 +24,7 @@ aliases = ["migrate-from-jekyl"]
 
 #### **x) Lue ja tiivistä:** [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited)
 
- ### **Linux Commnand Line Basics**
+ ### **Linux Command Line Perusteet**
 
     # Tämä on kommentti
     $ pwd                   # Tulosta "working directory"                
@@ -43,34 +43,27 @@ aliases = ["migrate-from-jekyl"]
     $ mkdir NEWFOLDER       # Uusi kansio
     $ mv OLDNAME NEWNAME    # Siirrä/uudelleennimeä 
     $ mv SOMEFILE NEWDIR/   # Siirrä/uudelleennimeä 
-
-
     $ cp -r ORIGINAL COPY   # Kopio ORIGINAL
     $ rmdir EMPTYDIR        # Poista tyhjä kansio
     $ rm JUNK               # Poista tiedosto
     $ rm -r FOLDEROFJUNK    # Poista tiedosto sisältöineen
 
  ### **SSH Remote Control**
-
 Avaa etäyhteys turvallisesti: 
-
 
     $ ssh anniina@example.com 
     anniina$ exit                  # Poistu etäkoneelta
-
 
 Kopio FOLDER uuteen kansioon etäkoneelle : login@server:path_from_your_home_dir
 
     anniina$ exit
     $ scp -r FOLDER anniina@example.com:public_html/
 
-
 ### **Apuja**
 
     $ man ls            # Näytä manuaali sivu
     $ ls --help         
     $ wget -h           
-
 
 ### **Tab näppäin**
 Näyttää mitä voidaan kirjoittaa: 
