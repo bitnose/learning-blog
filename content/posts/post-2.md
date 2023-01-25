@@ -134,7 +134,7 @@ Seuraavaksi testasin toimiiko editori.
 
      $ sudo lshw -short -sanitize
      sudo: lshw: command not found
-     $ sudo apt-get install install
+     $ sudo apt-get install lshw
      $ sudo lshw -short -sanitize
 
 {{< figure src="/img/rauta.png" title="" width="600">}}
@@ -145,7 +145,7 @@ Listauksessa selviää tietoja koneen raudasta. Virtuaalikone on asennettu Virtu
 
 #### **c) Apt.**  Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa. Ota ruutukaappaus. Kaikki terminaaliohjelmat kelpaavat, TUI (text user interface) ja CLI (command line interface). Osaatko tehdä apt-get komennon, joka asentaa nämä kolme ohjelmaa kerralla?
 
-    $ sudo apt install nsnake tree git
+    $ sudo apt-get install nsnake tree git
 
 ### **nsnake - Klassinen matopeli** 
 
@@ -199,3 +199,18 @@ Käytin komentoa **cd** *polku kansioon* ja **ls** listaukseen.
 ### **grep-komento**
 
 **e) The Friendly M.** Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy 'man grep' ja tietysti verkosta.
+
+Päivitys 24.01.2023:
+
+Etsin tiettyä komentoa, jota käytin aikaisemmin:
+
+    $ history|grep nsnake
+     99  sudo apt-get install nsnake git tree
+    100  snake
+    178  history|grep nsnake
+
+
+
+
+
+    
