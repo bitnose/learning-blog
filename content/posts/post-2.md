@@ -206,7 +206,7 @@ Etsin tiettyä komentoa, jota käytin aikaisemmin:
 
     $ history|grep nsnake
      99  sudo apt-get install nsnake git tree
-    100  snake
+    100  nsnake
     178  history|grep nsnake
 
 
