@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti 3: Vapaus"
+title = "Reportti 3: Vapaus!"
 date = "2023-01-26"
 description = "Lisenssit ja "
 tags = [
@@ -18,8 +18,8 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Raportti 3: Vapaus**
-- h3, Vapaus. Harjoitustehtäväraportti.
+## **Raportti 3: Vapaus!**
+- h3, Vapaus!. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #### **a) Kolmen ohjelman lisenssit.** Tarkastele kolmen edellisessä harjoituksessa asentamasi ohjelman lisenssejä. Selvitä kustakin ohjelmasta:
