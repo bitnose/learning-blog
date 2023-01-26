@@ -22,13 +22,6 @@ aliases = ["migrate-from-jekyl"]
 - h3, Vapaus. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
-#### **x) x) Lue ja tiivistä 
-FSF: FSF Free Software Definition
-Välimäki 2005: Rise of Open Source: 5 Open Source Licenses as Alternative Governance Mechanisms: 5.1.1 - 5.1.4 (sivu 113 - 121)
- Lue ja tiivistä (Muutama ranskalainen viiva riittää. Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)
-FSF: FSF Free Software Definition
-Välimäki 2005: Rise of Open Source: 5 Open Source Licenses as Alternative Governance Mechanisms: 5.1.1 - 5.1.4 (sivu 113 - 121)
-
 #### **a) Kolmen ohjelman lisenssit.** Tarkastele kolmen edellisessä harjoituksessa asentamasi ohjelman lisenssejä. Selvitä kustakin ohjelmasta:
 
 - Mitä lisenssiä kyseinen ohjelma käyttää?
