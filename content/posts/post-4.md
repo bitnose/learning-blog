@@ -111,7 +111,6 @@ joten tarkastelen kyseistä tiedostoa.
 - **'- -'** käyttäjän (client) tunnus
 - **[30/Jan/2023:12:05:54 +0200]** Pyynnön päivämäärä, kellonaika ja aikavyöhyke
 - **"GET / HTTP/1.1"** GET pyyntö serverille tiettyyn kohteeseen (API ?)
-- **URL**
 - **200** Vastaus serveriltä, onnistunut pyyntö. HTTP response status koodi.
 - **3380** Käyttäjälle palautetun objektin koko
 - **Loppuosa** User Agent, joka tunnistaa tietoa selaimesta, jota käytettiin pyynnön tekemiseksi 
@@ -152,25 +151,33 @@ Käytin **man** komentoa selvittääkseni tietoa lokissa esiintyvistä komennois
 ## **b) Aiheuta.** 
 Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki **onnistuneesta** ja yksi esimerkki **epäonnistuneesta** tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.
 
+Aiheutin lokiin merkinnän onnistuneesta toimenpiteestä aukaisemalla selaimen ja kirjoittamalla localhost osoitteen: 
 
+{{< figure src="/img/apache.png" title="" width="600">}}
 
+{{< figure src="/img/onnistunut.png" title="" width="600">}}
 
+- **127.0.0.1.** IP-osoite, josta pyyntö tuli (client)
+- **'- -'** käyttäjän (client) tunnus
+- **[30/Jan/2023:13:51:44 +0200]** Pyynnön päivämäärä, kellonaika ja aikavyöhyke
+- **"GET /icons/openlogo-75.png HTTP/1.1"** GET pyyntö serverille tiettyyn kohteeseen (API ?). Pyytää logoa. 
+- **200** Vastaus serveriltä, onnistunut pyyntö. HTTP response status koodi.
+- **6041** Käyttäjälle palautetun objektin koko
+- **Loppuosa** User Agent, joka tunnistaa tietoa selaimesta, jota käytettiin pyynnön tekemiseksi. Selain, OS. En tiedä mitä tarkoittaa rv:102.0. 
 
+Aiheutin lokiin merkinnän epäonnistuneesta toimenpiteestä lisäämällä url hellohello:
 
+{{< figure src="/img/apache_1.png" title="" width="600">}}
 
+{{< figure src="/img/eonnistunut.png" title="" width="600">}}
 
-
-
-
-Lokin analysoiminen tarkoittaa, että selität **kaiken**
-Vähän lokia, paljon selitystä
-**Kello** - onko oikeassa, mikä aikavyöhyke
-Mitä kukin osa tarkoittaa
-Mitä numerot merkitsevät
-Mitä tämä kokonaisuutena tarkoittaa
-Mitä puuttuu
-Mitä osia et vielä ymmärtänyt tai selvittänyt tässä yhteydessä
-Kerro se itsellesi ilmeinen asia ensin
+- **127.0.0.1.** IP-osoite, josta pyyntö tuli (client)
+- **'- -'** käyttäjän (client) tunnus
+- **[30/Jan/2023:13:52:05 +0200]** Pyynnön päivämäärä, kellonaika ja aikavyöhyke
+- **"GET /hellohello HTTP/1.1"** GET pyyntö serverille. Pyydetty osoite/tiedosto /hellehello ei ole olemassa. 
+- **404** Vastaus serveriltä, **epäonnistunut** pyyntö. HTTP response status koodi.
+- **488** Käyttäjälle palautetun objektin koko
+- **Loppuosa** User Agent, joka tunnistaa tietoa selaimesta, jota käytettiin pyynnön tekemiseksi. Selain, OS. En tiedä mitä tarkoittaa rv:102.0. 
 
 Lähteet:
 https://askubuntu.com/questions/465544/why-do-i-see-a-cron-session-opening-and-closing-every-hour-in-var-log-auth-log
