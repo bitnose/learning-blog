@@ -98,9 +98,6 @@ Kirjatumiset, sudo:n käyttö
 ### **/var/log/apache2/access.log** 
 Onnistunut surffailu 2xx, 3xx; käyttäjän virheet 4xx client error
 
-Jostain syystä kyseinen tiedosto on tyhjä, mutta sen sijaan löysin toisen tiedoston nimellä 
-joten tarkastelen kyseistä tiedostoa.
-
 **Onnistunut** surffailu:
 
     $ sudo cat /var/log/apache2/access.log|grep -w --color '200'
