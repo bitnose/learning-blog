@@ -47,19 +47,19 @@ Valitsin artikkelin [An Introduction to Data Science On The Linux Command Line](
 - Huomio onko kyseessä **UTF-8** vai **UTF-16** 
 - Putkien käyttö **tietokantojen** (kuten psql, mysql) kanssa onnistuu
 
-Kommenteissa tulee esille erilaisia työkaluja datan analysointiin, käsittelyyn (data science) ja myös visualisointiin. Lisäksi esim. kysymys miksi analysoida tietoa komennoilla kun voi hyödyntää Pythonia tai R --> +1 Komentirivillä automaatio
-Lähde: https://news.ycombinator.com/item?id=21605077. Luettu: 29.01.2023.
+[Kommenteissa](https://news.ycombinator.com/item?id=21605077) tulee esille erilaisia työkaluja datan analysointiin, käsittelyyn (data science) ja myös visualisointiin. Lisäksi esim. kysymys miksi analysoida tietoa komennoilla kun voi hyödyntää Pythonia tai R kieltä. Komentirivin etuna on automaation helppous ja kätevyys.
+
 
 ## **Linux: Hands on**
 ### **Perustiedot** 
 
-Kellonaika: 11:10 
-Host kone:
+
+**Host kone:**
 - Rauta: MacBook Pro Retina, 2015
 - Ohjelmistojärjestelmä: macOS Big Sur 11.7
 - Prosessori: Intel Core i7
 
-Virtuaali kone: 
+**Virtuaali kone:**
 - VM: debian-live-11.6.0-amd64-xfce-nonfree.iso
 - Operating System: Debian (64-bit)
 - Type: Linux
@@ -67,22 +67,25 @@ Virtuaali kone:
 - File size: 60 GB
 - Hard disk file type: VDI
 
-#### a) **Tukki.** Analysoi yksi esimerkkirivi kustakin näistä lokeista
+##### Kellonaika: 11:10 
 
-**/var/log/syslog** - yleisloki, tänne kaikki joilla ei ole omaa lokia
+#### a) **Tukki.** Analysoi yksi esimerkkirivi kustakin näistä lokeista:
+
+
+### **/var/log/syslog** - Yleisloki, tänne kaikki joilla ei ole omaa lokia
 
     $ sudo head /var/log/syslog
 
     {{< figure src="/img/sighup.png" title="" width="600">}}
 
-    - Päivämäärä ja kelllonaika
-    - [systemd](https://fi.wikipedia.org/wiki/Systemd): Käynnistää tärkeimmät ohjelmat, ajurit sekä aloittaa lokitietojen keräämisen
-    - [rsyslog](https://github.com/rsyslog/rsyslog): Lokien tehokkaaseen käsittelyyn --> Esim. ottaa vastaan inputin ja syöttää outputin haluttuun kohteeseen
-    - [SIGHUP](https://en.wikipedia.org/wiki/SIGHUP) ("signal hang up"): Signaali, joka lähetetään prosesseille kun terminaali suljetaan (ymmärtääkseni?)
-    - Ymmärtääkseni loki kirjaa tiedon, että terminaali on suljetaan.
+- Päivämäärä ja kelllonaika
+- [systemd](https://fi.wikipedia.org/wiki/Systemd): Käynnistää tärkeimmät ohjelmat, ajurit sekä aloittaa lokitietojen keräämisen
+- [rsyslog](https://github.com/rsyslog/rsyslog): Lokien tehokkaaseen käsittelyyn --> Esim. ottaa vastaan inputin ja syöttää outputin haluttuun kohteeseen
+- [SIGHUP](https://en.wikipedia.org/wiki/SIGHUP) ("signal hang up"): Signaali, joka lähetetään prosesseille kun terminaali suljetaan (ymmärtääkseni?)
+- Ymmärtääkseni loki kirjaa tiedon, että terminaali on suljetaan.
 
 
-**/var/log/auth.log** - kirjatumiset, sudo:n käyttö
+### **/var/log/auth.log** - Kirjatumiset, sudo:n käyttö
 
     $ sudo head /var/log/auth.log
 
@@ -93,41 +96,41 @@ Virtuaali kone:
 - pam_unix: Moduuli, joka hoitaa käyttäjän tunnistautumisen, tarkistaa salasanan.
 - Loki kirjaa tiedon, että sessio on avattu root käyttäjälle
 
-**/var/log/apache2/access.log** - onnistunut surffailu 2xx, 3xx; käyttäjän virheet 4xx client error
+### **/var/log/apache2/access.log** - Onnistunut surffailu 2xx, 3xx; käyttäjän virheet 4xx client error
 
 Jostain syystä kyseinen tiedosto on tyhjä, mutta sen sijaan löysin toisen tiedoston nimellä 
 joten tarkastelen kyseistä tiedostoa.
 
-Onnistunut surffailu:
+**Onnistunut** surffailu:
 
     $ sudo cat /var/log/apache2/access.log|grep -w --color '200'
 
     {{< figure src="/img/access.png" title="" width="600">}}
 
-- 127.0.0.1. IP-osoite, josta pyyntö tuli (client)
-- - - käyttäjän (client) tunnus
-- [30/Jan/2023:12:05:54 +0200] Pyynnön päivämäärä, kellonaika ja aikavyöhyke
-- "GET / HTTP/1.1" : GET pyyntö serverille tiettyyn kohteeseen (API ?)
-- URL
-- 200: Vastaus serveriltä, onnistunut pyyntö. HTTP response status koodi.
-- 3380: Käyttäjälle palautetun objektin koko
-- Firefox: User Agent, joka tunnistaa tietoa selaimesta, jota käytettiin pyynnön tekemiseksi 
+- **127.0.0.1.** IP-osoite, josta pyyntö tuli (client)
+- **'- -'** käyttäjän (client) tunnus
+- **[30/Jan/2023:12:05:54 +0200]** Pyynnön päivämäärä, kellonaika ja aikavyöhyke
+- **"GET / HTTP/1.1"** GET pyyntö serverille tiettyyn kohteeseen (API ?)
+- **URL**
+- **200** Vastaus serveriltä, onnistunut pyyntö. HTTP response status koodi.
+- **3380** Käyttäjälle palautetun objektin koko
+- **Loppuosa** User Agent, joka tunnistaa tietoa selaimesta, jota käytettiin pyynnön tekemiseksi 
 
-Epäonnistunut surffailu:
+**Epäonnistunut** surffailu:
 
     $ sudo cat /var/log/apache2/access.log|grep -w --color '404'
 
-    {{< figure src="/img/error_404.png" title="" width="600">}}
+{{< figure src="/img/error_404.png" title="" width="600">}}
 
 Tiedot ovat samankaltaisia kuin onnistuneessa surffailussa muutamalla erolla:
 - 404: Vastaus serveriltä, epäonnistunut pyyntö. HTTP response status koodi.
-Pyyntö oli GET request ja sillä pyydettiin [faviconia](https://stackoverflow.com/questions/13154603/how-to-resolve-favicon-ico-not-found-error-on-apache, mikä on selaimessa, URL vieressä näkyvä pieni kuvake verkkosivustolle. Selaimet pyytävät faviconia automaattisesti ja, jos sitä ei ole pyyntö palauttaa 404 HTTP status kooodin. 
+Pyyntö oli GET request ja sillä pyydettiin [faviconia](https://stackoverflow.com/questions/13154603/how-to-resolve-favicon-ico-not-found-error-on-apache), mikä on selaimessa, URL vieressä näkyvä pieni kuvake verkkosivustolle. Selaimet pyytävät faviconia automaattisesti ja, jos sitä ei ole pyyntö palauttaa 404 HTTP status kooodin. 
 
-Lähteet: https://www.sumologic.com/blog/apache-access-log/
+##### Lähteet: https://www.sumologic.com/blog/apache-access-log/
 
-**Olen kuluttanut tehtävien tekoon noin tunnin.**
+##### *Olen kuluttanut tehtävien tekoon noin tunnin tähän mennessä.*
 
-**/var/log/apache2/error.log**
+### **/var/log/apache2/error.log**
 
 Tämä tiedosto sisältää lokeja Apachen omista virheilmoituksista.
 
@@ -137,13 +140,16 @@ Tämä tiedosto oli tyhjä, lokeja ei löytynyt. Sen sijaan listaamalla apache2 
 
     $ sudo cat /var/log/apache2/error.log.1
 
-    {{< figure src="/img/error.png" title="" width="600">}}
+{{< figure src="/img/error.png" title="" width="600">}}
 
-    - Päivämäärä, ajankonta, timestamp 
-    - mpm_event:notice viestin tyyppi
-    - pid: prosessi pid 
-    - Loki tarkoittaa, että uusi processi käynnistyi kyseisellä pid:llä
+- Päivämäärä, ajankonta, timestamp 
+- mpm_event:notice viestin tyyppi
+- pid: prosessi pid 
+- Loki tarkoittaa, että uusi processi käynnistyi kyseisellä pid:llä
 
+Käytin **man** komentoa selvittääkseni tietoa lokissa esiintyvistä komennoista. 
+
+##### Lähteet: https://serverfault.com/questions/607873/apache-is-ok-but-what-is-this-in-error-log-mpm-preforknotice
 
 #### b) **Aiheuta.** Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki **onnistuneesta** ja yksi esimerkki **epäonnistuneesta** tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.
 
