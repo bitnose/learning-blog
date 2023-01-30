@@ -22,17 +22,6 @@ aliases = ["migrate-from-jekyl"]
 - h3, Vapaus!. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
-#### **z) Lue ja tiivistä**  
-Free Software ja neljä vapautta
-- Käyttäjillä on vapaus käyttää, kopioida, jakaa, tutkia, muuttaa ja parantaa ohjelmaa
-- "The freedom to **run the program as you wish**, for any purpose (freedom 0)."
-- "The freedom to **study how the program works**, and **change** it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this."
-- "The freedom to **redistribute copies** so you can help others (freedom 2)."
-- "The freedom to **distribute copies of your modified versions** to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this."
-(Lähteet: https://www.gnu.org/philosophy/free-sw.html, luettu: 26.01.2023)
-- Voi olla kaupallisessa käytössä
-
-
 #### **a) Kolmen ohjelman lisenssit.** Tarkastele kolmen edellisessä harjoituksessa asentamasi ohjelman lisenssejä. Selvitä kustakin ohjelmasta:
 
 - Mitä lisenssiä kyseinen ohjelma käyttää?
