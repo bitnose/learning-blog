@@ -49,10 +49,8 @@ Valitsin artikkelin [An Introduction to Data Science On The Linux Command Line](
 
 [Kommenteissa](https://news.ycombinator.com/item?id=21605077) tulee esille erilaisia työkaluja datan analysointiin, käsittelyyn (data science) ja myös visualisointiin. Lisäksi esim. kysymys miksi analysoida tietoa komennoilla kun voi hyödyntää Pythonia tai R kieltä. Komentirivin etuna on automaation helppous ja kätevyys.
 
-
 ## **Linux: Hands on**
 ### **Perustiedot** 
-
 
 **Host kone:**
 - Rauta: MacBook Pro Retina, 2015
@@ -69,14 +67,14 @@ Valitsin artikkelin [An Introduction to Data Science On The Linux Command Line](
 
 ##### Kellonaika: 11:10 
 
-#### a) **Tukki.** Analysoi yksi esimerkkirivi kustakin näistä lokeista:
+## **a) Tukki.** 
 
-
-### **/var/log/syslog** - Yleisloki, tänne kaikki joilla ei ole omaa lokia
+### **/var/log/syslog** 
+Yleisloki, tänne kaikki joilla ei ole omaa lokia
 
     $ sudo head /var/log/syslog
 
-    {{< figure src="/img/sighup.png" title="" width="600">}}
+{{< figure src="/img/sighup.png" title="" width="600">}}
 
 - Päivämäärä ja kelllonaika
 - [systemd](https://fi.wikipedia.org/wiki/Systemd): Käynnistää tärkeimmät ohjelmat, ajurit sekä aloittaa lokitietojen keräämisen
@@ -85,18 +83,20 @@ Valitsin artikkelin [An Introduction to Data Science On The Linux Command Line](
 - Ymmärtääkseni loki kirjaa tiedon, että terminaali on suljetaan.
 
 
-### **/var/log/auth.log** - Kirjatumiset, sudo:n käyttö
+### **/var/log/auth.log** 
+Kirjatumiset, sudo:n käyttö
 
     $ sudo head /var/log/auth.log
 
-    {{< figure src="/img/auth.png" title="" width="600">}}
+{{< figure src="/img/auth.png" title="" width="600">}}
 
-- Päivämäärä ja kelllonaika
+- Päivämäärä ja kellonaika
 - CRON: suorittaa ajastettuja komentoja
 - pam_unix: Moduuli, joka hoitaa käyttäjän tunnistautumisen, tarkistaa salasanan.
 - Loki kirjaa tiedon, että sessio on avattu root käyttäjälle
 
-### **/var/log/apache2/access.log** - Onnistunut surffailu 2xx, 3xx; käyttäjän virheet 4xx client error
+### **/var/log/apache2/access.log** 
+Onnistunut surffailu 2xx, 3xx; käyttäjän virheet 4xx client error
 
 Jostain syystä kyseinen tiedosto on tyhjä, mutta sen sijaan löysin toisen tiedoston nimellä 
 joten tarkastelen kyseistä tiedostoa.
@@ -105,7 +105,7 @@ joten tarkastelen kyseistä tiedostoa.
 
     $ sudo cat /var/log/apache2/access.log|grep -w --color '200'
 
-    {{< figure src="/img/access.png" title="" width="600">}}
+{{< figure src="/img/access.png" title="" width="600">}}
 
 - **127.0.0.1.** IP-osoite, josta pyyntö tuli (client)
 - **'- -'** käyttäjän (client) tunnus
@@ -128,8 +128,6 @@ Pyyntö oli GET request ja sillä pyydettiin [faviconia](https://stackoverflow.c
 
 ##### Lähteet: https://www.sumologic.com/blog/apache-access-log/
 
-##### *Olen kuluttanut tehtävien tekoon noin tunnin tähän mennessä.*
-
 ### **/var/log/apache2/error.log**
 
 Tämä tiedosto sisältää lokeja Apachen omista virheilmoituksista.
@@ -151,7 +149,10 @@ Käytin **man** komentoa selvittääkseni tietoa lokissa esiintyvistä komennois
 
 ##### Lähteet: https://serverfault.com/questions/607873/apache-is-ok-but-what-is-this-in-error-log-mpm-preforknotice
 
-#### b) **Aiheuta.** Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki **onnistuneesta** ja yksi esimerkki **epäonnistuneesta** tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.
+## **b) Aiheuta.** 
+Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki **onnistuneesta** ja yksi esimerkki **epäonnistuneesta** tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.
+
+
 
 
 
