@@ -23,10 +23,16 @@ aliases = ["migrate-from-jekyl"]
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #### **x) Kuuntele ja tiivistä**  
-Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)
-Indie Hackers -podcast, vapaavalintainen jakso, jossa hyödynnetään weppiä kaupallisesti.
 
-Valitsin artikkelin [An Introduction to Data Science On The Linux Command Line](https://blog.robertelder.org/data-science-linux-command-line/).
+Valitsin Indie Hackersin jakson [#265 - From Full-Time Job to $30k/Month with Damon Chen of Testimonial]().
+
+- Vieraana Damon Chen, joka on "indie hakkeri", [Testimonialin](https://testimonial.to/resources/damon) perustaja
+- Testimonial tarjoaa asiakkaille/yrityksille markkinoinnintyökaluja, subscription based
+- Jaksossa puhutaan yleisellä tasolla mm. epäonnistuneista projekteista ennen läpimurtoa, ideoista ja hyväksynnänhakemista omille ideoille, mitä on olla indie hakkeri
+- Miksi Damon Chen lähti tekemään omaa bisnestä sen sijaan, että olisi ollut rivityöntekijä: Oma motivaatio ja halu työskennelle itselle
+- Sosiaalinen media, Twitter sekä oma **aktiivinen** verkottuminen, kun rakennetaan yhteisöä/asiakaskuntaa tuotteelle 
+- Keskittyy asiakkaisiin ja asiakaspalautteeseen sen sijaan, että keskittyisi kilpailijoihin
+- Jaksossa puhutaan työn laskuttamisesta ja sen tuomista haasteista: kuinka voi olla hankalaa laskuttaa suurempia hintoja, mutta loppu peleissä se saattaa kannattaa: Ammattiylpeys ja oman työn/ajan arvostaminen näkyvät ulospäin, kuin itseään toteuttava ennustus
 
 ## **Linux: Hands on**
 ### **Perustiedot** 
