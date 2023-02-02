@@ -7,7 +7,7 @@ tags = [
     "linux",
     "virtualmachine",
     "debian",
-    "apache"
+    "apache",
     "command-line"
 ]
 categories = [
