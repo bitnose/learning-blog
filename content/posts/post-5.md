@@ -82,11 +82,12 @@ Komento esimerkkisivun vaihtamiseen:
 Seuraavaksi loin käyttäjän kotisivut: 
 
     anniinak$ sudo a2enmod userdir
-    anniinak$ sudo systemctl restart apache2
+    anniinak$ systemctl restart apache2
 
 {{< figure src="/img/h5/auth_reg.png" title="" width="600">}}
 
-    Menin käyttäjän kotikansioon, loin uuden kansion ja lisäsin sinne hieman HTML:
+Menin käyttäjän kotikansioon, loin uuden kansion ja lisäsin sinne hieman HTML:
+
     anniinak$ mkdir public_html
     anniinak$ micro index.html
     anniinak$ curl ‘http://localhost/~anniinak’
