@@ -1,7 +1,7 @@
 +++
 author = "Anniina Korkiakangas"
 title = "Reportti h5: Hello Web"
-date = "2023-01-30"
+date = "2023-02-03"
 description = "Apachen asentaminen Linuxiin."
 tags = [
     "linux",
@@ -74,8 +74,6 @@ Asensin Apachen uudelleen. Jostain syystä selain (ja curl) näyttivät tekstin 
 Komento esimerkkisivun vaihtamiseen: 
 
     anniinak$ echo "Hello"|sudo tee /var/www/html/index.html
-
-{{< figure src="/img/h5/hello.png" title="" width="600">}}
 
 **b) käyttäjien kotisivut** (http://example.com/~tero) toimimaan. Testaa esimerkkikotisivulla.
 
