@@ -26,7 +26,7 @@ aliases = ["migrate-from-jekyl"]
 
 #### **x) Lue ja tiivistä.** 
  
-#### **Apache Software Foundation 2023:[Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)**
+#### **Apache Software Foundation 2023**: [Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)
 
 Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet.
 
@@ -40,21 +40,14 @@ Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet.
 - **arg=value**: query string/argumentit, sisältää parametreja, joita lähetetään palvelimelle
 - CLIENT (web browser) --> REQUEST --> SERVER (Apache Server)
 - CLIENT (web browser) <-- RESPONSE <-- SERVER (Apache Server)
- - **Response** koostuu (http status koodista)[https://cwiki.apache.org/confluence/display/HTTPD/CommonHTTPStatusCodes] ja mahdollisesta response bodystä
- 
-**DNS: Domain Name System**
+ - **Response** koostuu (http status koodista)[https://cwiki.apache.org/confluence/display/HTTPD/CommonHTTPStatusCodes] ja mahdollisesta response bodystä.
+
+**DNS, Domain Name System:**
 
 - DNS tallentaa serverin nimen, joka vastaa julkista IP osoitetta -> kertoo serverin osoitteen
 - Client selvittää DNS avulla, mikä domain osoite vastaa mitäkin IP osoitetta
 - Virtual hostien avulla yksi fyysinen serveri voi ajaa useita nettisivuja
-- Host tiedostot sijaitsevat osoitteessa: 
     
-        /etc/hosts or C:\Windows\system32\drivers\etc\hosts
-
-- Paikalliseen testaamiseen voidaan konfiguroida:
-    
-        127.0.0.1 www.example.com
-
 **Apache Configuration -tiedostot**
 
 - Apache HTTP serveri konfiguroidaan tekstitiedostojen avulla
@@ -68,7 +61,7 @@ Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet.
 - Dynaaminen sisältö: Generoidaan pyyntöä tehdessä, esimerkiksi [handlerien](https://httpd.apache.org/docs/2.4/handler.html) avulla 
 - ErrorLog ja log tiedostot apuna ongelmienratkaisuun
 
-#### **Apache Software Foundation 2023: [Name-based Virtual Host Support](https://httpd.apache.org/docs/current/vhosts/name-based.html)**
+#### **Apache Software Foundation 2023**: [Name-based Virtual Host Support](https://httpd.apache.org/docs/current/vhosts/name-based.html)**
 
 - Apachen virallinen dokumentaatio, miten ja milloin käyttää nimipohjaisia virtuaali hosteja
 - IP-pohjaiset(IP-based) virtuaali hostit käyttävät IP osoitetta määrittääkseen, mikä on osoite kun taas nimi -pohjaiset (name-based) käyttävät nimiä osoitteen määrittämiseen DNS avulla 
@@ -155,10 +148,8 @@ Uuden sivuston luonti käyttäjän **kotikansiossa** (ilman sudoa):
     $ mkdir sites-available
     $ micro index.html
 
-
 ### **Päätelmä**
 Kaikki meni kuten piti, ei mitään erityistä. Tehtävän tekemiseen kului noin 30 minuuttia.
-
 
 **b) Tee Apachen asetustiedostoon kirjoitusvirhe.** Etsi se työkalujen avulla. Vertaa 'apache2ctl configtest' ja virhelokin /var/log/apache2/error.log virheilmoituksia.
 
