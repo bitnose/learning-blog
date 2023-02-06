@@ -8,7 +8,7 @@ tags = [
     "virtualmachine",
     "debian",
     "dns",
-    "name-server
+    "name-server",
     "web",
     "apache",
     "command-line"
