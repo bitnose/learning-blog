@@ -1,12 +1,15 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti h6: Hello Web"
-date = "2023-02-05"
+title = "Reportti h6: Based"
+date = "2023-02-06"
 description = "Apachen asentaminen Linuxiin."
 tags = [
     "linux",
     "virtualmachine",
     "debian",
+    "dns",
+    "name-server
+    "web",
     "apache",
     "command-line"
 ]
