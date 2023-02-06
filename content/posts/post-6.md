@@ -22,31 +22,28 @@ aliases = ["migrate-from-jekyl"]
 +++
 
 ## **Raportti h6: Based**
-- h6 based. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #### **x) Lue ja tiivistä.** 
-Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)
  
-### **Apache Software Foundation 2023: [Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)**
+#### **Apache Software Foundation 2023:[Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)**
 
-- Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet
+Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet.
 
 **URL:in anatomiaa:**
 
-        https://httpd.apache.org/docs/2.4/getting-started.html?arg=value
+    https://httpd.apache.org/docs/2.4/getting-started.html?arg=value
 
 - **https**: käytetty protokolla
 - **httpd.apache.org**: servername
 - **/docs/2.4/getting-started.html?**: URL-polku pyydettyyn tiedostoon
 - **arg=value**: query string/argumentit, sisältää parametreja, joita lähetetään palvelimelle
-
 - CLIENT (web browser) --> REQUEST --> SERVER (Apache Server)
 - CLIENT (web browser) <-- RESPONSE <-- SERVER (Apache Server)
- 
  - **Response** koostuu (http status koodista)[https://cwiki.apache.org/confluence/display/HTTPD/CommonHTTPStatusCodes] ja mahdollisesta response bodystä
  
 **DNS: Domain Name System**
+
 - DNS tallentaa serverin nimen, joka vastaa julkista IP osoitetta -> kertoo serverin osoitteen
 - Client selvittää DNS avulla, mikä domain osoite vastaa mitäkin IP osoitetta
 - Virtual hostien avulla yksi fyysinen serveri voi ajaa useita nettisivuja
@@ -71,7 +68,7 @@ Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä ala
 - Dynaaminen sisältö: Generoidaan pyyntöä tehdessä, esimerkiksi [handlerien](https://httpd.apache.org/docs/2.4/handler.html) avulla 
 - ErrorLog ja log tiedostot apuna ongelmienratkaisuun
 
-### **Apache Software Foundation 2023: [Name-based Virtual Host Support](https://httpd.apache.org/docs/current/vhosts/name-based.html)**
+#### **Apache Software Foundation 2023: [Name-based Virtual Host Support](https://httpd.apache.org/docs/current/vhosts/name-based.html)**
 
 - Apachen virallinen dokumentaatio, miten ja milloin käyttää nimipohjaisia virtuaali hosteja
 - IP-pohjaiset(IP-based) virtuaali hostit käyttävät IP osoitetta määrittääkseen, mikä on osoite kun taas nimi -pohjaiset (name-based) käyttävät nimiä osoitteen määrittämiseen DNS avulla 
@@ -85,7 +82,7 @@ Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä ala
     - **ServerAlias** Alias, toinen nimi samalle sivustolle
 - Lisäämällä [direktiivejä](https://httpd.apache.org/docs/2.4/mod/quickreference.html)  sivustoa voidaan räätälöidä ja optimoida haluttuun käyttötarkoitukseen
 
-Esimerkki tiedosto: 
+**Esimerkki tiedosto:** 
 
     <VirtualHost *:80>
         # This first-listed virtual host is also the default for *:80
