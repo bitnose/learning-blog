@@ -22,55 +22,54 @@ aliases = ["migrate-from-jekyl"]
 +++
 
 ## **Raportti h6: Based**
-- Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
+- Perustuu Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #### **x) Lue ja tiivistä.** 
  
 #### **Apache Software Foundation 2023**: [Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)
 
-Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet.
+Apachen virallinen dokumentti, joka pitää sisällään Apachen perusteet.
 
 **URL:in anatomiaa:**
 
     https://httpd.apache.org/docs/2.4/getting-started.html?arg=value
 
-- **https**: käytetty protokolla
-- **httpd.apache.org**: servername
+- **https**: Käytetty protokolla
+- **httpd.apache.org**: Serverin nimi
 - **/docs/2.4/getting-started.html?**: URL-polku pyydettyyn tiedostoon
-- **arg=value**: query string/argumentit, sisältää parametreja, joita lähetetään palvelimelle
+- **arg=value**: Query string/argumentit; sisältää parametreja, joita lähetetään palvelimelle pyynnön (requestin) mukana
 - CLIENT (web browser) --> REQUEST --> SERVER (Apache Server)
 - CLIENT (web browser) <-- RESPONSE <-- SERVER (Apache Server)
- - **Response** koostuu (http status koodista)[https://cwiki.apache.org/confluence/display/HTTPD/CommonHTTPStatusCodes] ja mahdollisesta response bodystä.
+ - **Response** Koostuu [http status koodista](https://cwiki.apache.org/confluence/display/HTTPD/CommonHTTPStatusCodes) ja mahdollisesta response bodystä.
 
 **DNS, Domain Name System:**
 
-- DNS tallentaa serverin nimen, joka vastaa julkista IP osoitetta -> kertoo serverin osoitteen
-- Client selvittää DNS avulla, mikä domain osoite vastaa mitäkin IP osoitetta
-- Virtual hostien avulla yksi fyysinen serveri voi ajaa useita nettisivuja
+- DNS tallentaa serverin nimen, joka vastaa julkista IP osoitetta -> kertoo serverin osoitteen nimen perusteella 
+- Client selvittää DNS kautta, mikä serveri osoite vastaa mitäkin IP osoitetta
+- Virtual hostien avulla yksi fyysinen serveri voi ajaa useita verkkosivustoja
     
 **Apache Configuration -tiedostot**
 
 - Apache HTTP serveri konfiguroidaan tekstitiedostojen avulla
-- Default tiedostot sijaitsevat polussa /usr/local/apache2/conf ja on nimeltään httpd.conf 
-- Sijainti ja nimet saattavat vaihdella tosin
+- Default tiedostot sijaitsevat yleensä polussa **/usr/local/apache2/conf** ja on nimeltään **httpd.conf** (sijainti ja nimet saattavat vaihdella)
 - Konfiguroidaan [configuration directivies](https://httpd.apache.org/docs/2.4/mod/quickreference.html) avulla (avainsana + argumentteja)
 
 **Web sivujen sisältö**
 
-- Saattinen sisältö: HTML, css, kuvat. DocumentRoot directive määrittää missä sijaitsevat
-- Dynaaminen sisältö: Generoidaan pyyntöä tehdessä, esimerkiksi [handlerien](https://httpd.apache.org/docs/2.4/handler.html) avulla 
-- ErrorLog ja log tiedostot apuna ongelmienratkaisuun
+- **Staattinen** sisältö: HTML, css, kuvat. DocumentRoot directive määrittää missä sisältö sijaitsee
+- **Dynaaminen** sisältö: Generoidaan pyyntöä tehdessä, esimerkiksi [handlerien](https://httpd.apache.org/docs/2.4/handler.html) avulla 
+- **ErrorLog** ja **log** tiedostot apuna ongelmienratkaisuun
 
 #### **Apache Software Foundation 2023**: [Name-based Virtual Host Support](https://httpd.apache.org/docs/current/vhosts/name-based.html)**
 
-- Apachen virallinen dokumentaatio, miten ja milloin käyttää nimipohjaisia virtuaali hosteja
-- IP-pohjaiset(IP-based) virtuaali hostit käyttävät IP osoitetta määrittääkseen, mikä on osoite kun taas nimi -pohjaiset (name-based) käyttävät nimiä osoitteen määrittämiseen DNS avulla 
+- Apachen virallinen dokumentti kertoo miten ja milloin käytetään nimipohjaisia virtuaali hosteja
+- IP-pohjaiset(IP-based) virtuaali hostit käyttävät IP osoitetta määrittääkseen, mikä on osoite kun taas nimi -pohjaiset (name-based) käyttävät nimiä osoitteen määrittämiseen DNS kautta 
 
-**Name-based: Käyttön**
+**Name-based: Käyttö**
 
--  Ensin rekisteröidään ja konfiguroidaan domain nimi vastaamaan IP-osoitetta DNS palvelimella ja sitten konfiguroidaan Apache
+-  Ensin rekisteröidään ja konfiguroidaan serverin nimi vastaamaan IP-osoitetta DNS palvelimella, ja sitten konfiguroidaan Apache
 - Tietty virtuaali host määritellään **VirtualHost** blokissa
-    - **ServerName** määrittää mikä host 
+    - **ServerName** Määrittää mikä host
     - **DocumentRoot** Missä sisältö sijaitsee
     - **ServerAlias** Alias, toinen nimi samalle sivustolle
 - Lisäämällä [direktiivejä](https://httpd.apache.org/docs/2.4/mod/quickreference.html)  sivustoa voidaan räätälöidä ja optimoida haluttuun käyttötarkoitukseen
@@ -105,7 +104,6 @@ Apachen virallinen dokumentaatio, joka pitää sisällään Apachen perusteet.
 - Hard disk file type: VDI
 
 ### **a) Vaihda Apachelle uusi etusivu.** 
-Varmista, että voit muokata sivua normaalilla käyttäjällä (ilman sudoa).
 
 Selaimella Apachen etusivu: 
 
@@ -135,7 +133,7 @@ Kaikki kuten piti. Sirryin luomaan käyttäjälle kotikansioon ja seuraavaksi p�
  
 {{< figure src="/img/h6/end.png" title="" width="600">}}
 
-Täysin uuden frontpage.conf tiedoston luonti ja konfigurointi sekä vanhan default tiedoston poisto (000-default.conf):
+Täysin uuden frontpage.conf tiedoston luonti ja konfigurointi sekä vanhan default tiedoston hylkääminen (000-default.conf):
 
     $ sudoedit /etc/apache2/sites-available/frontpage.conf
     $ cat /etc/apache2/sites-available/frontpage.conf
@@ -166,12 +164,12 @@ Seuraavaksi muokkasin frontpage.conf tiedostoa ja lisäsin sinne virheen ja käy
 
 {{< figure src="/img/h6/error_start.png" title="" width="600">}}
 
-Seuraavaksi tarkastelin virheilmoituksia. Ajoin configtestin, joka tarkistaa konfigurointi tiedostojen syntaksi virheiden varalta. Luin ensin lisätietoa apache2tl:n configtestistä, jonka jälkeen testasin komentoa:
+Seuraavaksi tarkastelin virheilmoituksia. Ajoin configtestin, joka tarkistaa konfigurointi -tiedostot kirjoitusvirheiden varalta. Luin ensin lisätietoa apache2tl:n configtestistä, jonka jälkeen testasin komentoa:
 
     $ man apache2ctl
     $ /usr/sbin/apache2ctl configtest
 
-Viestistä ilmenee selkeästi **mikä** meni vikaan (syntax error, puuttuu '>'), **missä** tiedostossa (/etc/apache2/sites-enabled/frontpage.conf) ja **millä** rivillä (line of 5). Kertoo testin tuloksen (failed) sekä **mistä**(Apache error log) voi löytyä lisää tietoa.
+Viestistä ilmenee selkeästi **mikä** meni vikaan (syntax error, puuttuu '>'), **missä** tiedostossa (/etc/apache2/sites-enabled/frontpage.conf) ja **millä** rivillä (line of 5) kirjoitusvirhe on.  Kertoo testin **tuloksen** (failed) sekä **mistä**(Apache error log) voi löytyä lisää tietoa.
 
 Toisaalta  teksti osoittaa kohteeseen /etc/apache2/**sites-enabled**/frontpage.conf eikä /etc/apache2/**sites-available**/frontpage.conf osoitteeseen, jossa tiedostoa muokataan (ymmärtääkseni). Hieman hämmentävää. 
 
@@ -185,6 +183,4 @@ Seuraavaksi tarkistin virhelokin:
 
 Tämä ei kerro paljon mitään, ainakaan kirjoitusvirheestä. 
 
-**Päätelmä**: Kirjoitusvirheiden tarkistamiseen configtest on hyödyllinen työkalu. 
-
-##### Testin tekemiseen kului noin tunti. 
+**Päätelmä**: Kirjoitusvirheiden tarkistamiseen configtest on hyödyllinen työkalu. Tehtävän tekemiseen kului noin 30 minuuttia. 
