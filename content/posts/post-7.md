@@ -37,7 +37,7 @@ aliases = ["migrate-from-jekyl"]
     server$ sudo ufw allow 22/tcp 
     server$ sudo ufw enable
 
-**Creating a new user** with the sudo rigths
+**Creating a new user** with the sudo rigths and login
 
     server$ sudo adduser anniina
     server$ sudo adduser anniina sudo
@@ -52,7 +52,7 @@ aliases = ["migrate-from-jekyl"]
         PermitRootLogin no
     server$ sudo service ssh restart
 
-**Update the packages** (sudo apt-get update, sudo apt-get -y dist-upgrade).
+**Update the packages**: sudo apt-get update, sudo apt-get -y dist-upgrade.
 
 **Start using it!**
 - If want tp install Apache, open the port 80 for the web traffic 
@@ -64,10 +64,10 @@ aliases = ["migrate-from-jekyl"]
 
 During the previous lesson, I rented some virtual private cloud from Linode with free credits. I created an account and followed the given intstructions and finally selected the server with this gear:
 
-**Host kone:**
-- Rauta: MacBook Pro Retina, 2015
-- Ohjelmistojärjestelmä: macOS Big Sur 11.7
-- Prosessori: Intel Core i7
+**Host Machine:**
+- MacBook Pro Retina, 2015
+- OS: macOS Big Sur 11.7
+- Intel Core i7
 
 **Server** 
 - Debian 11 Image
@@ -86,6 +86,8 @@ I opened a local terminal to connect to the server.
 
 The connection was established successfully. Though, it gave a warning that complains about local settings because of the unknown environment variables ($LC and $LANG). I deciced to take care of this after doing the first steps. 
 
+{{< figure src="/img/h7/warning.png" title="" width="600">}}
+
 **b) First steps:** Firewall, close root access, updates
 
 **Setting up firewall**
@@ -100,16 +102,17 @@ Next, I updated the packages and set up the firewall. I didn't have the ufw pack
     root$ sudo ufw enable
     root$ sudo ufw status
 
+
 **New user and disabling sudo**
 
-The firewall is set up successfully. I created a new user with the following commands:
+The firewall was set up . I created a new user with the following commands:
 
     root$ sudo adduser anniina
     root$ sudo adduser anniina sudo
     root$ sudo adduser anniina adm
     root$ sudo adduser anniina admin
 
-After the last command, it prompted "The group `admin' does not exist." I checked the manual about adduser but didn't find a command to list all the groups. I tried to find if the group named "admin" exists and got no hits. 
+After the last command, it prompted "The group 'admin' does not exist." I checked the manual about adduser: didn't find a command to list all the groups. I tried to find if the group named "admin" exists and got no hits. 
 
     root$ less /etc/group
     root$ less /etc/group|grep admin
@@ -120,14 +123,17 @@ I tried to **login with the new user** from the local machine. It worked.
 
     local$ ssh anniina@<IP>
 
-Next, back to root connection, I disabled the root access, restarted the ssh service and quit the session with root. 
+Next, back to the root connection, I disabled the root access, restarted the ssh service and quited the session with root. 
 
     root$ sudo usermod --lock root
     root$ sudoedit /etc/ssh/sshd_config
+
+{{< figure src="/img/h7/permit.png" title="" width="600">}}
+
     root$ sudo service ssh restart
     root$ exit
 
-**c) Asenna weppipalvelin omalle virtuaalipalvelimellesi.** Korvaa testisivu. Kokeile, että se näkyy julkisesti. (Muista tehdä reikä tulimuuriin).
+**c) Install a webservice on your machine.** Replace the test page. Check if it works online. Open a port in the firewall. 
 
 I installed apache2, and checked it works:
 
@@ -155,12 +161,18 @@ It worked. Changed the example site and created a site for the user:
     anniina$ nano index.html
     anniina$ cat index.html
 
-Open the port 80 so the site will be available: 
+Opened the port 80 to make the site accessible for outsiders (over Internet): 
 
     anniina$ sudo ufw allow 80/tcp
 
-For some reason, the site still shows 403 forbidden when I try to access the front page curl http://localhost/. I tried to restart but it didn't help. 
+For some reason, the site still showed 403 forbidden when I tried to access the front page curl http://localhost/ and through IP address. I tried to restart but it didn't help. 
 
+**UPDATE:**
+
+The mistake was that I had a mismatch with the path name in the frontpage.conf file and folder name. I corrected it by creating a corresponding folder (public_sites) and adding the correct, matching path in frontpage.conf file.
+
+{{< figure src="/img/h7/final.png" title="" width="600">}}
+    
 d) Etsi merkkejä murtautumisyrityksistä.
 
 In the /var/log/auth.log file I found lines like this but with different IP addresses. A little disclaimer, it could be me making typos. 
@@ -170,4 +182,22 @@ In the /var/log/auth.log file I found lines like this but with different IP addr
     anniina$ cat /var/log/auth.log|grep --color invalid
  
 
+### **UPDATE: Fixing locale error**
 
+{{< figure src="/img/h7/locale_error.png" title="" width="600">}}
+
+According this [post](https://askubuntu.com/questions/599808/cannot-set-lc-ctype-to-default-locale-no-such-file-or-directory) and the top voted answer, the problem arises because MacOS sends automatically some locale [environment variables](https://help.ubuntu.com/community/EnvironmentVariables) to configure the environment for the selected character encoding when connecting to Linux over ssh. This causes the conflict between variables. I fixed it easily on my macOS by: 
+
+- Terminal>Preferences>Profiles>Advanced tab
+- **Unchek** the box with "Set locale..."
+
+{{< figure src="/img/h7/locale.png" title="" width="600">}}
+
+I closed the session and opened the new one to see if the change was effective: 
+
+It worked. Locale conflict solved. 
+
+{{< figure src="/img/h7/locale_end.png" title="" width="600">}}
+
+
+Sources: https://help.ubuntu.com/community/EnvironmentVariables
