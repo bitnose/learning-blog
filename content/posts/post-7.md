@@ -123,12 +123,16 @@ I tried to **login with the new user** from the local machine. It worked.
 
     local$ ssh anniina@<IP>
 
-Next, back to the root connection, I disabled the root access, restarted the ssh service and quited the session with root. 
+Next, back to the root connection, I disabled the root access and edited sshd_config file. 
 
     root$ sudo usermod --lock root
     root$ sudoedit /etc/ssh/sshd_config
 
+Found the line with PermitRootLogin, and updated it with **no** like this:
+
 {{< figure src="/img/h7/permit.png" title="" width="600">}}
+
+Restarted the ssh service and quited the session with root:
 
     root$ sudo service ssh restart
     root$ exit
@@ -172,6 +176,8 @@ For some reason, the site still showed 403 forbidden when I tried to access the 
 The mistake was that I had a mismatch with the path name in the frontpage.conf file and folder name. I corrected it by creating a corresponding folder (public_sites) and adding the correct, matching path in frontpage.conf file.
 
 {{< figure src="/img/h7/final.png" title="" width="600">}}
+
+{{< figure src="/img/h7/final_terminal.png" title="" width="600">}}
     
 d) Etsi merkkejä murtautumisyrityksistä.
 
@@ -199,5 +205,7 @@ It worked. Locale conflict solved.
 
 {{< figure src="/img/h7/locale_end.png" title="" width="600">}}
 
-
-Sources: https://help.ubuntu.com/community/EnvironmentVariables
+Sources: 
+- https://help.ubuntu.com/community/EnvironmentVariables,
+- https://askubuntu.com/questions/599808/cannot-set-lc-ctype-to-default-locale-no-such-file-or-directory
+- Earlier homework posts
