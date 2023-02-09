@@ -69,7 +69,7 @@ Asensin Apachen uudelleen. Jostain syystä selain (ja curl) näyttivät tekstin 
 
     anniinak$ sudo apt-get -y install apache2
     anniinak$ sudo systemctl start apache2
-    anniinak$ curl ‘http://localhost/’
+    anniinak$ curl http://localhost/
 
 Komento esimerkkisivun vaihtamiseen: 
 

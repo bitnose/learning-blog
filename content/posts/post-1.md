@@ -110,6 +110,7 @@ Asensin ja käynnistin palomuurin:
 
         $ sudo apt-get -y install ufw
         $ sudo ufw enable
+        $ sudo ufw status
 
 - **install** asenna
 - **ufw** Palomuuri

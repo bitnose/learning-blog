@@ -140,7 +140,7 @@ Täysin uuden frontpage.conf tiedoston luonti ja konfigurointi sekä vanhan defa
     $ sudo a2ensite frontpage.conf
     $ sudo a2dissite 000-default.conf 
     $ sudo systemctl restart apache2
-
+    
 Uuden sivuston luonti käyttäjän **kotikansiossa** (ilman sudoa):
 
     $ mkdir sites-available
