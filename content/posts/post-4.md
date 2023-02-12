@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti 4: Tukki"
+title = "Linux 4: Tukki"
 date = "2023-01-30"
 description = "Lisenssit ja "
 tags = [
@@ -18,7 +18,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Raportti 4: Tukki**
+## **Linux 4: Tukki**
 - h4, Tukki. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 

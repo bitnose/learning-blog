@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti h5: Hello Web"
+title = "Linux h5: Hello Web"
 date = "2023-02-03"
 description = "Apachen asentaminen Linuxiin."
 tags = [
@@ -18,7 +18,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Raportti h5: Hello Web**
+## **Linux h5: Hello Web**
 - h5 Hello Web. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 

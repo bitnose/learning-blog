@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti h6: Based"
+title = "Linux h6: Based"
 date = "2023-02-06"
 description = "Apachen asentaminen Linuxiin."
 tags = [
@@ -21,7 +21,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Raportti h6: Based**
+## **Linux h6: Based**
 - Perustuu Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #### **x) Lue ja tiivistä.** 

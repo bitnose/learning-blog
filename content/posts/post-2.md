@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti 2: Komentaja Pingviini"
+title = "Linux 2: Komentaja Pingviini"
 date = "2023-01-23"
 description = "Komentokehotteiden harjoittelua"
 tags = [
@@ -18,7 +18,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Raportti 2: Komentaja Pingviini**
+## **Linux 2: Komentaja Pingviini**
 - h2, Komentaja-Pingviini. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 

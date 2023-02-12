@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Reportti 1: Virtuaali-Linux"
+title = "Linux 1: Virtuaali-Linux"
 date = "2023-01-19"
 description = "Linuxin asentaminen virtuaalikoneeseen"
 tags = [
@@ -18,7 +18,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Raportti 1: Virtuaali-Linux**
+## **Linux 1: Virtuaali-Linux**
 - h1, Virtuaali-Linux. Harjoitustehtäväraportti.
 - Pohjana Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
