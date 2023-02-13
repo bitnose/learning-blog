@@ -26,10 +26,18 @@ aliases = ["migrate-from-jekyl"]
 
 **a) Rent a domain name and point it to your virtual server** 
 
-**Host Machine:**
+**Host Machine**
 - MacBook Pro Retina, 2015
 - OS: macOS Big Sur 11.7
 - Intel Core i7
+
+**Virtual Box (local)**
+- VM: debian-live-11.6.0-amd64-xfce-nonfree.iso
+- Operating System: Debian (64-bit)
+- Type: Linux
+- Memory size: 4000 MB
+- File size: 60 GB
+- Hard disk file type: VDI
 
 **Virual Cloud Server** 
 - Debian 11 Image
