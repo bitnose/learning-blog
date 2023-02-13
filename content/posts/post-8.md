@@ -98,7 +98,45 @@ When doing vice versa (host IP address), it didn't print the korkiakangas.com bu
 
 ### **dig**
 
-First, I checked the manual. Then verbose. No results. Means I, need to install the tool. 
+First, I checked the manual. Then verbose. No results. Means I, need to install the tool. I tried to find the utility with this command:
+
+    anniina$ apt-cache search dig|grep --color -i dig 
+
+I couldn't find the program. According the [post](https://superuser.com/questions/141623/installing-dig-on-debian), I need to install dnsutils to use the command.
+
+    anniina$ apt-cache search dnsutils|grep --color -i -w dnsutils
+    anniina$ sudo apt-get install -y dnsutils
+    anniina$ man dnsutils           
+    # NO Results
+    anniina$ man dig
+
+Got the manual. According it, dig is a tool for troubleshooting and analyzing DNS name servers by sending queries to the servers.
+
+    anniina$ man -v
+    anniina$ man -h
+    anniina$ dig www.korkiakangas.com
+
+ {{< figure src="/img/h8/digwww.png" title="" width="600">}}
+
+After a quick look I could find information about: 
+
+- **DiG 9.16.37-Debian** version
+- **www.korkiakangas.com** domain name (the target name server to query)
+- **Global options +cmd** According manual +cmd is a parameter which tells to print the version etc on the console (default setting) 
+- **flags** Query options
+- **Response HEADER** Here, the most obvious is the status, NOERROR. 
+- **OPT PSEUDOSECTION** This section seems to tell where the query was sent
+- **ANSWER SECTION**: Tells the domain name and the IP address it's connected. Letter **A** indicates the type of query. Here it means a A record. 
+- **QUERY TIME**: Tells how long the request took, where and when it came from
+
+
+    anniina$ dig korkiakangas.com
+
+{{< figure src="/img/h8/dig.png" title="" width="600">}}
+
+    
+Sources: 
+- https://superuser.com/questions/141623/installing-dig-on-debian
 
 
 
