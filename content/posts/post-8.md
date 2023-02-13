@@ -120,8 +120,8 @@ I couldn't find the program. According the [post](https://superuser.com/question
 
 Got the manual. According it, dig is a tool for troubleshooting and analyzing DNS name servers by sending queries to the servers.
 
-    anniina$ man -v
-    anniina$ man -h
+    anniina$ dig -v
+    anniina$ dig -h
     anniina$ dig www.korkiakangas.com
 
  {{< figure src="/img/h8/digwww.png" title="" width="600">}}
