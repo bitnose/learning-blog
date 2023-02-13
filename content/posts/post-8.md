@@ -1,7 +1,7 @@
 +++
 author = "Anniina Korkiakangas"
 title = "Linux h8 Say my name"
-date = "2023-02-09"
+date = "2023-02-13"
 description = "Apachen asentaminen Linuxiin."
 tags = [
     "linux",
