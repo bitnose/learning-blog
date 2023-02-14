@@ -135,10 +135,11 @@ After a quick look I could find information about:
 - **Response HEADER** Here, the most obvious is the status, NOERROR. 
 - **OPT PSEUDOSECTION** This section seems to tell where the query was sent
 - **ANSWER SECTION**: Tells the domain name and the IP address it's connected. Letter **A** indicates the type of query. Here it means a A record. 
-- **QUERY TIME**: Tells how long the request took, where and when it came from, the size of the request
+- **QUERY TIME**: Time it took to get the response. The IP Address and port number of the DNS server that responded. When the request was made and the size of the received response.
 
 Conclusion: The domain www.korkiakangas.com is pointing to the IP address 143.42.59.10. The query was successfully made. 
 
 
 Sources: 
 - https://superuser.com/questions/141623/installing-dig-on-debian
+- https://www.howtogeek.com/663056/how-to-use-the-dig-command-on-linux/
