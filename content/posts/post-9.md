@@ -193,10 +193,7 @@ Checked the record was deleted:
 
 #
 
-**n) Volunteer: Maria.** Install MariaDB and try the CRUD.
+**Sources:**
 
-
-Karvinen 2016-2023: Install PostgreSQL on Ubuntu – New user and database in 3 commands
-Karvinen 2016-2023: PostgreSQL Install and One Table Database – SQL CRUD tutorial for Ubuntu
-'sudo adduser tero'
-Karvinen 2018: Install MariaDB on Ubuntu 18.04 – Database Management System, the New MySQL
+- Karvinen 2016-2023: [Install PostgreSQL on Ubuntu – New user and database in 3 commands](https://terokarvinen.com/2016/03/03/install-postgresql-on-ubuntu-new-user-and-database-in-3-commands/)
+- Karvinen 2016-2023: [PostgreSQL Install and One Table Database – SQL CRUD tutorial for Ubuntu](https://terokarvinen.com/2016/03/05/postgresql-install-and-one-table-database-sql-crud-tutorial-for-ubuntu/)
