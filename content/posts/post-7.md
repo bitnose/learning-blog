@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Linux h7: Real Internet(tm)"
+title = "Linux 7: Real Internet(tm)"
 date = "2023-02-09"
 description = "Apachen asentaminen Linuxiin."
 tags = [
@@ -17,7 +17,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Linux h7 Real Internet(tm)**
+## **Linux h7: Real Internet(tm)**
 - Perustuu Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #### **x) Summary** 

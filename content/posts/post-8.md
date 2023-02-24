@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Linux h8 Say my name"
+title = "Linux 8: Say my name"
 date = "2023-02-13"
 description = "Apachen asentaminen Linuxiin."
 tags = [
@@ -19,7 +19,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Linux h8 Say my name**
+## **Linux h8: Say my name**
 - Based on Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 ## **Linux: Hands on**

@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Linux h9 Sequel"
+title = "Linux 9: Sequel"
 date = "2023-02-16"
 description = "PostgreSQL on Linux"
 tags = [
@@ -19,7 +19,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Linux h9 Sequel**
+## **Linux h9: Sequel**
 - Based on Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 #

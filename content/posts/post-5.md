@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Linux h5: Hello Web"
+title = "Linux 5: Hello Web"
 date = "2023-02-03"
 description = "Apachen asentaminen Linuxiin."
 tags = [

@@ -2,7 +2,7 @@ baseURL: /
 languageCode: en-us
 title: Learning blog
 theme: mini
-paginate: 3
+paginate: 10
 relativeURLS: true
 
 
@@ -17,7 +17,7 @@ markup:
 
 social:
   github: https://github.com/bitnose
-  stackoverflow: https://stackoverflow.com/users/anniina
+  stackoverflow: https://stackoverflow.com/users/9491568/anniina
 
 
 params:
@@ -25,5 +25,6 @@ params:
   bio: 
   description: "."
   enableRSS: false
-  enableComments: false
+  enableComments: true
   enableGoogleAnalytics: false
+  hiddenPostSummaryInHomePage: true

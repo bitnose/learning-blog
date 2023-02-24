@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Linux h6: Based"
+title = "Linux 6: Based"
 date = "2023-02-06"
 description = "Apachen asentaminen Linuxiin."
 tags = [
