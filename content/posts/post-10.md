@@ -75,7 +75,7 @@ Inside the virtual env, I passed commands to **install Django**. I had already m
 {{< figure src="/img/h10/django.png" title="" width="600">}}
 
 ## **Creating a website project with Django**
-##### 18:30
+##### 17:30
 
 **Created a new website project** and ran it: 
 
