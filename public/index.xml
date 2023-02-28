@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning blog</title>
+    <link>/</link>
+    <description>Recent content on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 10: DJ Ango</title>
+      <link>/posts/linux-10-dj-ango/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-10-dj-ango/</guid>
+      <description>Linux h10: DJ Ango 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  Hands on 🔗Host Machine
+ MacBook Pro Retina, 2015 OS: macOS Big Sur 11.7 Intel Core i7  Virtual Box (local)
+ VM: debian-live-11.6.0-amd64-xfce-nonfree.iso Operating System: Debian (64-bit) Type: Linux Memory size: 4000 MB File size: 60 GB Hard disk file type: VDI  Build database application with Django 🔗a) Kannattavaa. Tee oma tietokantasovellus. jossa on weppiliittymä.</description>
+    </item>
+    
+    <item>
+      <title>Linux 9: Sequel</title>
+      <link>/posts/linux-9-sequel/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-9-sequel/</guid>
+      <description>Linux h9: Sequel 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  🔗x) Yrityssoftaa. Keksi esimerkki palvelusta, jota käytetään wepissä selaimella, koodi ajetaan palvelimella ja taustalla on tietokanta. Mitä etuja tällä toteutustavalla on vaihtoehtoisiin toteutustapoihin verrattuna? (Tässä x-alakohdassa ei tarvitse tehdä testejä koneella tai toteuttaa mitään, pelkkä kuvittelu ja vastauksen kirjoittaminen riittää)
+Online Shop
+ Customer uses the service on the web: The web is the interface for the customer (comparing and buying products, placing the order, getting information about the company) Customer&amp;rsquo;s userdata is saved on database, as well as the order and product information The code is run on linux server, website is served by Apache Communication between the database and the website could be handled by some back-end library (Django (Python), Vapor (Swift), etc) Benefits:  The back-end and the frontend is separated: increased security The data will be saved permanently in common format (unless someone deletes the db) The data can be accessible for several websites Increased scalability and availability when parts are broken into smaller (micro)services &amp;ndash;&amp;gt; Easier to managed and apply changes compared to monolith systems In larger projects, the people who work with the project could focus on certain skillsets rather than mastering the whole fullstack    🔗Linux: Hands on 🔗Host Machine</description>
+    </item>
+    
+    <item>
+      <title>Linux 8: Say my name</title>
+      <link>/posts/linux-8-say-my-name/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-8-say-my-name/</guid>
+      <description>Linux h8: Say my name 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  Linux: Hands on 🔗a) Rent a domain name and point it to your virtual server
+Host Machine
+ MacBook Pro Retina, 2015 OS: macOS Big Sur 11.7 Intel Core i7  Virtual Box (local)
+ VM: debian-live-11.6.0-amd64-xfce-nonfree.iso Operating System: Debian (64-bit) Type: Linux Memory size: 4000 MB File size: 60 GB Hard disk file type: VDI  Virual Cloud Server</description>
+    </item>
+    
+    <item>
+      <title>Linux 7: Real Internet(tm)</title>
+      <link>/posts/linux-7-real-internettm/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-7-real-internettm/</guid>
+      <description>Linux h7: Real Internet(tm) 🔗 Perustuu Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Summary 🔗Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
+ How to install virtual private (cloud) server and take the firts steps to configure it remotely Use only good passwords, always Keep your programs up to date (apt-get upgrade)  Login to server and setting up the password:</description>
+    </item>
+    
+    <item>
+      <title>Linux 6: Based</title>
+      <link>/posts/linux-6-based/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-6-based/</guid>
+      <description>Linux h6: Based 🔗 Perustuu Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä. 🔗Apache Software Foundation 2023: Getting Started 🔗Apachen virallinen dokumentti, joka pitää sisällään Apachen perusteet.
+URL:in anatomiaa:
+https://httpd.apache.org/docs/2.4/getting-started.html?arg=value   https: Käytetty protokolla httpd.apache.org: Serverin nimi /docs/2.4/getting-started.html?: URL-polku pyydettyyn tiedostoon arg=value: Query string/argumentit; sisältää parametreja, joita lähetetään palvelimelle pyynnön (requestin) mukana CLIENT (web browser) &amp;ndash;&amp;gt; REQUEST &amp;ndash;&amp;gt; SERVER (Apache Server) CLIENT (web browser) &amp;lt;&amp;ndash; RESPONSE &amp;lt;&amp;ndash; SERVER (Apache Server) Response Koostuu http status koodista ja mahdollisesta response bodystä.</description>
+    </item>
+    
+    <item>
+      <title>Linux 5: Hello Web</title>
+      <link>/posts/linux-5-hello-web/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-5-hello-web/</guid>
+      <description>Linux h5: Hello Web 🔗 h5 Hello Web. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Kuuntele ja tiivistä 🔗Valitsin Indie Hackersin jakson #265 - From Full-Time Job to $30k/Month with Damon Chen of Testimonial.
+ Vieraana Damon Chen, joka on &amp;ldquo;indie hakkeri&amp;rdquo;, Testimonialin perustaja Testimonial tarjoaa asiakkaille/yrityksille markkinoinnintyökaluja, subscription based Jaksossa puhutaan yleisellä tasolla mm. epäonnistuneista projekteista ennen läpimurtoa, ideoista ja hyväksynnänhakemista omille ideoille, mitä on olla indie hakkeri Miksi Damon Chen lähti tekemään omaa bisnestä sen sijaan, että olisi ollut rivityöntekijä: Oma motivaatio ja halu työskennelle itselle Sosiaalinen media, Twitter sekä oma aktiivinen verkottuminen, kun rakennetaan yhteisöä/asiakaskuntaa tuotteelle Keskittyy asiakkaisiin ja asiakaspalautteeseen sen sijaan, että keskittyisi kilpailijoihin Jaksossa puhutaan työn laskuttamisesta ja sen tuomista haasteista: kuinka voi olla hankalaa laskuttaa suurempia hintoja, mutta loppu peleissä se saattaa kannattaa: Ammattiylpeys ja oman työn/ajan arvostaminen näkyvät ulospäin, kuin itseään toteuttava ennustus  Linux: Hands on 🔗Perustiedot 🔗Host kone:</description>
+    </item>
+    
+    <item>
+      <title>Linux 4: Tukki</title>
+      <link>/posts/linux-4-tukki/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-4-tukki/</guid>
+      <description>Linux 4: Tukki 🔗 h4, Tukki. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  z) Lue ja tiivistä 🔗Valitsin artikkelin An Introduction to Data Science On The Linux Command Line.
+ Vastaa kysymykseen kuinka käyttää komentoriviä tiedon analysointiin Artikkile korostaa | tai putkien (pipes) merkitystä kommentorivillä: sen avulla voidaan luoda erittäin tehokkaita, räätälöityjä komentoja yhdistäen eri ohjelmien input ja output dataa grep: Tiedon suodattamasiseen tekstitiedostoista (txt, csv), mm.</description>
+    </item>
+    
+    <item>
+      <title>Linux 3: Vapaus!</title>
+      <link>/posts/linux-3-vapaus/</link>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-3-vapaus/</guid>
+      <description>Linux 3: Vapaus! 🔗 h3, Vapaus!. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  a) Kolmen ohjelman lisenssit. Tarkastele kolmen edellisessä harjoituksessa asentamasi ohjelman lisenssejä. Selvitä kustakin ohjelmasta: 🔗 Mitä lisenssiä kyseinen ohjelma käyttää? Mistä päättelit lisenssin? Onko kyseessä vapaa lisenssi? Mitkä ovat tämän lisenssin tärkeimmät oikeusvaikutukset?  Git
+ GNU General Public License version 2.0 Kyseessä on vapaa lisenssi Trademark Policy: Rajoittaa termin &amp;ldquo;Git&amp;rdquo;, logon ja sloganin käyttöä &amp;ldquo;the stupid content tracker&amp;rdquo; Lähteet: https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>Linux 2: Komentaja Pingviini</title>
+      <link>/posts/linux-2-komentaja-pingviini/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-2-komentaja-pingviini/</guid>
+      <description>Linux 2: Komentaja Pingviini 🔗 h2, Komentaja-Pingviini. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä: Command Line Basics Revisited 🔗Linux Command Line Perusteet 🔗# Tämä on kommentti $ pwd # Tulosta &amp;quot;working directory&amp;quot; /home/anniinak  Liikkuminen 🔗$ cd anniinadir/ # Liiku kansioon $ cd .. # Mene +1 kansio ylös $ less file.txt # Näytä tekstitiedosto $ ls /etc|less # Näytä tiedosto kerralla  Tiedostojen muokkaus 🔗$ nano file.</description>
+    </item>
+    
+    <item>
+      <title>Linux 1: Virtuaali-Linux</title>
+      <link>/posts/linux-1-virtuaali-linux/</link>
+      <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-1-virtuaali-linux/</guid>
+      <description>Linux 1: Virtuaali-Linux 🔗 h1, Virtuaali-Linux. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä: Raportin kirjoittaminen 🔗Tietokoneiden teknisten testien raportointi pähkinänkuoressa:
+ Vastaa kysymykseen mitä teit, mitä tapahtui ja missä ympäristössä Kirjoita tapahtumia samalla, kun testaat Toistettavuus: Raportoi niin, että ulkopuolinen pääsee samaan tulokseen samassa ympäristössä Raportoi imperfektissä: &amp;ldquo;Klikkasin&amp;hellip;&amp;rdquo; Täsmällinen: komennot, klikkaukset, kellonajat, yllätykset, viat ylös Helppolukuinen: väliotsikot, oikoluku, alkutiivistelmä Lähdeviitteet (ja lisenssit) EI sisällä sepitystä, plagiointia tai kuvien luvatonta kopiointia  a) Asenna Linux virtuaalikoneeseen.</description>
+    </item>
+    
+    <item>
+      <title>Report 7: Final Countdown</title>
+      <link>/posts/report-7-final-countdown/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-7-final-countdown/</guid>
+      <description>Report 7: Final Countdown 🔗Instructions 🔗A report based on the homework 7 (h7 Final Countdown) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+Homework a) Find a block and a transaction in BitCoin public ledger and explain its key parts. 🔗I used blockchain.com Explorer funtion to find a block in bitcoin public ledger.</description>
+    </item>
+    
+    <item>
+      <title>Report 6: Can of worms</title>
+      <link>/posts/report-6-can-of-worms/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-6-can-of-worms/</guid>
+      <description>Report 6: Can of worms 🔗Instructions 🔗A report based on the homework 6 (h6 can of worms) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+Homework v) Read/watch and summarize 🔗 Felten et al 2015: Bitcoin and Cryptocurrency Technologies, videos Week 2 (about 1,5 hours). Requires free registration. If you find it easy to follow, you can also optionally look at weeks 3 and four.</description>
+    </item>
+    
+    <item>
+      <title>Report 5: BitCoin</title>
+      <link>/posts/report-5-bitcoin/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-5-bitcoin/</guid>
+      <description>Report 5: Bitcoin 🔗Instructions 🔗A report based on the homework 5 (h5 BitCoin) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+v) Read/watch and summarize
+  Nakamoto, Satoshi 2008: Bitcoin: A Peer-to-Peer Electronic Cash System. (A colored HTML version. This is the paper that defined and introduced BitCoin. You can skip &amp;ldquo;11. Calculations&amp;rdquo; if you don&amp;rsquo;t like sigma symbols.</description>
+    </item>
+    
+    <item>
+      <title>Report 4: The Tor Browser </title>
+      <link>/posts/report-4-the-tor-browser/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-4-the-tor-browser/</guid>
+      <description>Report 4: The Tor Browser 🔗Instructions 🔗A report based on the homework 4 (h4) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+a) Read and summarize Shavers &amp;amp; Bair 2016: Hiding Behind the Keyboard: The Tor Browser
+The Tor Browser: Summary 🔗Tor, The Onion Router browser, has empowered any person even without technical background to communicate anonymously over the Internet.</description>
+    </item>
+    
+    <item>
+      <title>Report 3: Public key encryption and pgp</title>
+      <link>/posts/report-3-public-key-encryption-and-pgp/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-3-public-key-encryption-and-pgp/</guid>
+      <description>Report 3: Public key encryption and pgp 🔗Instructions 🔗A report based on the homework 3 (h3 public key encryption and pgp) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+a) Read and summarize (with 1-5 bullet points for each heading) Schneier 2015: Applied Cryptography Chapter 1: Foundations
+b) Give two examples of public key cryptography (other than PGP).</description>
+    </item>
+    
+    <item>
+      <title>Report 2: Hashes</title>
+      <link>/posts/report-2-hashes/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-2-hashes/</guid>
+      <description>Report 2: Hashes 🔗Instructions 🔗A report based on the homework 2 (h2 hashes) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+z) Read and summarize (some bullet points, feel free to concentrate on things you find interesting)
+ € Schneier 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks: From beginning of chapter to the end of &amp;ldquo;2.</description>
+    </item>
+    
+    <item>
+      <title>Report 1: Adversarial mindset</title>
+      <link>/posts/report-1-adversarial-mindset/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-1-adversarial-mindset/</guid>
+      <description>Report 1: Adversarial mindset 🔗Instructions 🔗A report based on the homework 1 (h1 adversarial mindset) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+z) Read and summarize. Some bullets are enough for a summary.
+ Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains Darknet Diaries.</description>
+    </item>
+    
+  </channel>
+</rss>

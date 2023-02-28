@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cyber-kill-chain on Learning blog</title>
+    <link>/tags/cyber-kill-chain/</link>
+    <description>Recent content in cyber-kill-chain on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cyber-kill-chain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 1: Cyber Kill Chain</title>
+      <link>/posts/report-1-cyber-kill-chain/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-1-cyber-kill-chain/</guid>
+      <description>Report 1: Cyber Kill Chain 🔗Instructions 🔗This is a post based on the given homework at the course: ICT Security Basics from Trust to Blockchain ICT4HM103-3003, 2022 Spring
+z) Read and summarize. Some bullets are enough for a summary.
+ Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains Darknet Diaries MITRE ATT&amp;amp;CK FAQ explains the ATT&amp;amp;CK Enterprise Matrix. Explain tactic, technique, and procedure in the context of ATT&amp;amp;CK, and give an example of each.</description>
+    </item>
+    
+  </channel>
+</rss>

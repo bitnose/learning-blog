@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>adversarial mindset on Learning blog</title>
+    <link>/tags/adversarial-mindset/</link>
+    <description>Recent content in adversarial mindset on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/adversarial-mindset/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 1: Adversarial mindset</title>
+      <link>/posts/report-1-adversarial-mindset/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-1-adversarial-mindset/</guid>
+      <description>Report 1: Adversarial mindset 🔗Instructions 🔗A report based on the homework 1 (h1 adversarial mindset) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+z) Read and summarize. Some bullets are enough for a summary.
+ Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains Darknet Diaries.</description>
+    </item>
+    
+  </channel>
+</rss>

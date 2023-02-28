@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Linux 2: Komentaja Pingviini | Learning blog</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Komentokehotteiden harjoittelua">
+<meta name="generator" content="Hugo 0.98.0" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="../../css/style.css">
+
+
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="../../"> <span class="arrow">←</span>Home</a>
+	
+	<a href="../../posts">Archive</a>
+	<a href="../../tags">Tags</a>
+	<a href="../../about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Linux 2: Komentaja Pingviini</h1>
+
+    <div class="tip">
+        <time datetime="2023-01-23 00:00:00 &#43;0000 UTC">Jan 23, 2023</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          630 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h2 id="linux-2-komentaja-pingviini"><strong>Linux 2: Komentaja Pingviini</strong> <a href="#linux-2-komentaja-pingviini" class="anchor">🔗</a></h2><ul>
+<li>h2, Komentaja-Pingviini. Harjoitustehtäväraportti.</li>
+<li>Pohjana Tero Karvinen 2023: <a href="https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/" target="_blank" rel="noopener">Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002</a>.</li>
+</ul>
+<h4 id="x-lue-ja-tiivistä-command-line-basics-revisitedhttpsterokarvinencom2020command-line-basics-revisitedfromsearchcommand20line20basics20revisited"><strong>x) Lue ja tiivistä:</strong> <a href="https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited" target="_blank" rel="noopener">Command Line Basics Revisited</a> <a href="#x-lue-ja-tiivist%c3%a4-command-line-basics-revisitedhttpsterokarvinencom2020command-line-basics-revisitedfromsearchcommand20line20basics20revisited" class="anchor">🔗</a></h4><h3 id="linux-command-line-perusteet"><strong>Linux Command Line Perusteet</strong> <a href="#linux-command-line-perusteet" class="anchor">🔗</a></h3><pre><code># Tämä on kommentti
+$ pwd                   # Tulosta &quot;working directory&quot;                
+/home/anniinak                      
+</code></pre>
+<h3 id="liikkuminen"><strong>Liikkuminen</strong> <a href="#liikkuminen" class="anchor">🔗</a></h3><pre><code>$ cd anniinadir/        # Liiku kansioon         
+$ cd ..                 # Mene +1 kansio ylös 
+$ less file.txt         # Näytä tekstitiedosto
+$ ls /etc|less          # Näytä tiedosto kerralla
+</code></pre>
+<h3 id="tiedostojen-muokkaus"><strong>Tiedostojen muokkaus</strong> <a href="#tiedostojen-muokkaus" class="anchor">🔗</a></h3><pre><code>$ nano file.txt         # Avaa tiedosto editorissa
+$ mkdir NEWFOLDER       # Uusi kansio
+$ mv OLDNAME NEWNAME    # Siirrä/uudelleennimeä 
+$ mv SOMEFILE NEWDIR/   # Siirrä/uudelleennimeä 
+$ cp -r ORIGINAL COPY   # Kopio ORIGINAL
+$ rmdir EMPTYDIR        # Poista tyhjä kansio
+$ rm JUNK               # Poista tiedosto
+$ rm -r FOLDEROFJUNK    # Poista tiedosto sisältöineen
+</code></pre>
+<h3 id="ssh-remote-control"><strong>SSH Remote Control</strong> <a href="#ssh-remote-control" class="anchor">🔗</a></h3><p>Avaa etäyhteys turvallisesti:</p>
+<pre><code>$ ssh anniina@example.com 
+anniina$ exit                  # Poistu etäkoneelta
+</code></pre>
+<p>Kopio FOLDER uuteen kansioon etäkoneelle : login@server:path_from_your_home_dir</p>
+<pre><code>anniina$ exit
+$ scp -r FOLDER anniina@example.com:public_html/
+</code></pre>
+<h3 id="apuja"><strong>Apuja</strong> <a href="#apuja" class="anchor">🔗</a></h3><pre><code>$ man ls            # Näytä manuaali sivu
+$ ls --help         
+$ wget -h           
+</code></pre>
+<h3 id="tab-näppäin"><strong>Tab näppäin</strong> <a href="#tab-n%c3%a4pp%c3%a4in" class="anchor">🔗</a></h3><p>Näyttää mitä voidaan kirjoittaa:</p>
+<pre><code>$ ls /etc/re[tab][tab]
+reportbug.conf  resolvconf/     resolv.conf
+$ ls /etc/resolv.[tab]
+$ ls /etc/resolv.conf
+
+$ history               # Listaa syötetyt komennot
+</code></pre>
+<h3 id="admin-komennot"><strong>Admin komennot</strong> <a href="#admin-komennot" class="anchor">🔗</a></h3><p><strong>Minimum priviledge</strong> periaate: Anna vain tarvittavat käyttäoikeudet &ndash;&gt; <strong>sudo</strong> vain kun vaaditaan laajat käyttöoikeudet</p>
+<p>Päivitä lista saatavista paketeista, &ldquo;packages&rdquo;:</p>
+<pre><code> $ sudo apt-get update 
+</code></pre>
+<p><strong>Etsi</strong> ladattavia ohjelmistoja avainsanoilla:</p>
+<pre><code>$ apt-cache search dungeon adventure
+</code></pre>
+<p><strong>Asenna</strong> ohjelmisto:</p>
+<pre><code>$ sudo apt-get -y install nethack-console
+</code></pre>
+<p><strong>Poista</strong> ohjelmisto:</p>
+<pre><code>$ sudo apt-get purge nethack
+</code></pre>
+<h2 id="linux-hands-on"><strong>Linux: Hands on</strong> <a href="#linux-hands-on" class="anchor">🔗</a></h2><h3 id="perustiedot"><strong>Perustiedot</strong> <a href="#perustiedot" class="anchor">🔗</a></h3><p>Aloitin harjoituksen klo 11:07 ja lopetin 12:45.</p>
+<p>Host kone:</p>
+<ul>
+<li>Rauta: MacBook Pro Retina, 2015</li>
+<li>Ohjelmistojärjestelmä: macOS Big Sur 11.7</li>
+<li>Prosessori: Intel Core i7</li>
+</ul>
+<p>Virtuaali kone:</p>
+<ul>
+<li>VM: debian-live-11.6.0-amd64-xfce-nonfree.iso</li>
+<li>Operating System: Debian (64-bit)</li>
+<li>Type: Linux</li>
+<li>Memory size: 4000 MB</li>
+<li>File size: 60 GB</li>
+<li>Hard disk file type: VDI</li>
+</ul>
+<h3 id="micro-editorin-asennus"><strong>Micro-editorin asennus</strong> <a href="#micro-editorin-asennus" class="anchor">🔗</a></h3><h4 id="a-micro-asenna-micro-editori"><strong>a) Micro.</strong> Asenna micro-editori. <a href="#a-micro-asenna-micro-editori" class="anchor">🔗</a></h4><p>Käynnistin virtuaalikoneen, kirjauduin sisään ja avasin Terminalin. Syötin seuraavat komennot.</p>
+<pre><code>$ sudo apt-get update 
+$ sudo apt-get -y dist-upgrade
+$ sudo apt-get install micro
+</code></pre>
+<p>Seuraavaksi testasin toimiiko editori.</p>
+<pre><code>$ micro
+</code></pre>
+<figure><img src="../../img/terminal-2.png" width="600"/><figcaption>
+            <h4>Toimii! 🎉</h4>
+        </figcaption>
+</figure>
+
+<h3 id="raudan-tiedot"><strong>Raudan tiedot</strong> <a href="#raudan-tiedot" class="anchor">🔗</a></h3><h4 id="a-rauta--listaa-testaamasi-koneen-rauta-sudo-lshw--short--sanitize-asenna-lshw-tarvittaessa-selitä-ja-analysoi-listaus"><strong>a) Rauta.</strong>  Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’). Asenna lshw tarvittaessa. Selitä ja analysoi listaus.. <a href="#a-rauta--listaa-testaamasi-koneen-rauta-sudo-lshw--short--sanitize-asenna-lshw-tarvittaessa-selit%c3%a4-ja-analysoi-listaus" class="anchor">🔗</a></h4><pre><code> $ sudo lshw -short -sanitize
+ sudo: lshw: command not found
+ $ sudo apt-get install lshw
+ $ sudo lshw -short -sanitize
+</code></pre>
+<figure><img src="../../img/rauta.png" width="600"/>
+</figure>
+
+<p>Listauksessa selviää tietoja koneen raudasta. Virtuaalikone on asennettu VirtualBoxiin, listauksesta selviää prosessori, muisti, etc.</p>
+<h3 id="ohjelmien-asennus"><strong>Ohjelmien asennus</strong> <a href="#ohjelmien-asennus" class="anchor">🔗</a></h3><h4 id="c-apt--asenna-kolme-itsellesi-uutta-komentoriviohjelmaa-kokeile-kutakin-ohjelmaa-sen-pääasiallisessa-käyttötarkoituksessa-ota-ruutukaappaus-kaikki-terminaaliohjelmat-kelpaavat-tui-text-user-interface-ja-cli-command-line-interface-osaatko-tehdä-apt-get-komennon-joka-asentaa-nämä-kolme-ohjelmaa-kerralla"><strong>c) Apt.</strong>  Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa. Ota ruutukaappaus. Kaikki terminaaliohjelmat kelpaavat, TUI (text user interface) ja CLI (command line interface). Osaatko tehdä apt-get komennon, joka asentaa nämä kolme ohjelmaa kerralla? <a href="#c-apt--asenna-kolme-itsellesi-uutta-komentoriviohjelmaa-kokeile-kutakin-ohjelmaa-sen-p%c3%a4%c3%a4asiallisessa-k%c3%a4ytt%c3%b6tarkoituksessa-ota-ruutukaappaus-kaikki-terminaaliohjelmat-kelpaavat-tui-text-user-interface-ja-cli-command-line-interface-osaatko-tehd%c3%a4-apt-get-komennon-joka-asentaa-n%c3%a4m%c3%a4-kolme-ohjelmaa-kerralla" class="anchor">🔗</a></h4><pre><code>$ sudo apt-get install nsnake tree git
+</code></pre>
+<h3 id="nsnake---klassinen-matopeli"><strong>nsnake - Klassinen matopeli</strong> <a href="#nsnake---klassinen-matopeli" class="anchor">🔗</a></h3><figure><img src="../../img/snake.png" width="600"/>
+</figure>
+
+<h3 id="tree---navigoinnin-helpottamiseksi"><strong>tree - Navigoinnin helpottamiseksi</strong> <a href="#tree---navigoinnin-helpottamiseksi" class="anchor">🔗</a></h3><figure><img src="../../img/tree.png" width="600"/>
+</figure>
+
+<h3 id="git---versionhallinta"><strong>git - Versionhallinta</strong> <a href="#git---versionhallinta" class="anchor">🔗</a></h3><p>Asensin gitin versionhallintaa varten. Syötin seuraavat komennot luodakseni uuden repositorion ja testatakseni versionhallintaa.</p>
+<pre><code>$ git version           # Versio
+$ mkdir Tarina          # Uusi kansio
+$ cd Tarina/            # Siirry kansioon
+$ git init              # Luo .git tiedosto
+$ git status            # Katso status
+$ micro luku_1.txt      # Luo uusi tiedosto
+$ git add .             # Lisää kaikki muutokset &quot;stage&quot;
+$ git commit -m &quot;Init&quot;  # Vahvista muutokset, viesti
+</code></pre>
+<figure><img src="../../img/git.png" width="600"/>
+</figure>
+
+<h3 id="tärkeät-tiedostot"><strong>Tärkeät tiedostot</strong> <a href="#t%c3%a4rke%c3%a4t-tiedostot" class="anchor">🔗</a></h3><p><strong>d) FHS</strong>. Esittele kansiot, jotka on listattu &ldquo;Command Line Basics Revisited&rdquo; kappaleessa &ldquo;Important directories&rdquo;. Näytä kuvaava esimerkki kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Jos kyseessä on tiedosto, näytä siitä kuvaava esimerkkirivi. Työskentele komentokehotteessa ja näytä komennot, joilla etsit esimerkit.</p>
+<p>Käytin komentoa <strong>cd</strong> <em>polku kansioon</em> ja <strong>ls</strong> listaukseen.</p>
+<pre><code>$ cd /
+$ ls
+</code></pre>
+<ul>
+<li><strong>/</strong> Root directory (kaikki kansiot ovat tämän alla)</li>
+<li><strong>/home/</strong> Sisältää kotikansiot kaikille käyttäjille</li>
+<li><strong>/home/anniina/</strong> Käyttäjän kotiskansio</li>
+<li><strong>/etc/</strong> Asetukset</li>
+<li><strong>/media/</strong> Media, esim. /media/cdrom/ ja /media/usbdisk/</li>
+<li><strong>/var/log/</strong> Loki</li>
+</ul>
+<figure><img src="../../img/home.png" width="600"/>
+</figure>
+
+<figure><img src="../../img/etc.png" width="600"/>
+</figure>
+
+<figure><img src="../../img/media.png" width="600"/>
+</figure>
+
+<figure><img src="../../img/log.png" width="600"/>
+</figure>
+
+<h3 id="grep-komento"><strong>grep-komento</strong> <a href="#grep-komento" class="anchor">🔗</a></h3><p><strong>e) The Friendly M.</strong> Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy &lsquo;man grep&rsquo; ja tietysti verkosta.</p>
+<p>Päivitys 24.01.2023:</p>
+<p>Etsin tiettyä komentoa, jota käytin aikaisemmin:</p>
+<pre><code>$ history|grep nsnake
+ 99  sudo apt-get install nsnake git tree
+100  nsnake
+178  history|grep nsnake
+</code></pre>
+
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="../../tags/linux">linux</a>
+            
+                <a href="../../tags/virtualmachine">virtualmachine</a>
+            
+                <a href="../../tags/debian">debian</a>
+            
+                <a href="../../tags/virtualbox">virtualbox</a>
+            
+                <a href="../../tags/command-line">command-line</a>
+            
+        </div>
+    
+    
+    
+  <div id="comment">
+    
+    
+  </div>
+
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+
+    <a class="symbol" href="https://github.com/bitnose" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>Github</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+    <a class="symbol" href="https://stackoverflow.com/users/9491568/anniina" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>stackoverflow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-488.000000, -1163.000000)">
+            <g id="stackoverflow" transform="translate(488.000000, 1163.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M42.0860128,53.5922927 L22.9745951,53.6011499 L22.9729497,49.5538824 L42.0835447,49.5440929 L42.0860128,53.5922927 L42.0860128,53.5922927 Z M55,30.6708298 L51.7306912,12 L47.7087256,12.6920259 L50.9775643,31.3628557 L55,30.6708298 L55,30.6708298 Z M42.5455518,44.3547147 L23.5156994,42.616026 L23.1410164,46.6470941 L42.1712214,48.3841513 L42.5455518,44.3547147 L42.5455518,44.3547147 Z M43.8009984,39.0731519 L25.3459811,34.1539179 L24.285633,38.0621508 L42.7419431,42.9819676 L43.8009984,39.0731519 L43.8009984,39.0731519 Z M46.2103463,34.4436411 L29.7494464,24.8164635 L27.6748215,28.3015328 L44.1365441,37.9292931 L46.2103463,34.4436411 L46.2103463,34.4436411 Z M50.2466504,31.6088756 L46.8745036,33.8883189 L36.106599,18.2318456 L39.4792159,15.9517031 L50.2466504,31.6088756 Z M45.3315807,40.2784283 L48.5799693,40.2784283 L48.5799693,60 L17,60 L17,40.2784283 L20.2648427,40.2784283 L20.2648427,56.8243495 L45.3315807,56.8243495 L45.3315807,40.2784283 Z" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+
+</div>
+
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2023 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

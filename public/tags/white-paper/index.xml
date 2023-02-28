@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>white-paper on Learning blog</title>
+    <link>/tags/white-paper/</link>
+    <description>Recent content in white-paper on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/white-paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 5: BitCoin</title>
+      <link>/posts/report-5-bitcoin/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-5-bitcoin/</guid>
+      <description>Report 5: Bitcoin 🔗Instructions 🔗A report based on the homework 5 (h5 BitCoin) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+v) Read/watch and summarize
+  Nakamoto, Satoshi 2008: Bitcoin: A Peer-to-Peer Electronic Cash System. (A colored HTML version. This is the paper that defined and introduced BitCoin. You can skip &amp;ldquo;11. Calculations&amp;rdquo; if you don&amp;rsquo;t like sigma symbols.</description>
+    </item>
+    
+  </channel>
+</rss>

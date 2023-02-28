@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtualbox on Learning blog</title>
+    <link>/tags/virtualbox/</link>
+    <description>Recent content in virtualbox on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 4: Tukki</title>
+      <link>/posts/linux-4-tukki/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-4-tukki/</guid>
+      <description>Linux 4: Tukki 🔗 h4, Tukki. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  z) Lue ja tiivistä 🔗Valitsin artikkelin An Introduction to Data Science On The Linux Command Line.
+ Vastaa kysymykseen kuinka käyttää komentoriviä tiedon analysointiin Artikkile korostaa | tai putkien (pipes) merkitystä kommentorivillä: sen avulla voidaan luoda erittäin tehokkaita, räätälöityjä komentoja yhdistäen eri ohjelmien input ja output dataa grep: Tiedon suodattamasiseen tekstitiedostoista (txt, csv), mm.</description>
+    </item>
+    
+    <item>
+      <title>Linux 3: Vapaus!</title>
+      <link>/posts/linux-3-vapaus/</link>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-3-vapaus/</guid>
+      <description>Linux 3: Vapaus! 🔗 h3, Vapaus!. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  a) Kolmen ohjelman lisenssit. Tarkastele kolmen edellisessä harjoituksessa asentamasi ohjelman lisenssejä. Selvitä kustakin ohjelmasta: 🔗 Mitä lisenssiä kyseinen ohjelma käyttää? Mistä päättelit lisenssin? Onko kyseessä vapaa lisenssi? Mitkä ovat tämän lisenssin tärkeimmät oikeusvaikutukset?  Git
+ GNU General Public License version 2.0 Kyseessä on vapaa lisenssi Trademark Policy: Rajoittaa termin &amp;ldquo;Git&amp;rdquo;, logon ja sloganin käyttöä &amp;ldquo;the stupid content tracker&amp;rdquo; Lähteet: https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>Linux 2: Komentaja Pingviini</title>
+      <link>/posts/linux-2-komentaja-pingviini/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-2-komentaja-pingviini/</guid>
+      <description>Linux 2: Komentaja Pingviini 🔗 h2, Komentaja-Pingviini. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä: Command Line Basics Revisited 🔗Linux Command Line Perusteet 🔗# Tämä on kommentti $ pwd # Tulosta &amp;quot;working directory&amp;quot; /home/anniinak  Liikkuminen 🔗$ cd anniinadir/ # Liiku kansioon $ cd .. # Mene +1 kansio ylös $ less file.txt # Näytä tekstitiedosto $ ls /etc|less # Näytä tiedosto kerralla  Tiedostojen muokkaus 🔗$ nano file.</description>
+    </item>
+    
+    <item>
+      <title>Linux 1: Virtuaali-Linux</title>
+      <link>/posts/linux-1-virtuaali-linux/</link>
+      <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-1-virtuaali-linux/</guid>
+      <description>Linux 1: Virtuaali-Linux 🔗 h1, Virtuaali-Linux. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä: Raportin kirjoittaminen 🔗Tietokoneiden teknisten testien raportointi pähkinänkuoressa:
+ Vastaa kysymykseen mitä teit, mitä tapahtui ja missä ympäristössä Kirjoita tapahtumia samalla, kun testaat Toistettavuus: Raportoi niin, että ulkopuolinen pääsee samaan tulokseen samassa ympäristössä Raportoi imperfektissä: &amp;ldquo;Klikkasin&amp;hellip;&amp;rdquo; Täsmällinen: komennot, klikkaukset, kellonajat, yllätykset, viat ylös Helppolukuinen: väliotsikot, oikoluku, alkutiivistelmä Lähdeviitteet (ja lisenssit) EI sisällä sepitystä, plagiointia tai kuvien luvatonta kopiointia  a) Asenna Linux virtuaalikoneeseen.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Learning blog</title>
+    <link>/tags/web/</link>
+    <description>Recent content in web on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 8: Say my name</title>
+      <link>/posts/linux-8-say-my-name/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-8-say-my-name/</guid>
+      <description>Linux h8: Say my name 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  Linux: Hands on 🔗a) Rent a domain name and point it to your virtual server
+Host Machine
+ MacBook Pro Retina, 2015 OS: macOS Big Sur 11.7 Intel Core i7  Virtual Box (local)
+ VM: debian-live-11.6.0-amd64-xfce-nonfree.iso Operating System: Debian (64-bit) Type: Linux Memory size: 4000 MB File size: 60 GB Hard disk file type: VDI  Virual Cloud Server</description>
+    </item>
+    
+    <item>
+      <title>Linux 6: Based</title>
+      <link>/posts/linux-6-based/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-6-based/</guid>
+      <description>Linux h6: Based 🔗 Perustuu Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä. 🔗Apache Software Foundation 2023: Getting Started 🔗Apachen virallinen dokumentti, joka pitää sisällään Apachen perusteet.
+URL:in anatomiaa:
+https://httpd.apache.org/docs/2.4/getting-started.html?arg=value   https: Käytetty protokolla httpd.apache.org: Serverin nimi /docs/2.4/getting-started.html?: URL-polku pyydettyyn tiedostoon arg=value: Query string/argumentit; sisältää parametreja, joita lähetetään palvelimelle pyynnön (requestin) mukana CLIENT (web browser) &amp;ndash;&amp;gt; REQUEST &amp;ndash;&amp;gt; SERVER (Apache Server) CLIENT (web browser) &amp;lt;&amp;ndash; RESPONSE &amp;lt;&amp;ndash; SERVER (Apache Server) Response Koostuu http status koodista ja mahdollisesta response bodystä.</description>
+    </item>
+    
+  </channel>
+</rss>

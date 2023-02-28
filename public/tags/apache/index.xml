@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apache on Learning blog</title>
+    <link>/tags/apache/</link>
+    <description>Recent content in apache on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 6: Based</title>
+      <link>/posts/linux-6-based/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-6-based/</guid>
+      <description>Linux h6: Based 🔗 Perustuu Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä. 🔗Apache Software Foundation 2023: Getting Started 🔗Apachen virallinen dokumentti, joka pitää sisällään Apachen perusteet.
+URL:in anatomiaa:
+https://httpd.apache.org/docs/2.4/getting-started.html?arg=value   https: Käytetty protokolla httpd.apache.org: Serverin nimi /docs/2.4/getting-started.html?: URL-polku pyydettyyn tiedostoon arg=value: Query string/argumentit; sisältää parametreja, joita lähetetään palvelimelle pyynnön (requestin) mukana CLIENT (web browser) &amp;ndash;&amp;gt; REQUEST &amp;ndash;&amp;gt; SERVER (Apache Server) CLIENT (web browser) &amp;lt;&amp;ndash; RESPONSE &amp;lt;&amp;ndash; SERVER (Apache Server) Response Koostuu http status koodista ja mahdollisesta response bodystä.</description>
+    </item>
+    
+    <item>
+      <title>Linux 5: Hello Web</title>
+      <link>/posts/linux-5-hello-web/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-5-hello-web/</guid>
+      <description>Linux h5: Hello Web 🔗 h5 Hello Web. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Kuuntele ja tiivistä 🔗Valitsin Indie Hackersin jakson #265 - From Full-Time Job to $30k/Month with Damon Chen of Testimonial.
+ Vieraana Damon Chen, joka on &amp;ldquo;indie hakkeri&amp;rdquo;, Testimonialin perustaja Testimonial tarjoaa asiakkaille/yrityksille markkinoinnintyökaluja, subscription based Jaksossa puhutaan yleisellä tasolla mm. epäonnistuneista projekteista ennen läpimurtoa, ideoista ja hyväksynnänhakemista omille ideoille, mitä on olla indie hakkeri Miksi Damon Chen lähti tekemään omaa bisnestä sen sijaan, että olisi ollut rivityöntekijä: Oma motivaatio ja halu työskennelle itselle Sosiaalinen media, Twitter sekä oma aktiivinen verkottuminen, kun rakennetaan yhteisöä/asiakaskuntaa tuotteelle Keskittyy asiakkaisiin ja asiakaspalautteeseen sen sijaan, että keskittyisi kilpailijoihin Jaksossa puhutaan työn laskuttamisesta ja sen tuomista haasteista: kuinka voi olla hankalaa laskuttaa suurempia hintoja, mutta loppu peleissä se saattaa kannattaa: Ammattiylpeys ja oman työn/ajan arvostaminen näkyvät ulospäin, kuin itseään toteuttava ennustus  Linux: Hands on 🔗Perustiedot 🔗Host kone:</description>
+    </item>
+    
+  </channel>
+</rss>

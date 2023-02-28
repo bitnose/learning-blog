@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Report 2: Hashes | Learning blog</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="A writing based on given homework">
+<meta name="generator" content="Hugo 0.98.0" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="../../css/style.css">
+
+
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="../../"> <span class="arrow">←</span>Home</a>
+	
+	<a href="../../posts">Archive</a>
+	<a href="../../tags">Tags</a>
+	<a href="../../about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Report 2: Hashes</h1>
+
+    <div class="tip">
+        <time datetime="2022-04-11 00:00:00 &#43;0000 UTC">Apr 11, 2022</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1247 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          6 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h1 id="report-2-hashes"><strong>Report 2: Hashes</strong> <a href="#report-2-hashes" class="anchor">🔗</a></h1><h4 id="instructions"><strong>Instructions</strong> <a href="#instructions" class="anchor">🔗</a></h4><p>A report based on the homework 2 (h2 hashes) on the course
+<a href="https://terokarvinen.com/2021/trust-to-blockchain-2022/" target="_blank" rel="noopener">ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences</a> given by teacher Tero Karvinen.</p>
+<p>z) Read and summarize (some bullet points, feel free to concentrate on things you find interesting)</p>
+<ul>
+<li>€ Schneier 2015: Applied Cryptography: <a href="https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html" target="_blank" rel="noopener">Chapter 2 - Protocol Building Blocks</a>: From beginning of chapter to the end of &ldquo;2.4 One-Way Hash Functions&rdquo;.</li>
+<li>Karvinen 2020: <a href="https://terokarvinen.com/2020/command-line-basics-revisited/" target="_blank" rel="noopener">Command Line Basics Revisited</a></li>
+<li>€ Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: <a href="https://learning.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00" target="_blank" rel="noopener">Lesson 6: Hacking User Credentials</a></li>
+<li>Karvinen 2022: <a href="https://terokarvinen.com/2022/cracking-passwords-with-hashcat/" target="_blank" rel="noopener">Cracking Passwords with Hashcat</a></li>
+</ul>
+<h2 id="z-what-are-protocols"><strong>z) What are protocols?</strong> <a href="#z-what-are-protocols" class="anchor">🔗</a></h2><p><em><strong>“Protocol is a series of steps, involving two or more parties, designed to accomplish a task.”</strong></em></p>
+<p>The steps must be clear and well defined: No space for ambiguity. All the parties involved in the protocol must know the protocol and the steps in advance. They must agree and follow it. The protocol must be complete and reach its objectives.</p>
+<ul>
+<li>There are informal protocols for almost everything: ordering food, playing games, voting</li>
+<li>To ensure fairness and security, protocols rely on the presence of people</li>
+<li>Nowadays, more human interactions are taken place online and virtually, over the computer networks</li>
+<li><em><strong>“A cryptographic protocol is a protocol that uses cryptography.”</strong></em></li>
+<li>The goal of using cryptography in a protocol is to prevent or detect malicious behavior like eavesdropping and cheating</li>
+<li>Cryptography solves problems that involve secrecy, authentication, integrity, and dishonest people</li>
+<li>Parties can be adversary and defender, or two trusting parties for example</li>
+</ul>
+<h2 id="arbitrated-protocols"><strong>Arbitrated Protocols</strong> <a href="#arbitrated-protocols" class="anchor">🔗</a></h2><p>An arbitrator is a <strong>trusted third party</strong>, a middle-man, with <strong>no interest</strong> in a protocol or other parties involved - and it’s trusted to complete the protocol it’s involved. They can help complete protocols between two parties that do not trust each other. In the real world, arbitrators are trusted bankers, notaries, lawyers, real estate agents, galleries, grocery stores, brands, etc.</p>
+<p>My comment: An arbitrator must be incorruptible!</p>
+<h4 id="some-problems-with-computer-arbitrators"><strong>Some Problems with Computer Arbitrators</strong> <a href="#some-problems-with-computer-arbitrators" class="anchor">🔗</a></h4><ul>
+<li>Faceless: More likely difficulties to trust it</li>
+<li>The network must handle the cost</li>
+<li>The arbitrator must deal with every transaction so it can be a bottleneck in large projects</li>
+<li>Arbitrator represents a vulnerable point of protocol because everyone on the network must trust him</li>
+</ul>
+<p><strong>Arbitrated protocols can be divided into two subprotocols:</strong></p>
+<ul>
+<li><strong>A nonarbitrated subprotocol</strong> is executed every time parties want to complete the protocol</li>
+<li><strong>An arbitrated subprotocol</strong> is executed only when there is <strong>a dispute</strong>. This type of arbitrator is an <strong>adjudicator</strong></li>
+<li>An adjudicator is an unbiased and trusted third party, called in only to determine if a protocol was carried out with justice.
+For example a judge</li>
+<li>Adjudicated computer protocols could determine if someone cheated and determine the id of the cheater: <strong>They detect cheating</strong></li>
+</ul>
+<h2 id="self-enforcing-protocols"><strong>Self-Enforcing protocols</strong> <a href="#self-enforcing-protocols" class="anchor">🔗</a></h2><p>Self-Enforcing <strong>protocols themselves guarantee fairness</strong> —&gt; no middle-men, arbitrators, or adjudicators needed for completion. If one of the parties tries to cheat, the other party immediately detects the cheating, and the protocol stops. Protocols architecture ensures there cannot be disputes.</p>
+<p>Comment: Maybe smart contracts and blockchain could help with it?</p>
+<h2 id="attacks-against-protocols-themselves"><strong>Attacks against Protocols (themselves)</strong> <a href="#attacks-against-protocols-themselves" class="anchor">🔗</a></h2><p><strong>Passive Attack</strong></p>
+<ul>
+<li>Eavesdropping the protocol</li>
+<li>It does not affect the protocol, it only observes and seeks to get information</li>
+<li>Difficult to detect —&gt; Prevention instead of detection</li>
+<li>Motive: gain information</li>
+</ul>
+<p><strong>Active Attack</strong></p>
+<ul>
+<li>The attacker is trying to manipulate the protocol to his advantage</li>
+<li>Requires active intervention —&gt; Depends on the network</li>
+<li>Pretend to be someone else, use messages in the protocol, alter information, interrupt a communication channel, for example</li>
+<li>Motive: Obtain information, get access, data corruption, degrading system performance</li>
+<li>More serious attacks</li>
+<li>Can be a legitimate system user, an outsider, an admin, a group, a party from the protocol (from supply chain), etc</li>
+</ul>
+<h2 id="what-are-one-way-functions"><strong>What are one-way functions?</strong> <a href="#what-are-one-way-functions" class="anchor">🔗</a></h2><h4 id="one-way-function"><strong>One-way Function</strong> <a href="#one-way-function" class="anchor">🔗</a></h4><ul>
+<li>Central building blocks for many protocols</li>
+<li>Easy to compute but much harder to reverse,</li>
+<li>Like “breaking a plate” —&gt; Easy to break, hard to fix</li>
+<li>No mathematically proof that one-way functions exist nor real evidence they can be built!</li>
+<li>It’s not useful for encrypting messages: no one could decrypt it</li>
+<li><strong>Trapdoor one-way function</strong>: Same to a one-way function plus an extra secret key so the function becomes easier to reverse and compute</li>
+</ul>
+<h4 id="one-way-hash-function"><strong>One-way Hash Function</strong> <a href="#one-way-hash-function" class="anchor">🔗</a></h4><ul>
+<li>Central building blocks for many protocols</li>
+<li>a function that takes a variable-length input string called a pre-image and converts it to a fixed-length, generally smaller output string, called a hash value</li>
+<li>A good one-way hash function is collision-free: hard to generate two pre-images with the same hash value</li>
+<li>Hash function is public, the security is its one-wayness</li>
+<li>Computationally unfeasible to find a pre-image that hashes to that value</li>
+</ul>
+<h6 id="schneier-2015-applied-cryptography-chapter-2---protocol-building-blockshttpslearningoreillycomlibraryviewapplied-cryptography-protocols978111909672610_chap02html-read-1042022">Schneier 2015: Applied Cryptography: <a href="https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html" target="_blank" rel="noopener">Chapter 2 - Protocol Building Blocks</a>. read: 10.4.2022 <a href="#schneier-2015-applied-cryptography-chapter-2---protocol-building-blockshttpslearningoreillycomlibraryviewapplied-cryptography-protocols978111909672610_chap02html-read-1042022" class="anchor">🔗</a></h6><h2 id="hacking-user-credentials"><strong>Hacking User Credentials</strong> <a href="#hacking-user-credentials" class="anchor">🔗</a></h2><h4 id="about-authentication-and-authorization-mechanism"><strong>About Authentication and Authorization Mechanism</strong> <a href="#about-authentication-and-authorization-mechanism" class="anchor">🔗</a></h4><ul>
+<li>Password are stored in databases or a text file</li>
+<li>Passwords must be protected on the storage side and while they are transmitted over the network</li>
+<li>Encryption, access management, endpoint protection, longer passwords and two-factor-authentication protect against intruders</li>
+<li>Default passwords, password reuse are simple passwords create vulnerabilities that attackers might leverage</li>
+</ul>
+<h4 id="ways-to-capture-credential-over-the-network"><strong>Ways to capture credential over the network</strong> <a href="#ways-to-capture-credential-over-the-network" class="anchor">🔗</a></h4><ul>
+<li>MITM</li>
+<li>Attacks against clear text protocols (telnet, FTP, SIP, POP3, IMAP, HTTP, etc)</li>
+<li>Against ciphered protocols</li>
+<li>Spoof an SSL certificate, SSH downgrade attacks</li>
+<li>Relay attacks: steal the creds directly from the device</li>
+</ul>
+<h4 id="why-is-it-so-easy-to-crack-passwords-these-days"><strong>Why is it so easy to crack passwords these days?</strong> <a href="#why-is-it-so-easy-to-crack-passwords-these-days" class="anchor">🔗</a></h4><ul>
+<li>Used to rely on CPU speed</li>
+<li>Weak algorithms</li>
+<li>Dictionaries like rainbow tables makes it easier</li>
+<li>Multiple GPU’s makes it much faster by decreasing computation times</li>
+</ul>
+<h5 id="summary-of-santos-et-al-2017-security-penetration-testing---the-art-of-hacking-series-livelessons-lesson-6-hacking-user-credentialshttpslearningoreillycomvideossecurity-penetration-testing97801348339899780134833989-sptt_00_06_00_00">Summary of Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: <a href="https://learning.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00" target="_blank" rel="noopener">Lesson 6: Hacking User Credentials</a> <a href="#summary-of-santos-et-al-2017-security-penetration-testing---the-art-of-hacking-series-livelessons-lesson-6-hacking-user-credentialshttpslearningoreillycomvideossecurity-penetration-testing97801348339899780134833989-sptt_00_06_00_00" class="anchor">🔗</a></h5><h2 id="cracking-passwords-with-hashcat"><strong>Cracking passwords with hashcat</strong> <a href="#cracking-passwords-with-hashcat" class="anchor">🔗</a></h2><h4 id="a-install-hashcat-and-test-that-it-works"><strong>a) Install hashcat and test that it works.</strong> <a href="#a-install-hashcat-and-test-that-it-works" class="anchor">🔗</a></h4><p>I installed hashcat according <a href="https://terokarvinen.com/2022/cracking-passwords-with-hashcat/" target="_blank" rel="noopener">Cracking passwords with hashcat</a>.</p>
+<p>The excersice was done on:</p>
+<ul>
+<li>Client OS: Ubuntu 18.04</li>
+<li>Virtualization: Oracle VM &amp; Vm Guest Additions</li>
+<li>Host OS: macOS Big Sur 11</li>
+<li>Machine: MacBook Pro 2015</li>
+</ul>
+<h4 id="b-crack-this-hash-21232f297a57a5a743894a0e4a801fc3"><strong>b) Crack this hash: 21232f297a57a5a743894a0e4a801fc3</strong> <a href="#b-crack-this-hash-21232f297a57a5a743894a0e4a801fc3" class="anchor">🔗</a></h4><p>At first, I tried to get more information of the hash type with this command on the terminal:</p>
+<pre><code>$ hashid -m 21232f297a57a5a743894a0e4a801fc3
+</code></pre>
+<p>It gave a result like this:</p>
+<pre><code>[+] MD2 
+[+] MD5 [Hashcat Mode: 0]
+</code></pre>
+<p>I tried with:</p>
+<pre><code>$ hashcat -m 0 '21232f297a57a5a743894a0e4a801fc3' rockyou.txt -o solved --force
+</code></pre>
+<p>Cracking was successfull! I printed the solved password with this command:</p>
+<pre><code>$ cat solved
+21232f297a57a5a743894a0e4a801fc3:admin
+</code></pre>
+<h4 id="c-crack-this-windows-ntlm-hash-f2477a144dff4f216ab81f2ac3e3207dupdate-i-added-the-tip-that-its-ntlm"><strong>c) Crack this Windows NTLM hash: f2477a144dff4f216ab81f2ac3e3207d(Update: I added the tip that it&rsquo;s NTLM)</strong> <a href="#c-crack-this-windows-ntlm-hash-f2477a144dff4f216ab81f2ac3e3207dupdate-i-added-the-tip-that-its-ntlm" class="anchor">🔗</a></h4><p>At first, I tried to get more information of the hash by typing this command:</p>
+<pre><code>$ hashid -m f2477a144dff4f216ab81f2ac3e3207d
+</code></pre>
+<p>I knew already it&rsquo;s a NTLM hash so I selected the right hashcat mode (which is 1000 in this case).</p>
+<pre><code>$ hashcat -m 1000 'f2477a144dff4f216ab81f2ac3e3207d' rockyou.txt -o solved --force
+</code></pre>
+<p>Hurray! The cracking was successful. The password was:</p>
+<pre><code>$ cat solved
+...
+f2477a144dff4f216ab81f2ac3e3207d:monkey
+</code></pre>
+<h4 id="d-try-cracking-this-hash-and-comment-on-your-hash-rate-2y18axmtq4n8jnqvitqjed9uorfsuk667rawfycwfmtdbd6zao1se2eu"><strong>d) Try cracking this hash and comment on your hash rate $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu</strong> <a href="#d-try-cracking-this-hash-and-comment-on-your-hash-rate-2y18axmtq4n8jnqvitqjed9uorfsuk667rawfycwfmtdbd6zao1se2eu" class="anchor">🔗</a></h4><p>I started by trying to get more information of the hash type and the mode to use:</p>
+<pre><code> $ hashid -m '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu'
+
+ [+] Blowfish(OpenBSD) [Hashcat Mode: 3200]
+ [+] Woltlab Burning Board 4.x
+ [+] bcrypt [Hashcat Mode: 3200]
+</code></pre>
+<p>Next, I tried:</p>
+<pre><code> $ hashcat -m 3200 '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu' rockyou.txt -o solved --force
+</code></pre>
+<p>The process timed out. I tried again and actually it worked!</p>
+<pre><code>$ cat solved
+...
+$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu:12345
+</code></pre>
+<p>The cracking took 22 minutes and 23 seconds. The hash rate was very low because I don&rsquo;t have a compatible GPU available on my machine. The software shows 0H/s, I assume it shows zero when the hash rate is below 1H/s.</p>
+
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="../../tags/hash">hash</a>
+            
+                <a href="../../tags/protocol">protocol</a>
+            
+                <a href="../../tags/homework">homework</a>
+            
+        </div>
+    
+    
+    
+  <div id="comment">
+    
+    
+  </div>
+
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+
+    <a class="symbol" href="https://github.com/bitnose" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>Github</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+    <a class="symbol" href="https://stackoverflow.com/users/9491568/anniina" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>stackoverflow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-488.000000, -1163.000000)">
+            <g id="stackoverflow" transform="translate(488.000000, 1163.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M42.0860128,53.5922927 L22.9745951,53.6011499 L22.9729497,49.5538824 L42.0835447,49.5440929 L42.0860128,53.5922927 L42.0860128,53.5922927 Z M55,30.6708298 L51.7306912,12 L47.7087256,12.6920259 L50.9775643,31.3628557 L55,30.6708298 L55,30.6708298 Z M42.5455518,44.3547147 L23.5156994,42.616026 L23.1410164,46.6470941 L42.1712214,48.3841513 L42.5455518,44.3547147 L42.5455518,44.3547147 Z M43.8009984,39.0731519 L25.3459811,34.1539179 L24.285633,38.0621508 L42.7419431,42.9819676 L43.8009984,39.0731519 L43.8009984,39.0731519 Z M46.2103463,34.4436411 L29.7494464,24.8164635 L27.6748215,28.3015328 L44.1365441,37.9292931 L46.2103463,34.4436411 L46.2103463,34.4436411 Z M50.2466504,31.6088756 L46.8745036,33.8883189 L36.106599,18.2318456 L39.4792159,15.9517031 L50.2466504,31.6088756 Z M45.3315807,40.2784283 L48.5799693,40.2784283 L48.5799693,60 L17,60 L17,40.2784283 L20.2648427,40.2784283 L20.2648427,56.8243495 L45.3315807,56.8243495 L45.3315807,40.2784283 Z" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+
+</div>
+
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2023 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

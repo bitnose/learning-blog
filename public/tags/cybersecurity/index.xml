@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cybersecurity on Learning blog</title>
+    <link>/tags/cybersecurity/</link>
+    <description>Recent content in cybersecurity on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 6: Can of worms</title>
+      <link>/posts/report-6-can-of-worms/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-6-can-of-worms/</guid>
+      <description>Report 6: Can of worms 🔗Instructions 🔗A report based on the homework 6 (h6 can of worms) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+Homework v) Read/watch and summarize 🔗 Felten et al 2015: Bitcoin and Cryptocurrency Technologies, videos Week 2 (about 1,5 hours). Requires free registration. If you find it easy to follow, you can also optionally look at weeks 3 and four.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hash on Learning blog</title>
+    <link>/tags/hash/</link>
+    <description>Recent content in hash on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 2: Hashes</title>
+      <link>/posts/report-2-hashes/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-2-hashes/</guid>
+      <description>Report 2: Hashes 🔗Instructions 🔗A report based on the homework 2 (h2 hashes) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+z) Read and summarize (some bullet points, feel free to concentrate on things you find interesting)
+ € Schneier 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks: From beginning of chapter to the end of &amp;ldquo;2.</description>
+    </item>
+    
+  </channel>
+</rss>

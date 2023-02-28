@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>läksyt on Learning blog</title>
+    <link>/tags/l%C3%A4ksyt/</link>
+    <description>Recent content in läksyt on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/l%C3%A4ksyt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 1: Virtuaali-Linux</title>
+      <link>/posts/linux-1-virtuaali-linux/</link>
+      <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-1-virtuaali-linux/</guid>
+      <description>Linux 1: Virtuaali-Linux 🔗 h1, Virtuaali-Linux. Harjoitustehtäväraportti. Pohjana Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä: Raportin kirjoittaminen 🔗Tietokoneiden teknisten testien raportointi pähkinänkuoressa:
+ Vastaa kysymykseen mitä teit, mitä tapahtui ja missä ympäristössä Kirjoita tapahtumia samalla, kun testaat Toistettavuus: Raportoi niin, että ulkopuolinen pääsee samaan tulokseen samassa ympäristössä Raportoi imperfektissä: &amp;ldquo;Klikkasin&amp;hellip;&amp;rdquo; Täsmällinen: komennot, klikkaukset, kellonajat, yllätykset, viat ylös Helppolukuinen: väliotsikot, oikoluku, alkutiivistelmä Lähdeviitteet (ja lisenssit) EI sisällä sepitystä, plagiointia tai kuvien luvatonta kopiointia  a) Asenna Linux virtuaalikoneeseen.</description>
+    </item>
+    
+  </channel>
+</rss>

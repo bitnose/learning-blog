@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dns on Learning blog</title>
+    <link>/tags/dns/</link>
+    <description>Recent content in dns on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 6: Based</title>
+      <link>/posts/linux-6-based/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-6-based/</guid>
+      <description>Linux h6: Based 🔗 Perustuu Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Lue ja tiivistä. 🔗Apache Software Foundation 2023: Getting Started 🔗Apachen virallinen dokumentti, joka pitää sisällään Apachen perusteet.
+URL:in anatomiaa:
+https://httpd.apache.org/docs/2.4/getting-started.html?arg=value   https: Käytetty protokolla httpd.apache.org: Serverin nimi /docs/2.4/getting-started.html?: URL-polku pyydettyyn tiedostoon arg=value: Query string/argumentit; sisältää parametreja, joita lähetetään palvelimelle pyynnön (requestin) mukana CLIENT (web browser) &amp;ndash;&amp;gt; REQUEST &amp;ndash;&amp;gt; SERVER (Apache Server) CLIENT (web browser) &amp;lt;&amp;ndash; RESPONSE &amp;lt;&amp;ndash; SERVER (Apache Server) Response Koostuu http status koodista ja mahdollisesta response bodystä.</description>
+    </item>
+    
+  </channel>
+</rss>

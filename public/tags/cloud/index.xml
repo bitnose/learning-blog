@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud on Learning blog</title>
+    <link>/tags/cloud/</link>
+    <description>Recent content in cloud on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 10: DJ Ango</title>
+      <link>/posts/linux-10-dj-ango/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-10-dj-ango/</guid>
+      <description>Linux h10: DJ Ango 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  Hands on 🔗Host Machine
+ MacBook Pro Retina, 2015 OS: macOS Big Sur 11.7 Intel Core i7  Virtual Box (local)
+ VM: debian-live-11.6.0-amd64-xfce-nonfree.iso Operating System: Debian (64-bit) Type: Linux Memory size: 4000 MB File size: 60 GB Hard disk file type: VDI  Build database application with Django 🔗a) Kannattavaa. Tee oma tietokantasovellus. jossa on weppiliittymä.</description>
+    </item>
+    
+    <item>
+      <title>Linux 9: Sequel</title>
+      <link>/posts/linux-9-sequel/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-9-sequel/</guid>
+      <description>Linux h9: Sequel 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  🔗x) Yrityssoftaa. Keksi esimerkki palvelusta, jota käytetään wepissä selaimella, koodi ajetaan palvelimella ja taustalla on tietokanta. Mitä etuja tällä toteutustavalla on vaihtoehtoisiin toteutustapoihin verrattuna? (Tässä x-alakohdassa ei tarvitse tehdä testejä koneella tai toteuttaa mitään, pelkkä kuvittelu ja vastauksen kirjoittaminen riittää)
+Online Shop
+ Customer uses the service on the web: The web is the interface for the customer (comparing and buying products, placing the order, getting information about the company) Customer&amp;rsquo;s userdata is saved on database, as well as the order and product information The code is run on linux server, website is served by Apache Communication between the database and the website could be handled by some back-end library (Django (Python), Vapor (Swift), etc) Benefits:  The back-end and the frontend is separated: increased security The data will be saved permanently in common format (unless someone deletes the db) The data can be accessible for several websites Increased scalability and availability when parts are broken into smaller (micro)services &amp;ndash;&amp;gt; Easier to managed and apply changes compared to monolith systems In larger projects, the people who work with the project could focus on certain skillsets rather than mastering the whole fullstack    🔗Linux: Hands on 🔗Host Machine</description>
+    </item>
+    
+    <item>
+      <title>Linux 8: Say my name</title>
+      <link>/posts/linux-8-say-my-name/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-8-say-my-name/</guid>
+      <description>Linux h8: Say my name 🔗 Based on Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  Linux: Hands on 🔗a) Rent a domain name and point it to your virtual server
+Host Machine
+ MacBook Pro Retina, 2015 OS: macOS Big Sur 11.7 Intel Core i7  Virtual Box (local)
+ VM: debian-live-11.6.0-amd64-xfce-nonfree.iso Operating System: Debian (64-bit) Type: Linux Memory size: 4000 MB File size: 60 GB Hard disk file type: VDI  Virual Cloud Server</description>
+    </item>
+    
+    <item>
+      <title>Linux 7: Real Internet(tm)</title>
+      <link>/posts/linux-7-real-internettm/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-7-real-internettm/</guid>
+      <description>Linux h7: Real Internet(tm) 🔗 Perustuu Tero Karvinen 2023: Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002.  x) Summary 🔗Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
+ How to install virtual private (cloud) server and take the firts steps to configure it remotely Use only good passwords, always Keep your programs up to date (apt-get upgrade)  Login to server and setting up the password:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>public-key on Learning blog</title>
+    <link>/tags/public-key/</link>
+    <description>Recent content in public-key on Learning blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/public-key/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 3: Public key encryption and pgp</title>
+      <link>/posts/report-3-public-key-encryption-and-pgp/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/report-3-public-key-encryption-and-pgp/</guid>
+      <description>Report 3: Public key encryption and pgp 🔗Instructions 🔗A report based on the homework 3 (h3 public key encryption and pgp) on the course ICT Security Basics - from Trust to Blockchain - ICT4HM103-3003, 2022 Spring, Haaga-Helia University of Applied Sciences given by teacher Tero Karvinen.
+a) Read and summarize (with 1-5 bullet points for each heading) Schneier 2015: Applied Cryptography Chapter 1: Foundations
+b) Give two examples of public key cryptography (other than PGP).</description>
+    </item>
+    
+  </channel>
+</rss>
