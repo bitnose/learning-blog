@@ -153,15 +153,4 @@ Book database is done! Ready for more...
 
 {{< figure src="/img/h10/books.png" title="" width="600">}}
 
-## **b) Many-to-one relationship**
-
-I created Author model as a parent model for the Book model. I read the documentation about the relationships, and followed it. 
-
-
-At first, when I ran the program, it didn't work but showed errors even though I tried to migrate changes. It's because I manipulated the Book model but on the database, there was already some existing records with the old model, without the relationships, if I understood correctly. I dropped the whole database, created new admin user, loged in, created
-
-Created landing page and route for books:
-
-
-
 
