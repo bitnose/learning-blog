@@ -2,7 +2,7 @@
 author = "Anniina Korkiakangas"
 title = "Linux 7: Real Internet(tm)"
 date = "2023-02-09"
-description = "Apachen asentaminen Linuxiin."
+description = ""
 tags = [
     "linux",
     "virtualmachine",

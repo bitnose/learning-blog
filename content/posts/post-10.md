@@ -2,7 +2,7 @@
 author = "Anniina Korkiakangas"
 title = "Linux 10: DJ Ango"
 date = "2023-02-16"
-description = "PostgreSQL on Linux"
+description = ""
 tags = [
     "linux",
     "virtualmachine",

@@ -2,7 +2,7 @@
 author = "Anniina Korkiakangas"
 title = "Linux 8: Say my name"
 date = "2023-02-13"
-description = "Apachen asentaminen Linuxiin."
+description = ""
 tags = [
     "linux",
     "virtualmachine",
