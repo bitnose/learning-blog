@@ -22,7 +22,9 @@ aliases = ["migrate-from-jekyl"]
 ## **Linux h11: prod**
 - Based on Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
+
 ## **Hands on**
+
 
 **Host Machine**
 - MacBook Pro Retina, 2015
@@ -41,7 +43,7 @@ aliases = ["migrate-from-jekyl"]
 
 **a) Tee Djangon tuotantoasennus.** The goal is to install Django for production.
 
-##### **Started at 15:10**
+##### **17:20**
 
 I read this tutorial: [Deploy Django 4 - Production Install](https://terokarvinen.com/2022/deploy-django/).
 
