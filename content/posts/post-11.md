@@ -121,9 +121,6 @@ I connected the project with Apache by modifying anni.config:
         Undefine TVENV
 
 
-{{< figure src="/img/h11/config_4.png" title="" width="600">}}
-
-
 In config file, I needed to find the correct paths to directories so Apache can serve the files. 
 
 - **TDIR** Directory for manage.py of Python project.
@@ -152,7 +149,7 @@ To load changes (to Apache), touch wsgi.py file and restart apache2:
 
 {{< figure src="/img/h11/debug_7.png" title="" width="500">}}
 
-I make sure the debug is false, I opened the browser: 
+To make sure the debug is false, I opened the browser: 
 
 
 {{< figure src="/img/h11/notfound_7.png" title="" width="600">}}
