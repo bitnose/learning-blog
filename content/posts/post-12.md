@@ -1,6 +1,6 @@
 +++
 author = "Anniina Korkiakangas"
-title = "Linux 12: vianselvitys (debug)"
+title = "Linux 12: Debug"
 date = "2023-03-06"
 description = ""
 tags = [
@@ -19,7 +19,7 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Linux h12: debugging**
+## **Linux h12: debug**
 - Based on Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
 
 ## **Hands on**
