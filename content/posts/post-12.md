@@ -19,27 +19,8 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-## **Linux h12: vianselvitys**
+## **Linux h12: debugging**
 - Based on Tero Karvinen 2023: [Linux Palvelimet 2023 alkukevät, ICI003AS2A-3002](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/).
-
-Haasteita horisontissa. Tutki ongelmia Djangon tuotantotyyppisessä asennuksessa:
-
-Aiheuta ongelma
-Näytä oireet (esim. selaimella)
-Etsi siihen liittyvät lokimerkinnät
-Analysoi lokimerkinnät (eli selitä perusteellisesti, mitä eri kohdat tarkoittavat ja mitä kohdista on pääteltävissä)
-Korjaa ongelma
-Osoita testillä, että vika on korjattu
-
-
-Aloita toimivasta tilanteesta. Silloin tiedät, ettei asennuksessa ole muita ongelmia kuin ne, joita olet itse aiheuttanut.
-
-'sudo tail -F /var/log/apache2/access.log /var/log/apache2/error.log /var/log/apache2/other_vhost.log'
-
-ja tähän voi lätkiä rivinvaihtoja, niin erottaa, mitkä rivit tulevat mistäkin sivunlatauksesta
-
-'/sbin/apache2ctl configtest'
-'sudo systemctl status apache2
 
 ## **Hands on**
 
