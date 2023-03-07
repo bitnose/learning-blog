@@ -317,7 +317,13 @@ Tested on browser, and it worked:
 
 {{< figure src="/img/h12/conf_05.png" title="" width="600">}}
 
-e) Apachen WSGI-moduli puuttuu ('sudo apt-get purge libapache2-mod-wsgi-py3' tms)
+#
+
+### e) Apache WSGI module is missing
+
+Apache WSGI module is 
+
+('sudo apt-get purge libapache2-mod-wsgi-py3' tms)
 
 **1. Cause the problem**
 **2. Show the symptoms***
