@@ -223,7 +223,7 @@ I tried to fix the problem by modifying access to the Django project. Add read a
 
     env anniinak$ chmod u+rx annik/
 
-I didn't work, still showed the same error. Next, I checked the permissions of the files and folders to understand what was going on. I still needed to modify the permissions. At this point, I asked helped from my better (at least in Linux) half who knows the Linux like his own pockets.
+I didn't work, still showed the same error. Next, I checked the permissions of the files and folders to understand what was going on. I still needed to modify the permissions. At this point, I asked helped from my partner who knows the Linux like his own pockets.
 
 To elaborate what I learnt: 
 
@@ -335,12 +335,3 @@ f) Väärät domain-nimet ALLOWED_HOSTS-kohdassa (settings.py, ja DEBUG=False)
 **4. Analyze the logs**
 **5. Fix the problem**
 **6. Proof of solution**
-
-
-
-
-
-
-
-
-e) Vapaaehtoinen bonus: oma, itse keksitty ongelma.
