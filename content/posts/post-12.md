@@ -301,7 +301,7 @@ I guess this was the log.
 
 **4. Analyze the logs**
 
-According the logs, Apache wasn't able to start because of the syntax error, a missinf >, on line 255 in anni.conf file. Pretty straight forward. 
+According the logs, Apache wasn't able to start because of the syntax error, a missing >, on line 255 in anni.conf file. Pretty straight forward. 
 
 **5. Fix the problem**
 
