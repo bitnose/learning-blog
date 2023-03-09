@@ -38,7 +38,7 @@ aliases = ["migrate-from-jekyl"]
 - Hard disk file type: VDI
 
 
-## Write "Hello World" in tree language
+## **Write "Hello World" in tree language**
 **a) Käännä "Hei maailma" kolmella kielellä.**
 
 The purpose is to set Linux up for three different programming language, and test them with simple Hello world program.
@@ -146,5 +146,5 @@ I created a program that greets the user. I created a new file in my Python fold
     anniinak$ cat greetme.sh
     anniinak$ bash greetme.sh
 
-{{< figure src="/img/h13/bash.png" title="" width="600">}}
+{{< figure src="/img/h13/bash-hello.png" title="" width="600">}}
 
