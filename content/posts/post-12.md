@@ -135,7 +135,7 @@ The project folder is the one containing manage.py file.
 
 **1. Cause the problem**
 
-I created a new folder named wrong_public in user's home dir, located the manage.py file and the project. Then I moved the project (still the one containing manage.py) to `wrong_public` folder
+I created a new folder, named wrong_public in user's home dir. I located the manage.py file and the project. Then I moved the project (still the one containing manage.py) to `wrong_public` folder.
 
 {{< figure src="/img/h12/debug_09.png" title="" width="600">}}
 
@@ -155,7 +155,7 @@ Vm crashed so I needed to start it again. I checked the access logs at first. To
 
 **4. Analyze the logs**
 
-- `127.0.0.1.` IP-address of the request (client)
+- `127.0.0.1.` IP-address of the request 
 - `[Mon Mar xx xx:xx.xxxxxx]` Timestamp of the log, date and time, timezone. Answers question when.
 - `GET / ` The client made the get request to ask index.html file in given directory.
 - `HTTP/1.1` The protocol which was used.
@@ -187,14 +187,14 @@ It worked!
 
 **1. Cause the problem**
 
-The django project lives inside publicd/annik/ folder in home directory. First, I removed the read, write and execute rights from the user, group and others. The command is not recursive, meaning it doesn't change the permits of each file and folder inside. To my understanding, they stayed intack.
+The django project was inside publicd/annik/ folder in the home directory. At first, I removed read, write and execute rights from the user, group and others. The command is not recursive, meaning it doesn't change the permits of each file and folder inside. To my understanding, they stayed intack.
 
     env anniinak$ cd publicd/
     env anniinak$ chmod ugo-rwx annik/
 
 **2. Show the symptoms***
 
-Next, I tried to see if any changes has happened by going localhost/admin:
+Next, I tried to see if any changes has happened by going on localhost/admin:
 
 {{< figure src="/img/h12/debug_14.png" title="" width="600">}}
 
@@ -213,17 +213,17 @@ I checked the access logs but there was nothing interesting. Next, I checked the
 - `pid` The process id or identfier: Which process was interrupted.
 - `tid` The thread id or identifier: Which thread.
 -  `(13)Permission denied` What was the problem
-- `client` The address and the port number. 
+- `client` The address and the port number (of request?) 
 
 The log told that there is a problem with accessing the project files. 
 
 **5. Fix the problem**
 
-I tried to fix the problem by modifying access to the Django project. Add read and write access to the user for annik folder.
+I tried to fix the problem by modifying access to the Django project. Added read and write access to the user for annik folder.
 
     env anniinak$ chmod u+rx annik/
 
-I didn't work, still showed the same error. Next, I checked the permissions of the files and folders to understand what was going on. I still needed to modify the permissions. At this point, I asked helped from my partner who knows the Linux like his own pockets.
+It didn't work, still showed the same error. Next, I checked the permissions of the files and folders to understand what was going on. I still needed to modify the permissions. At this point, I asked helped from my partner who knows the Linux like his own pockets.
 
 To elaborate what I learnt: 
 
@@ -241,7 +241,7 @@ I added read and execute access for user:
 
 {{< figure src="/img/h12/toto_02.png" title="" width="600">}}
 
-To update all the rights like they were originally:
+Updated all the rights, like they were originally:
 
     env anniinak$ chmod u+rwx toto
     env anniinak$ chmod go+rx toto
@@ -321,15 +321,45 @@ Tested on browser, and it worked:
 
 ### e) Apache WSGI module is missing
 
-Apache WSGI module is 
-
-('sudo apt-get purge libapache2-mod-wsgi-py3' tms)
+Apache WSGI module connects Apache to Django project.
 
 **1. Cause the problem**
-**2. Show the symptoms***
+
+Removed WSGI module and reloaded the Apache2.
+
+    env anniinak$ sudo apt-get purge libapache2-mod-wsgi-py3
+    env anniinak$ sudo systemctl restart apache2
+
+**2. Show the symptoms**
+
+Apache2 couldn't be restarted anymore.
+
+{{< figure src="/img/h12/wsgi_01.png" title="" width="600">}}
+
 **3. Locate the logs**
+
+    env anniinak$ sudo tail /var/log/apache2/error.log | grep --color wsgi
+
+    {{< figure src="/img/h12/wsgi_02.png" title="" width="600">}}
+
+
 **4. Analyze the logs**
+
+To my understanding, log means that Apache got a shutdown signal and it was shut down, during the same time when I tried to restart Apache.
+
+-  Timestamp of the log, date and time. Answers question when.  
+- `mpm_event:notice` The module that produced the error.
+- `pid` The process id or identfier: Which process was interrupted.
+- `tid` The thread id or identifier: Which thread.
+- `AH00491` Didn't know what this one mean.
+- `caught SIGTERM, shutting down`
+
 **5. Fix the problem**
+
+To fix the problem, I installed the module again.
+
+    env anniinak$ sudo apt-get -y install libapache2-mod-wsgi-py3
+
 **6. Proof of solution**
 
 
