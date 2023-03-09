@@ -128,13 +128,14 @@ Create a HelloWorld program in Bash.
 
 {{< figure src="/img/h13/bash.png" title="" width="600">}}
 
+
 ## **Greetme program in Python**
-b) Create a program that greets the user.
+
+Created a program that greets the user (not sure if understood correctly the instructions).
 
 I created a program that greets the user. I created a new file in my Python folder in Projects.
 
     anniinak$ micro greetme.py
-    anniinak$ ls
     anniinak$ cat greetme.py
     anniinak$ python3 greetme.py
 
