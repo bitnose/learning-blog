@@ -34,31 +34,15 @@ aliases = ["migrate-from-jekyl"]
 - File size: 60 GB
 - Hard disk file type: VDI
 
-
-## **Write "Hello World" in tree language**
-**a) Käännä "Hei maailma" kolmella kielellä.**
-
-The purpose is to set Linux up for three different programming language, and test them with simple Hello world program.
-
-At first, I took a snapshot of vm and started it. **logged in** to vm and did the basic updates. I decided to use already existing box instead of creating a new one. 
-
-    anniinak$ date
-    anniinak$ whoami
-    anniinak$ sudo apt-get update
-    anniinak$ sudo apt-get -y dist-upgrade
-    
-I created a folder `Projects` in home directory.
-
-    anniinak$ mkdir Projects/
-    anniinak$ cd Projects/
-
 ## **Bash** 
 
 Create a program in Bash for multiple users.
 
-    # New bash script
+    # A new bash script I created
     anniinak$ cd /home/anniinak/Projects/Bash
     anniinak$ micro dateis
+
+Here is the content: 
 
     #!/usr/bin/bash
 
@@ -67,20 +51,47 @@ Create a program in Bash for multiple users.
     whoami
     pwd
 
-    # Test the program
+I tested the program:
+
     anniinak$ cat dateis
     anniinak$ bash dateis
 
-    # Copy the file to /usr/local/bin/
+I copied the file to /usr/local/bin/.
+
     anniinak$ sudo cp dateis /usr/local/bin/
     anniinak$ cd /usr/local/bin/
 
-    # Update the rights so user, group and others can read and execute the file.
+I Updated the rights so user, group and others can read and execute the file.
+
     anniinak$ ls -la
     anniinak$ chmod ugo+rx dateis
     anniinak$ ls -la
     anniinak$ cd
     anniinak$ dateis
+
+I created a program to list all files and rights.
+
+    # New bash script
+    anniinak$ cd /home/anniinak/Projects/Bash
+    anniinak$ micro ll
+
+    #!/usr/bin/bash
+    ls -al
+
+    # Test the program
+    anniinak$ cat ll
+    anniinak$ bash ll
+
+    # Copy the file to /usr/local/bin/
+    anniinak$ sudo cp ll /usr/local/bin/
+    anniinak$ cd /usr/local/bin/
+
+    # Update the rights so user, group and others can read and execute the file.
+    anniinak$ ls -la
+    anniinak$ chmod ugo+rx ll
+    anniinak$ ll
+    anniinak$ cd
+    anniinak$ ll
 
 
 
